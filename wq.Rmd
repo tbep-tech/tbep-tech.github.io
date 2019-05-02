@@ -8,26 +8,40 @@ output:
     toc_float: yes
 ---
 
-```{r setup, include=FALSE}  # ''' LOOKS LIKE A WAY TO ID R MARKDOWN CODE
+Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
+
+```{r setup, include=FALSE}
+# libraries
 require(tidyverse)
 require(lubridate)
 require(readxl)
 require(curl)
 require(leaflet)
 require(rmarkdown)
+require(here) # gets consistent path based on *.Rproj
+require(glue) # easy string creation
 knitr::opts_chunk$set(echo = TRUE)
+
+# variables
+download_latest_epchc <- FALSE
+
+# paths
+epchc_xlsx    <- here("data-raw/epchc.xlsx")
+epcdata_rdata <- here("data-raw/epcdata.RData")
 ```
 
 ## Code to Download EPCHC Dataset
 ```{r epchc_download}
 #URL of EPCHC's long-term dataset in Excel Spreadsheet format
- epchc_url <- "ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx"
-#Download data from EPCHC's ftp site
- download.file(url = epchc_url, destfile = './data-raw/epchc.xlsx', method = "libcurl", mode = "wb")
+epchc_url <- "ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx"
+
+if (!file.exists(epchc_xlsx) | download_latest_epchc){
+  # download data from EPCHC's ftp site
+  download.file(url = epchc_url, destfile = epchc_xlsx, method = "libcurl", mode = "wb") # 23.2 MB
+}
 ```
 
 ## Correctly Import EPCHC xlsx Data File into R
-
 
 ```{r epchc_import}
 #EPC data column name file
@@ -90,7 +104,7 @@ epcdata <- read_xlsx("./data-raw/epchc.xlsx",
                                    "text", "text", "text"),
                      col_names = epcnames, 
                      skip=1, na="")
-save(epcdata, file = './data-raw/epcdata.RData', compress = 'xz')
+save(epcdata, file = epcdata_rdata, compress = 'xz')
 #load('./data-raw/epcdata.Rdata')
 ```
 
@@ -145,7 +159,7 @@ map <- leaflet(wqsites) %>%                                            ### LOOKS
 map
 ```
 
-```{r calculate_means}                                          #### IS THIS ASSIGNING A NAME FOR R MARKDOWN?
+```{r calculate_means}                                          
 #Generate annual averages for each bay segment
 tbdata <-subset(wqdata, bay_segment != "MTB")                   ### DROPS MTB HERE - DEALS WITH IT LATER 
 tbmonchla <- tbdata %>% 
