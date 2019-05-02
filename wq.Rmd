@@ -26,8 +26,18 @@ knitr::opts_chunk$set(echo = TRUE)
 download_latest_epchc <- FALSE
 
 # paths
+# here(): set path based on root of repo where *.Rproj is found
 epchc_xlsx    <- here("data-raw/epchc.xlsx")
 epcdata_rdata <- here("data-raw/epcdata.RData")
+# set Google Drive folder to where sync'd
+user <- Sys.info()[["user"]]
+dir_gdrive <- case_when(
+  user == "Marcus" ~ "C:/Users/Marcus.SCCWRP2K/Desktop/Google Drive/tbep-tech",
+  user == "bbest" ~ "/Users/bbest/Gdrive Ecoquants/projects/tbep-tech")
+
+# test paths
+test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
+stopifnot(file.exists(test_xlsx))
 ```
 
 ## Code to Download EPCHC Dataset
@@ -354,7 +364,7 @@ chl_yr %>%
   spread(bay_segment, mean_chla) %>% 
   gt() %>% 
   data_color(
-    columns = vars(HB,LTB,MTB,OTB), 
+    columns = vars(HB, LTB, MTB, OTB), 
     colors = scales::col_numeric(palette = c("red", "yellow", "green"), alpha = NULL, apply_to = "bkgd", autocolor_text = TRUE)
 ```
 
