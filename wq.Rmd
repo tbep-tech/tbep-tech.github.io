@@ -12,14 +12,16 @@ Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherw
 
 ```{r setup, include=FALSE}
 # libraries
-require(tidyverse)
-require(lubridate)
-require(readxl)
-require(curl)
-require(leaflet)
-require(rmarkdown)
-require(here) # gets consistent path based on *.Rproj
-require(glue) # easy string creation
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(curl)
+library(leaflet)
+library(rmarkdown)
+library(here) # gets consistent path based on *.Rproj
+library(glue) # easy string creation
+library(tbeptools)
+# devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE)
 
 # variables
@@ -29,26 +31,23 @@ download_latest_epchc <- FALSE
 # here(): set path based on root of repo where *.Rproj is found
 epchc_xlsx    <- here("data-raw/epchc.xlsx")
 epcdata_rdata <- here("data-raw/epcdata.RData")
+
 # set Google Drive folder to where sync'd
 user <- Sys.info()[["user"]]
 dir_gdrive <- case_when(
-  user == "Marcus" ~ "C:/Users/Marcus.SCCWRP2K/Desktop/Google Drive/tbep-tech",
+  user == "Marcus" ~ "C:/Users/Marcus/Google Drive/tbep-tech",
   user == "bbest" ~ "/Users/bbest/Gdrive Ecoquants/projects/tbep-tech")
 
-# test paths
-test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
-stopifnot(file.exists(test_xlsx))
+
 ```
 
 ## Code to Download EPCHC Dataset
 ```{r epchc_download}
-#URL of EPCHC's long-term dataset in Excel Spreadsheet format
-epchc_url <- "ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx"
+# test paths
+test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
 
-if (!file.exists(epchc_xlsx) | download_latest_epchc){
-  # download data from EPCHC's ftp site
-  download.file(url = epchc_url, destfile = epchc_xlsx, method = "libcurl", mode = "wb") # 23.2 MB
-}
+# download new data and check with existing
+get_epchc_wq(test_xlsx, download_latest_epchc)
 ```
 
 ## Correctly Import EPCHC xlsx Data File into R
@@ -351,7 +350,7 @@ write.csv(sdmmodata, file = "./data-processed/TB_Secchi_Monthly_means.csv")
 
 ## Table output
 
-```{r}
+```{r, eval = F}
 #library(formattable)
 library(gt)
 
