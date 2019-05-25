@@ -24,9 +24,6 @@ library(tbeptools)
 # devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE)
 
-# variables
-download_latest_epchc <- FALSE
-
 # paths
 # here(): set path based on root of repo where *.Rproj is found
 epchc_xlsx    <- here("data-raw/epchc.xlsx")
@@ -38,119 +35,23 @@ dir_gdrive <- case_when(
   user == "Marcus" ~ "C:/Users/Marcus/Google Drive/tbep-tech",
   user == "bbest" ~ "/Users/bbest/Gdrive Ecoquants/projects/tbep-tech")
 
-
 ```
 
-## Code to Download EPCHC Dataset
-```{r epchc_download}
-# test paths
-test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
-
-# download new data and check with existing
-get_epchc_wq(test_xlsx, download_latest_epchc)
-```
-
-## Correctly Import EPCHC xlsx Data File into R
+## Download and import EPCHC dataset
 
 ```{r epchc_import}
-#EPC data column name file
-epcnames <- readLines("./data-raw/epchc_column_names.csv")  ### WHAT HAPPENS IF COLUMNS SHIFT??
+# path to download if not downloaded, path to import
+xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
 
-#EPC sites within Tampa Bay used for the Annual TBEP WQ Assessment
-epcsites <- c(6, 7, 8, 44, 52, 55, 70, 71, 73, 80, 36, 38, 40, 41, 46, 47, 50, 51, 60, 63, 64, 65, 66, 67, 68, 9,               11, 81, 84, 13, 14, 32, 33, 16, 19, 28, 82, 23, 24, 25, 90, 91, 92, 93, 95)
-#Station Lists by Bay Segment
-otb_stations <- c(36, 38, 40, 41, 46, 47, 50, 51, 60, 63, 64, 65, 66, 67, 68)
-hb_stations <- c(6, 7, 8, 44, 52, 55, 70, 71, 73, 80)
-mtb_stations <- c(9, 11, 81, 84, 13, 14, 32, 33, 16, 19, 28, 82)
-ltb_stations <- c(23, 24, 25, 90, 91, 92, 93, 95)
-#Short Bay Segment Names
-bay_segments = c("OTB", "HB", "MTB", "LTB")
-
-#Data frame that lists bay segment specific management targets + low and high magnitude exceedance thresholds
-targets <- data.frame(bay_segment = c("OTB", "HB", "MTB", "LTB"),
-                           name = c("Old Tampa Bay", "Hillsborough Bay", "Middle Tampa Bay", "Lower Tampa Bay"),
-                           chla_target = c(8.5, 13.2, 7.4, 4.6),
-                           chla_smallex = c(8.9, 14.1, 7.9, 4.8),
-                           chla_thresh = c(9.3, 15.0, 8.5, 5.1),
-                           la_target = c(0.83, 1.58, 0.83, 0.63),
-                           la_smallex = c(0.86, 1.63, 0.87, 0.66),
-                           la_thresh = c(0.88, 1.67, 0.91, 0.68))
-
-#Import the raw dataset into R
-
-### THIS SEEMS A BIT DANGEROUS TO ME - IS THERE A BETTER WAY TO MAKE SURE THAT THE COLUMNS DIDNT SHIFT. WHY NOT READ IN COLUMN HEADERS?
-
-epcdata <- read_xlsx("./data-raw/epchc.xlsx", 
-                     sheet="RWMDataSpreadsheet", 
-                     col_types = c("numeric", "numeric", "text", "text", "text", "text", 
-                                   "numeric", "numeric", "text", "numeric", "numeric", 
-                                   "text", "date", "text", "numeric", "text", "text", 
-                                   "numeric", "numeric", "numeric", "numeric", "text", 
-                                   "text", "text", "numeric", "text", "numeric", "text", 
-                                   "numeric", "text", "numeric", "text", "numeric", 
-                                   "text", "numeric", "text", "numeric", "text", 
-                                   "numeric", "text", "numeric", "text", "numeric", 
-                                   "text", "numeric", "text", "numeric", "text", 
-                                   "numeric", "text", "numeric", "text", "numeric", 
-                                   "text", "numeric", "text", "numeric", "text", 
-                                   "numeric", "text", "numeric", "text", "numeric", 
-                                   "text", "numeric", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text", 
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text", "text", "text", "text",
-                                   "text", "text", "text"),
-                     col_names = epcnames, 
-                     skip=1, na="")
-save(epcdata, file = epcdata_rdata, compress = 'xz')
-#load('./data-raw/epcdata.Rdata')
+# load data and some light formatting
+epcdata <- load_epchc_wq(xlsx, download_latest_epchc = F) %>% 
+  form_epchc_wq
 ```
 
 
 ```{r ecphc_validate}
-#Filter entire EPCHC dataset
-wqdata <- epcdata %>%                   ### USE OF PIPE OPERATOR - DPLYR FUNCTIONS? LOOKS LIKE IT ENDS WITH CLOSED PARENS
-          select(StationNumber,
-                 Latitude,
-                 Longitude,
-                 SampleTime,
-                 Total_Depth_m,
-                 Sample_Depth_m,
-                 Secchi_Depth_m,
-                 Secchi_Q,
-                 Chlorophyll_a_uncorr_ugL,
-                 Chlorophyll_a_uncorr_Q) %>% 
-          mutate(epchc_station = as.numeric(StationNumber),
-                 sd_m = as.numeric(Secchi_Depth_m),
-                 sd_check = as.numeric((Total_Depth_m*3.2809)-(Secchi_Depth_m*3.2809)),
-                 chla = as.numeric(Chlorophyll_a_uncorr_ugL),
-                 yr = year(SampleTime),
-                 mo = month(SampleTime)) %>% 
-          filter(epchc_station %in% epcsites)
-
-#Assign NAs to VOB secchi disk depths or secchis <0.5ft from bottom -- Janicki protocols
-wqdata <- within(wqdata, sd_m[Secchi_Q == ">"] <- NA)
-wqdata <- within(wqdata, sd_m[sd_check < 0.5] <- NA)
-
-wqdata$bay_segment <- ifelse(wqdata$epchc_station %in% hb_stations, "HB",                        ### SUBSETTING IFELSE STATEMENTS
-                             ifelse(wqdata$epchc_station %in% otb_stations, "OTB",
-                                    ifelse(wqdata$epchc_station %in% mtb_stations, "MTB",
-                                           ifelse(wqdata$epchc_station %in% ltb_stations, "LTB",NA))))
-
-
 #Display station locations
-wqsites <- wqdata %>% 
+wqsites <- epcdata %>% 
            select(epchc_station, Latitude, Longitude) %>% 
            unique()                                                   ### WHAT IS THIS - DOES IT SELECT ONLY UNIQUE FULL ROWS?
 
@@ -170,7 +71,7 @@ map
 
 ```{r calculate_means}                                          
 #Generate annual averages for each bay segment
-tbdata <-subset(wqdata, bay_segment != "MTB")                   ### DROPS MTB HERE - DEALS WITH IT LATER 
+tbdata <-subset(epcdata, bay_segment != "MTB")                   ### DROPS MTB HERE - DEALS WITH IT LATER 
 tbmonchla <- tbdata %>% 
                select(yr, mo, bay_segment, chla) %>%
                drop_na() %>%
@@ -195,7 +96,7 @@ tbyrsdm <- tbmonsdm %>%
                summarise(mean_sdm = mean(mean_sdm))
 
 #Process MTB data using weighted averages of 3 subsegments
-mtbdata <- subset(wqdata, bay_segment == "MTB")
+mtbdata <- subset(epcdata, bay_segment == "MTB")
 mtbdata$baysegment <- ifelse(mtbdata$epchc_station %in% c(9, 11, 81, 84), "MT1",
                              ifelse(mtbdata$epchc_station %in% c(13, 14, 32, 33), "MT2",
                                     ifelse(mtbdata$epchc_station %in% c(16, 19, 28, 82), "MT3", NA)))
@@ -266,6 +167,7 @@ sdmdata$mean_la <- ifelse(sdmdata$bay_segment =="OTB", 1.49/sdmdata$mean_sdm,
 
 ## Plot Mean Annual Chl-a Values by Bay Segment {.tabset}
 ```{r plot_chla_annual_averages, results='asis'}
+bay_segments <- unique(stations$bay_segment)
 cols <- c("Annual Mean"="red", "Management Target"="blue", "Regulatory Threshold"="blue", "Small Mag. Exceedance"="blue", "Large Mag. Exceedance"="blue")
 for (i in seq_along(bay_segments)) {
    chlaplot <- chladata %>%
