@@ -24,15 +24,10 @@ library(tbeptools)
 # devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE)
 
-# paths
-# here(): set path based on root of repo where *.Rproj is found
-epchc_xlsx    <- here("data-raw/epchc.xlsx")
-epcdata_rdata <- here("data-raw/epcdata.RData")
-
 # set Google Drive folder to where sync'd
 user <- Sys.info()[["user"]]
 dir_gdrive <- case_when(
-  user == "Marcus" ~ "C:/Users/Marcus/Google Drive/tbep-tech",
+  user == "Marcus" ~ "C:/Users/Marcus.SCCWRP2K/Google Drive/tbep-tech",
   user == "bbest" ~ "/Users/bbest/Gdrive Ecoquants/projects/tbep-tech")
 
 ```
@@ -44,8 +39,7 @@ dir_gdrive <- case_when(
 xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
 
 # load data and some light formatting
-epcdata <- load_epchc_wq(xlsx, download_latest_epchc = F) %>% 
-  form_epchc_wq
+epcdata <- load_epchc_wq(xlsx, download_latest_epchc = F, format = T) 
 ```
 
 
@@ -53,9 +47,9 @@ epcdata <- load_epchc_wq(xlsx, download_latest_epchc = F) %>%
 #Display station locations
 wqsites <- epcdata %>% 
            select(epchc_station, Latitude, Longitude) %>% 
-           unique()                                                   ### WHAT IS THIS - DOES IT SELECT ONLY UNIQUE FULL ROWS?
+           unique()                                                   
 
-map <- leaflet(wqsites) %>%                                            ### LOOKS LIKE THIS MAPS LOCATION OF STATIONS IN WQSITES - CAN WE IMPROVE TO PLOT COLOR CODED AVERAGES
+map <- leaflet(wqsites) %>%                                         
               addProviderTiles(providers$CartoDB.Positron) %>% 
               addCircleMarkers(~Longitude, ~Latitude,
                                radius = 6,
@@ -69,104 +63,14 @@ map <- leaflet(wqsites) %>%                                            ### LOOKS
 map
 ```
 
-```{r calculate_means}                                          
-#Generate annual averages for each bay segment
-tbdata <-subset(epcdata, bay_segment != "MTB")                   ### DROPS MTB HERE - DEALS WITH IT LATER 
-tbmonchla <- tbdata %>% 
-               select(yr, mo, bay_segment, chla) %>%
-               drop_na() %>%
-               group_by(yr, mo, bay_segment) %>%
-               summarise(mean_chla = mean(chla))
-tbyrchla <- tbmonchla %>% 
-               select(bay_segment, yr, mean_chla) %>% 
-               drop_na() %>% 
-               group_by(bay_segment, yr) %>% 
-               summarise(mean_chla = mean(mean_chla))
-  
-tbmonsdm <- tbdata %>% 
-               select(yr, mo, bay_segment, sd_m) %>%
-               drop_na() %>%
-               group_by(yr, mo, bay_segment) %>%
-               summarise(mean_sdm = mean(sd_m))
-
-tbyrsdm <- tbmonsdm %>% 
-               select(bay_segment, yr, mean_sdm) %>% 
-               drop_na() %>% 
-               group_by(bay_segment, yr) %>% 
-               summarise(mean_sdm = mean(mean_sdm))
-
-#Process MTB data using weighted averages of 3 subsegments
-mtbdata <- subset(epcdata, bay_segment == "MTB")
-mtbdata$baysegment <- ifelse(mtbdata$epchc_station %in% c(9, 11, 81, 84), "MT1",
-                             ifelse(mtbdata$epchc_station %in% c(13, 14, 32, 33), "MT2",
-                                    ifelse(mtbdata$epchc_station %in% c(16, 19, 28, 82), "MT3", NA)))
-mtbmonthlychla <- mtbdata %>%
-                select(yr, mo, baysegment, chla) %>% 
-                drop_na() %>% 
-                group_by(yr, mo, baysegment) %>% 
-                summarise(mean_chla = mean(chla))
-mtbmonchla <- mtbmonthlychla
-
-mtbmonthlysdm <- mtbdata %>%                                  ### SECCHI DISK
-                select(yr, mo, baysegment, sd_m) %>% 
-                drop_na() %>% 
-                group_by(yr, mo, baysegment) %>% 
-                summarise(mean_sd_m = mean(sd_m))
-mtbmonsdm <- mtbmonthlysdm
-
-mtbmonchla$chla <- ifelse(mtbmonchla$baysegment=="MT1", mtbmonchla$mean_chla*2108.7,                  ### AREA WEIGHTED ?
-                        ifelse(mtbmonchla$baysegment=="MT2", mtbmonchla$mean_chla*1041.9,
-                               ifelse(mtbmonchla$baysegment=="MT3", mtbmonchla$mean_chla*974.6, NA)))
-mtbmonsdm$sdm <- ifelse(mtbmonsdm$baysegment=="MT1", mtbmonsdm$mean_sd_m*2108.7,
-                        ifelse(mtbmonsdm$baysegment=="MT2", mtbmonsdm$mean_sd_m*1041.9,
-                               ifelse(mtbmonsdm$baysegment=="MT3", mtbmonsdm$mean_sd_m*974.6, NA)))
-mtbmoyrchla <- mtbmonchla %>%
-                select(yr, mo, baysegment, chla) %>% 
-                drop_na() %>% 
-                group_by(yr, mo) %>% 
-                summarise(sum_chla = sum(chla)) %>% 
-                mutate(mean_chla = sum_chla/4125.2,              ### WEIGHTED AVERAGE MONTHLY
-                       bay_segment ="MTB") 
-
-mtbyrchla <- mtbmoyrchla %>%
-                select(yr, mean_chla) %>% 
-                drop_na() %>% 
-                group_by(yr) %>% 
-                summarise(mean_chla = mean(mean_chla)) %>% 
-                mutate(bay_segment = "MTB")                   ###AVERAGE OF MONTHLY AREA WEIGHTED
-  
-
-mtbmoyrsdm <- mtbmonsdm %>%
-                select(yr, mo, baysegment, sdm) %>% 
-                drop_na() %>% 
-                group_by(yr, mo) %>% 
-                summarise(sum_sdm = sum(sdm)) %>% 
-                mutate(mean_sdm = sum_sdm/4125.2,            ### WEIGHTED AVERAGE sd
-                       bay_segment ="MTB")
-
-mtbyrsdm <- mtbmoyrsdm %>%
-                select(yr, mean_sdm) %>% 
-                drop_na() %>% 
-                group_by(yr) %>% 
-                summarise(mean_sdm = mean(mean_sdm)) %>% 
-                mutate(bay_segment = "MTB")
-
-#Put it all together
-chladata <- bind_rows(tbyrchla, mtbyrchla)
-chlamodata <- bind_rows(tbmonchla, mtbmoyrchla)
-sdmdata <- bind_rows(tbyrsdm, mtbyrsdm)
-sdmmodata <- bind_rows(tbmonsdm, mtbmoyrsdm)
-
-
-### I BELIEVE THE BELOW ARE GEISSON FACTORS FOR sd TO CALCULATE % LIGHT AVAILABILITY
-sdmdata$mean_la <- ifelse(sdmdata$bay_segment =="OTB", 1.49/sdmdata$mean_sdm,
-                             ifelse(sdmdata$bay_segment =="HB", 1.61/sdmdata$mean_sdm,
-                                    ifelse(sdmdata$bay_segment =="MTB", 1.49/sdmdata$mean_sdm,
-                                           ifelse(sdmdata$bay_segment =="LTB", 1.84/sdmdata$mean_sdm,NA))))
-```
-
 ## Plot Mean Annual Chl-a Values by Bay Segment {.tabset}
 ```{r plot_chla_annual_averages, results='asis'}
+aves <- mean_epchc_wq(epcdata)
+
+chladata <- aves$ann %>% 
+  filter(grepl('chla', var)) %>% 
+  spread(var, val)
+  
 bay_segments <- unique(stations$bay_segment)
 cols <- c("Annual Mean"="red", "Management Target"="blue", "Regulatory Threshold"="blue", "Small Mag. Exceedance"="blue", "Large Mag. Exceedance"="blue")
 for (i in seq_along(bay_segments)) {
@@ -205,6 +109,10 @@ for (i in seq_along(bay_segments)) {
 
 ## Plot Mean Annual Light Attenuation Values by Bay Segment {.tabset}
 ```{r plot_la_annual_averages, results='asis'}
+sdmdata <- aves$ann %>% 
+  filter(grepl('\\_sdm$|\\_la$', var)) %>% 
+  spread(var, val)
+
 for (i in seq_along(bay_segments)) {
     sdmplot <- sdmdata %>%
                  filter(bay_segment == bay_segments[i] & yr<2019) %>% 
@@ -244,10 +152,10 @@ for (i in seq_along(bay_segments)) {
 ## Export Annual Values as a Tidy CSV File
 Export final datasets to csv files in 'data-processed' folder.
 ```{r epchc_export_tidy_data}
-write.csv(chladata, file = "./data-processed/TB_Chla_Annual_Means.csv")
-write.csv(chlamodata, file = "./data-processed/TB_Chla_Monthly_means.csv")
-write.csv(sdmdata, file = "./data-processed/TB_Secchi_Annual_Means.csv")
-write.csv(sdmmodata, file = "./data-processed/TB_Secchi_Monthly_means.csv")
+# write.csv(chladata, file = "./data-processed/TB_Chla_Annual_Means.csv")
+# write.csv(chlamodata, file = "./data-processed/TB_Chla_Monthly_means.csv")
+# write.csv(sdmdata, file = "./data-processed/TB_Secchi_Annual_Means.csv")
+# write.csv(sdmmodata, file = "./data-processed/TB_Secchi_Monthly_means.csv")
 ```
 
 ## Table output

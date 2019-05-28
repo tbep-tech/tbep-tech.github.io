@@ -6172,15 +6172,13 @@ div.tocify {
 xlsx &lt;- file.path(dir_gdrive, &quot;data/wq/2018_Results_Updated.xls&quot;)
 
 # load data and some light formatting
-epcdata &lt;- load_epchc_wq(xlsx, download_latest_epchc = F) %&gt;% 
-  form_epchc_wq</code></pre>
-<pre><code>## Warning: NAs introduced by coercion</code></pre>
+epcdata &lt;- load_epchc_wq(xlsx, download_latest_epchc = F, format = T) </code></pre>
 <pre class="r"><code>#Display station locations
 wqsites &lt;- epcdata %&gt;% 
            select(epchc_station, Latitude, Longitude) %&gt;% 
-           unique()                                                   ### WHAT IS THIS - DOES IT SELECT ONLY UNIQUE FULL ROWS?
+           unique()                                                   
 
-map &lt;- leaflet(wqsites) %&gt;%                                            ### LOOKS LIKE THIS MAPS LOCATION OF STATIONS IN WQSITES - CAN WE IMPROVE TO PLOT COLOR CODED AVERAGES
+map &lt;- leaflet(wqsites) %&gt;%                                         
               addProviderTiles(providers$CartoDB.Positron) %&gt;% 
               addCircleMarkers(~Longitude, ~Latitude,
                                radius = 6,
@@ -6192,105 +6190,18 @@ map &lt;- leaflet(wqsites) %&gt;%                                            ###
               addLayersControl(overlayGroups = c(&#39;Water quality&#39;),
                                options = layersControlOptions(collapsed = FALSE))
 map</code></pre>
-<div id="htmlwidget-cd82d1a76feb301056e8" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cd82d1a76feb301056e8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
-<pre class="r"><code>#Generate annual averages for each bay segment
-tbdata &lt;-subset(epcdata, bay_segment != &quot;MTB&quot;)                   ### DROPS MTB HERE - DEALS WITH IT LATER 
-tbmonchla &lt;- tbdata %&gt;% 
-               select(yr, mo, bay_segment, chla) %&gt;%
-               drop_na() %&gt;%
-               group_by(yr, mo, bay_segment) %&gt;%
-               summarise(mean_chla = mean(chla))
-tbyrchla &lt;- tbmonchla %&gt;% 
-               select(bay_segment, yr, mean_chla) %&gt;% 
-               drop_na() %&gt;% 
-               group_by(bay_segment, yr) %&gt;% 
-               summarise(mean_chla = mean(mean_chla))</code></pre>
-<pre><code>## Adding missing grouping variables: `mo`</code></pre>
-<pre class="r"><code>tbmonsdm &lt;- tbdata %&gt;% 
-               select(yr, mo, bay_segment, sd_m) %&gt;%
-               drop_na() %&gt;%
-               group_by(yr, mo, bay_segment) %&gt;%
-               summarise(mean_sdm = mean(sd_m))
-
-tbyrsdm &lt;- tbmonsdm %&gt;% 
-               select(bay_segment, yr, mean_sdm) %&gt;% 
-               drop_na() %&gt;% 
-               group_by(bay_segment, yr) %&gt;% 
-               summarise(mean_sdm = mean(mean_sdm))</code></pre>
-<pre><code>## Adding missing grouping variables: `mo`</code></pre>
-<pre class="r"><code>#Process MTB data using weighted averages of 3 subsegments
-mtbdata &lt;- subset(epcdata, bay_segment == &quot;MTB&quot;)
-mtbdata$baysegment &lt;- ifelse(mtbdata$epchc_station %in% c(9, 11, 81, 84), &quot;MT1&quot;,
-                             ifelse(mtbdata$epchc_station %in% c(13, 14, 32, 33), &quot;MT2&quot;,
-                                    ifelse(mtbdata$epchc_station %in% c(16, 19, 28, 82), &quot;MT3&quot;, NA)))
-mtbmonthlychla &lt;- mtbdata %&gt;%
-                select(yr, mo, baysegment, chla) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr, mo, baysegment) %&gt;% 
-                summarise(mean_chla = mean(chla))
-mtbmonchla &lt;- mtbmonthlychla
-
-mtbmonthlysdm &lt;- mtbdata %&gt;%                                  ### SECCHI DISK
-                select(yr, mo, baysegment, sd_m) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr, mo, baysegment) %&gt;% 
-                summarise(mean_sd_m = mean(sd_m))
-mtbmonsdm &lt;- mtbmonthlysdm
-
-mtbmonchla$chla &lt;- ifelse(mtbmonchla$baysegment==&quot;MT1&quot;, mtbmonchla$mean_chla*2108.7,                  ### AREA WEIGHTED ?
-                        ifelse(mtbmonchla$baysegment==&quot;MT2&quot;, mtbmonchla$mean_chla*1041.9,
-                               ifelse(mtbmonchla$baysegment==&quot;MT3&quot;, mtbmonchla$mean_chla*974.6, NA)))
-mtbmonsdm$sdm &lt;- ifelse(mtbmonsdm$baysegment==&quot;MT1&quot;, mtbmonsdm$mean_sd_m*2108.7,
-                        ifelse(mtbmonsdm$baysegment==&quot;MT2&quot;, mtbmonsdm$mean_sd_m*1041.9,
-                               ifelse(mtbmonsdm$baysegment==&quot;MT3&quot;, mtbmonsdm$mean_sd_m*974.6, NA)))
-mtbmoyrchla &lt;- mtbmonchla %&gt;%
-                select(yr, mo, baysegment, chla) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr, mo) %&gt;% 
-                summarise(sum_chla = sum(chla)) %&gt;% 
-                mutate(mean_chla = sum_chla/4125.2,              ### WEIGHTED AVERAGE MONTHLY
-                       bay_segment =&quot;MTB&quot;) 
-
-mtbyrchla &lt;- mtbmoyrchla %&gt;%
-                select(yr, mean_chla) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr) %&gt;% 
-                summarise(mean_chla = mean(mean_chla)) %&gt;% 
-                mutate(bay_segment = &quot;MTB&quot;)                   ###AVERAGE OF MONTHLY AREA WEIGHTED
-  
-
-mtbmoyrsdm &lt;- mtbmonsdm %&gt;%
-                select(yr, mo, baysegment, sdm) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr, mo) %&gt;% 
-                summarise(sum_sdm = sum(sdm)) %&gt;% 
-                mutate(mean_sdm = sum_sdm/4125.2,            ### WEIGHTED AVERAGE sd
-                       bay_segment =&quot;MTB&quot;)
-
-mtbyrsdm &lt;- mtbmoyrsdm %&gt;%
-                select(yr, mean_sdm) %&gt;% 
-                drop_na() %&gt;% 
-                group_by(yr) %&gt;% 
-                summarise(mean_sdm = mean(mean_sdm)) %&gt;% 
-                mutate(bay_segment = &quot;MTB&quot;)
-
-#Put it all together
-chladata &lt;- bind_rows(tbyrchla, mtbyrchla)
-chlamodata &lt;- bind_rows(tbmonchla, mtbmoyrchla)
-sdmdata &lt;- bind_rows(tbyrsdm, mtbyrsdm)
-sdmmodata &lt;- bind_rows(tbmonsdm, mtbmoyrsdm)
-
-
-### I BELIEVE THE BELOW ARE GEISSON FACTORS FOR sd TO CALCULATE % LIGHT AVAILABILITY
-sdmdata$mean_la &lt;- ifelse(sdmdata$bay_segment ==&quot;OTB&quot;, 1.49/sdmdata$mean_sdm,
-                             ifelse(sdmdata$bay_segment ==&quot;HB&quot;, 1.61/sdmdata$mean_sdm,
-                                    ifelse(sdmdata$bay_segment ==&quot;MTB&quot;, 1.49/sdmdata$mean_sdm,
-                                           ifelse(sdmdata$bay_segment ==&quot;LTB&quot;, 1.84/sdmdata$mean_sdm,NA))))</code></pre>
+<div id="htmlwidget-82c37edd3c38bdb06ed9" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-82c37edd3c38bdb06ed9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="plot-mean-annual-chl-a-values-by-bay-segment" class="section level2 tabset">
 <h2>Plot Mean Annual Chl-a Values by Bay Segment</h2>
-<pre class="r"><code>bay_segments &lt;- unique(stations$bay_segment)
+<pre class="r"><code>aves &lt;- mean_epchc_wq(epcdata)
+
+chladata &lt;- aves$ann %&gt;% 
+  filter(grepl(&#39;chla&#39;, var)) %&gt;% 
+  spread(var, val)
+  
+bay_segments &lt;- unique(stations$bay_segment)
 cols &lt;- c(&quot;Annual Mean&quot;=&quot;red&quot;, &quot;Management Target&quot;=&quot;blue&quot;, &quot;Regulatory Threshold&quot;=&quot;blue&quot;, &quot;Small Mag. Exceedance&quot;=&quot;blue&quot;, &quot;Large Mag. Exceedance&quot;=&quot;blue&quot;)
 for (i in seq_along(bay_segments)) {
    chlaplot &lt;- chladata %&gt;%
@@ -6343,7 +6254,11 @@ for (i in seq_along(bay_segments)) {
 </div>
 <div id="plot-mean-annual-light-attenuation-values-by-bay-segment" class="section level2 tabset">
 <h2>Plot Mean Annual Light Attenuation Values by Bay Segment</h2>
-<pre class="r"><code>for (i in seq_along(bay_segments)) {
+<pre class="r"><code>sdmdata &lt;- aves$ann %&gt;% 
+  filter(grepl(&#39;\\_sdm$|\\_la$&#39;, var)) %&gt;% 
+  spread(var, val)
+
+for (i in seq_along(bay_segments)) {
     sdmplot &lt;- sdmdata %&gt;%
                  filter(bay_segment == bay_segments[i] &amp; yr&lt;2019) %&gt;% 
                  ggplot(aes(x=yr)) + 
@@ -6395,10 +6310,10 @@ for (i in seq_along(bay_segments)) {
 <div id="export-annual-values-as-a-tidy-csv-file" class="section level2">
 <h2>Export Annual Values as a Tidy CSV File</h2>
 <p>Export final datasets to csv files in ‘data-processed’ folder.</p>
-<pre class="r"><code>write.csv(chladata, file = &quot;./data-processed/TB_Chla_Annual_Means.csv&quot;)
-write.csv(chlamodata, file = &quot;./data-processed/TB_Chla_Monthly_means.csv&quot;)
-write.csv(sdmdata, file = &quot;./data-processed/TB_Secchi_Annual_Means.csv&quot;)
-write.csv(sdmmodata, file = &quot;./data-processed/TB_Secchi_Monthly_means.csv&quot;)</code></pre>
+<pre class="r"><code># write.csv(chladata, file = &quot;./data-processed/TB_Chla_Annual_Means.csv&quot;)
+# write.csv(chlamodata, file = &quot;./data-processed/TB_Chla_Monthly_means.csv&quot;)
+# write.csv(sdmdata, file = &quot;./data-processed/TB_Secchi_Annual_Means.csv&quot;)
+# write.csv(sdmmodata, file = &quot;./data-processed/TB_Secchi_Monthly_means.csv&quot;)</code></pre>
 </div>
 <div id="table-output" class="section level2">
 <h2>Table output</h2>
