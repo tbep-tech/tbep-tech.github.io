@@ -4,6 +4,7 @@ author: "Ed Sherwood <esherwood@tbep.org>"
 date: "February 4, 2019"
 output: 
   html_document: 
+    code_folding: hide
     toc: yes
     toc_float: yes
 ---
@@ -20,7 +21,8 @@ require(leaflet)
 require(rmarkdown)
 require(here) # gets consistent path based on *.Rproj
 require(glue) # easy string creation
-knitr::opts_chunk$set(echo = TRUE)
+library(tools)
+knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
 
 # variables
 download_latest_epchc <- FALSE
@@ -29,6 +31,7 @@ download_latest_epchc <- FALSE
 # here(): set path based on root of repo where *.Rproj is found
 epchc_xlsx    <- here("data-raw/epchc.xlsx")
 epcdata_rdata <- here("data-raw/epcdata.RData")
+
 # set Google Drive folder to where sync'd
 user <- Sys.info()[["user"]]
 dir_gdrive <- case_when(
@@ -40,15 +43,33 @@ test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
 stopifnot(file.exists(test_xlsx))
 ```
 
+## TODO
+
+- Shiny app:
+  - slider to change thresholds and see results
+  - p
+
+
 ## Code to Download EPCHC Dataset
 ```{r epchc_download}
+#library(tbeptools)
+#get_epchc_wq(epchc_xlsx)
+
 #URL of EPCHC's long-term dataset in Excel Spreadsheet format
 epchc_url <- "ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx"
 
 if (!file.exists(epchc_xlsx) | download_latest_epchc){
   # download data from EPCHC's ftp site
-  download.file(url = epchc_url, destfile = epchc_xlsx, method = "libcurl", mode = "wb") # 23.2 MB
+  tmp_xlsx <- tempfile(fileext = "xlsx")
+  download.file(url = epchc_url, destfile = tmp_xlsx, method = "libcurl", mode = "wb") # 23.2 MB
+  
+  is_latest <- md5sum(epchc_xlsx) == md5sum(tmp_xlsx)
+  if (!is_latest){
+    file.copy(tmp_xlsx, epchc_xlsx, overwrite=T)
+  }
 }
+
+# TODO: for Travis updating: if (is_latest) return() # no need to update
 ```
 
 ## Correctly Import EPCHC xlsx Data File into R
@@ -349,23 +370,46 @@ write.csv(sdmdata, file = "./data-processed/TB_Secchi_Annual_Means.csv")
 write.csv(sdmmodata, file = "./data-processed/TB_Secchi_Monthly_means.csv")
 ```
 
-## Table output
+## Colorized Table
+
+Now let's produce a color coded table similar to that found in [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
+  
+![](/Users/bbest/github/tbep-tech.github.io/img/decision-matrix_color-table-snip.png)
+
+except we'll include the actual values and color code cells along a gradient using the new [**gt**](https://github.com/rstudio/gt) R package.
 
 ```{r}
 #library(formattable)
 library(gt)
 
-chl_yr <- read_csv(here("data-processed/TB_Chla_Annual_Means.csv"))
-#chl_yr %>% select(-X1) %>% View()
+colorize_fld <- function(gtbl, fld, pal=c("red", "yellow", "green"), digits=1){
+  #browser()
+  gtbl %>% 
+    data_color(
+      #columns = vars(fld), 
+      columns = fld, 
+      colors = scales::col_numeric(
+        palette = pal,
+        domain =  gtbl[[fld]])) %>% 
+    fmt_number(
+      #columns = vars(fld),
+      columns = fld,
+      decimals = 1) 
+}
 
-chl_yr %>% 
+colorize_tbl <- function(gtbl, exclude_cols="Year", pal=c("red", "yellow", "green"), digits=1){
+  flds <- setdiff(names(gtbl), exclude_cols)
+  for (fld in flds){
+    gtbl <- colorize_fld(gtbl, fld, pal, digits)
+  }
+  gtbl
+}
+
+read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>% 
   select(-X1) %>% 
   #View()
   spread(bay_segment, mean_chla) %>% 
+  rename(Year=yr) %>% #,
   gt() %>% 
-  data_color(
-    columns = vars(HB, LTB, MTB, OTB), 
-    colors = scales::col_numeric(palette = c("red", "yellow", "green"), alpha = NULL, apply_to = "bkgd", autocolor_text = TRUE)
+  colorize_tbl()
 ```
-
-
