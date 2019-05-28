@@ -6,7 +6,7 @@
     
     - [**tbep-tech.github.io**](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
     
-    - [**tbeptools**](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizating TBEP data
+    - [**tbeptools**](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data
 
 ## Reports
 
