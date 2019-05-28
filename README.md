@@ -1,4 +1,8 @@
-# tbep-tech.github.io
-Tampa Bay Estuarine Program - Technical Github website
+# Tampa Bay Estuarine Program - Technical Github website
 
-- [Water Quality](./wq.html)
+## Reports
+- [water quality](./wq.html)
+
+## R library
+
+- [tbeptools](https://tbep-tech.github.io/tbeptools/): utility functions for processing data from TBEP
