@@ -10,5 +10,5 @@
 
 ## Reports
 
-- [Water Quality](./wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
+- [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
