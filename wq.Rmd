@@ -22,6 +22,7 @@ require(rmarkdown)
 require(here) # gets consistent path based on *.Rproj
 require(glue) # easy string creation
 library(tools)
+library(gt)
 #library(tbeptools)
 devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
@@ -75,17 +76,14 @@ if (!file.exists(epchc_xlsx) | download_latest_epchc){
 ## Download and import EPCHC dataset
 
 ```{r epchc_import}
-# path to download if not downloaded, path to import
-xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
-
 # load data and some light formatting
-epcdata <- load_epchc_wq(xlsx, download_latest_epchc = F, format = T) 
+epcdata <- load_epchc_wq(test_xlsx, download_latest_epchc = F) 
 ```
 
 
 ```{r ecphc_validate}
 #Display station locations
-wqsites <- epcdata %>% 
+wqsites <- frmdat(epcdata) %>% 
            select(epchc_station, Latitude, Longitude) %>% 
            unique()                                                   
 
@@ -105,7 +103,7 @@ map
 
 ## Plot Mean Annual Chl-a Values by Bay Segment {.tabset}
 ```{r plot_chla_annual_averages, results='asis'}
-aves <- mean_epchc_wq(epcdata)
+aves <- avedat(epcdata)
 
 chladata <- aves$ann %>% 
   filter(grepl('chla', var)) %>% 
@@ -202,13 +200,11 @@ Export final datasets to csv files in 'data-processed' folder.
 
 Now let's produce a color coded table similar to that found in [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
   
-![](/Users/bbest/github/tbep-tech.github.io/img/decision-matrix_color-table-snip.png)
+![](img/decision-matrix_color-table-snip.png)
 
 except we'll include the actual values and color code cells along a gradient using the new [**gt**](https://github.com/rstudio/gt) R package.
 
 ```{r}
-library(gt)
-
 colorize_fld <- function(gtbl, fld, pal=c("red", "yellow", "green"), digits=1){
   gtbl %>% 
     data_color(
