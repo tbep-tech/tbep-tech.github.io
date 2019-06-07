@@ -102,51 +102,37 @@ map
 ```
 
 ## Plot Mean Annual Chl-a Values by Bay Segment {.tabset}
-```{r plot_chla_annual_averages, results='asis'}
-aves <- avedat(epcdata)
 
-chladata <- aves$ann %>% 
-  filter(grepl('chla', var)) %>% 
-  spread(var, val)
-  
-bay_segments <- unique(stations$bay_segment)
-cols <- c("Annual Mean"="red", "Management Target"="blue", "Regulatory Threshold"="blue", "Small Mag. Exceedance"="blue", "Large Mag. Exceedance"="blue")
-for (i in seq_along(bay_segments)) {
-   chlaplot <- chladata %>%
-                 filter(bay_segment == bay_segments[i] & yr<2019) %>%                           ###   LOOP TO PLOT BY BAYSEGMENT
-                 ggplot(aes(x=yr)) +                                                            ###   SEE GARY'S NOTES ON REQUESTED IMPROVEMENTS
-                   geom_point(aes(y=mean_chla, colour="Annual Mean"), size=3) +
-                   geom_line(aes(y=mean_chla, colour="Annual Mean"), size=0.75) +
-                   geom_hline(data=targets, aes(yintercept = as.numeric(chla_thresh[i]),        ###    DO THEY WANT TO ADD OTHER REFERENCE LINES?
-                                                colour="Regulatory Threshold")) +
-                   ggtitle(paste(targets$name[i])) +
-                   geom_text(data=targets, parse = TRUE,
-                             aes(1973, as.numeric(chla_thresh[i]),
-                                 label = paste(chla_thresh[i],"~ mu * g%.%L^{-1}"),            ### NOT SURE WHAT g%.%L IS BUT ITS A LABEL
-                                 hjust = 0.2, vjust = -0.3)) +
-                   ylab(expression("Mean Annual Chlorophyll-a ("~ mu * "g\u00B7L"^-1 *")")) +
-                   xlab("") +
-                   scale_x_continuous(breaks=seq(1973,2019,by=1),                                   ### IS THERE A WAY TO AUTOMATE THIS SO WE DONT HAVE TO MANUALLY SCALE AXIS?
-                                      labels=c(1973, rep("",3), 1977, rep("",3), 1981, rep("",3),
-                                               1985, rep("",3), 1989, rep("",3), 1993, rep("",3),
-                                               1997, rep("",3), 2001, rep("",3), 2005, rep("",3),
-                                               2009, rep("",3), 2013, rep("",3), 2017, rep("",2)),
-                                      expand = c(0.035,0)) +
-                   theme(plot.title = element_text(hjust = 0.5),
-                         panel.grid.minor=element_blank(),
-                         panel.grid.major=element_blank(),
-                         legend.position = c(0.88, 0.95),
-                         legend.background = element_rect(fill=NA)) +
-                   scale_colour_manual(name="", values = cols,
-                                       labels=c("Annual Mean", "Regulatory Threshold"))
-   cat("###", paste(targets$name[i]), "\n")
-   print(chlaplot)
-   cat("\n\n")
-} 
+### Old Tampa Bay
+
+```{r chlplot_otb}
+chlplot(epcdata, bay_segment = "OTB")
+```
+
+### Hillsborough Bay
+
+```{r chlplot_hb}
+chlplot(epcdata, bay_segment = "HB")
+```
+
+### Middle Tampa Bay
+
+```{r chlplot_mtb}
+chlplot(epcdata, bay_segment = "MTB")
+```
+
+### Lower Tampa Bay
+
+```{r chlplot_ltb}
+chlplot(epcdata, bay_segment = "LTB")
 ```
 
 ## Plot Mean Annual Light Attenuation Values by Bay Segment {.tabset}
 ```{r plot_la_annual_averages, results='asis'}
+aves <- avedat(epcdata)
+cols <- c("Annual Mean"="red", "Management Target"="blue", "Regulatory Threshold"="blue", "Small Mag. Exceedance"="blue", "Large Mag. Exceedance"="blue")
+
+bay_segments <- targets$bay_segment
 sdmdata <- aves$ann %>% 
   filter(grepl('\\_sdm$|\\_la$', var)) %>% 
   spread(var, val)
