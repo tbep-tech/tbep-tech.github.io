@@ -106,71 +106,53 @@ map
 ### Old Tampa Bay
 
 ```{r chlplot_otb}
-chlplot(epcdata, bay_segment = "OTB")
+thrplot(epcdata, bay_segment = "OTB", thr = "chla")
 ```
 
 ### Hillsborough Bay
 
 ```{r chlplot_hb}
-chlplot(epcdata, bay_segment = "HB")
+thrplot(epcdata, bay_segment = "HB", thr = "chla")
 ```
 
 ### Middle Tampa Bay
 
 ```{r chlplot_mtb}
-chlplot(epcdata, bay_segment = "MTB")
+thrplot(epcdata, bay_segment = "MTB", thr = "chla")
 ```
 
 ### Lower Tampa Bay
 
 ```{r chlplot_ltb}
-chlplot(epcdata, bay_segment = "LTB")
+thrplot(epcdata, bay_segment = "LTB", thr = "chla")
 ```
 
 ## Plot Mean Annual Light Attenuation Values by Bay Segment {.tabset}
-```{r plot_la_annual_averages, results='asis'}
-aves <- avedat(epcdata)
-cols <- c("Annual Mean"="red", "Management Target"="blue", "Regulatory Threshold"="blue", "Small Mag. Exceedance"="blue", "Large Mag. Exceedance"="blue")
 
-bay_segments <- targets$bay_segment
-sdmdata <- aves$ann %>% 
-  filter(grepl('\\_sdm$|\\_la$', var)) %>% 
-  spread(var, val)
+### Old Tampa Bay
 
-for (i in seq_along(bay_segments)) {
-    sdmplot <- sdmdata %>%
-                 filter(bay_segment == bay_segments[i] & yr<2019) %>% 
-                 ggplot(aes(x=yr)) + 
-                   geom_point(aes(y=mean_la, colour="Annual Mean"), size=3) +
-                   geom_line(aes(y=mean_la, colour="Annual Mean"), size=0.75) +
-                   geom_hline(data=targets, aes(yintercept = as.numeric(la_target[i]),
-                                                colour="Management Target")) +
-                   ggtitle(paste(targets$name[i])) +
-                   geom_text(data=targets, parse = T,
-                             aes(1973, as.numeric(la_target[i]),
-                                 label = paste(la_target[i],"~m","^{-1}"),
-                                 hjust = 0.3, vjust = -0.3)) +
-                   ylab(expression("Mean Annual Light Attenuation (m  " ^-1 *")")) +
-                   xlab("") +
-                   scale_x_continuous(breaks=seq(1973,2019,by=1),
-                                      labels=c(1973, rep("",3), 1977, rep("",3), 1981, rep("",3),
-                                               1985, rep("",3), 1989, rep("",3), 1993, rep("",3),
-                                               1997, rep("",3), 2001, rep("",3), 2005, rep("",3),
-                                               2009, rep("",3), 2013, rep("",3), 2017, rep("",2)),
-                                      expand = c(0.035,0)) +
-                   theme(plot.title = element_text(hjust = 0.5),
-                         panel.grid.minor=element_blank(),
-                         panel.grid.major=element_blank(),
-                         legend.position = c(0.88, 0.95),
-                         legend.background = element_rect(fill=NA)) +
-                   scale_colour_manual(name="", values = cols,
-                                       labels=c("Annual Mean", "Management Target"))
-   cat("###", paste(targets$name[i]), "\n")  
-   print(sdmplot)
-   cat("\n\n")
-} 
-
+```{r laplot_otb}
+thrplot(epcdata, bay_segment = "OTB", thr = "la")
 ```
+
+### Hillsborough Bay
+
+```{r laplot_hb}
+thrplot(epcdata, bay_segment = "HB", thr = "la")
+```
+
+### Middle Tampa Bay
+
+```{r laplot_mtb}
+thrplot(epcdata, bay_segment = "MTB", thr = "la")
+```
+
+### Lower Tampa Bay
+
+```{r laplot_ltb}
+thrplot(epcdata, bay_segment = "LTB", thr = "la")
+```
+
 #### NEED TO USE THE FILES BELOW TO GENERATE THE COLOR CODED TABLE OF RESULTS
 
 ## Export Annual Values as a Tidy CSV File
