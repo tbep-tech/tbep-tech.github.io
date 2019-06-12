@@ -1,6 +1,6 @@
 ---
 title: "Get EPCHC Data, Tidy it Up & Perform TBEP Annual WQ Assessment"
-author: "Ed Sherwood <esherwood@tbep.org>, Ben Best <ben@ecoquants.com>"
+author: "Ed Sherwood <esherwood@tbep.org>, Ben Best <ben@ecoquants.com>, Marcus Beck <marcusb@sccwrp.org>"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document: 
@@ -11,7 +11,7 @@ output:
 
 Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
 
-```{r setup, include=FALSE}
+```{r setup, message = F, warning = F}
 # libraries
 require(tidyverse)
 require(lubridate)
@@ -27,14 +27,6 @@ library(gt)
 devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
 
-# variables
-download_latest_epchc <- FALSE
-
-# paths
-# here(): set path based on root of repo where *.Rproj is found
-epchc_xlsx    <- here("data-raw/epchc.xlsx")
-epcdata_rdata <- here("data-raw/epcdata.RData")
-
 # set Google Drive folder to where sync'd
 user <- Sys.info()[["user"]]
 dir_gdrive <- case_when(
@@ -43,34 +35,6 @@ dir_gdrive <- case_when(
 
 # test paths
 test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
-stopifnot(file.exists(test_xlsx))
-```
-
-## TODO
-
-- Shiny app:
-  - slider to change thresholds and see results
-
-## Code to Download EPCHC Dataset
-```{r epchc_download}
-#library(tbeptools)
-#get_epchc_wq(epchc_xlsx)
-
-#URL of EPCHC's long-term dataset in Excel Spreadsheet format
-epchc_url <- "ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx"
-
-if (!file.exists(epchc_xlsx) | download_latest_epchc){
-  # download data from EPCHC's ftp site
-  tmp_xlsx <- tempfile(fileext = "xlsx")
-  download.file(url = epchc_url, destfile = tmp_xlsx, method = "libcurl", mode = "wb") # 23.2 MB
-  
-  is_latest <- md5sum(epchc_xlsx) == md5sum(tmp_xlsx)
-  if (!is_latest){
-    file.copy(tmp_xlsx, epchc_xlsx, overwrite=T)
-  }
-}
-
-# TODO: for Travis updating: if (is_latest) return() # no need to update
 ```
 
 ## Download and import EPCHC dataset
@@ -80,7 +44,6 @@ if (!file.exists(epchc_xlsx) | download_latest_epchc){
 epcdata <- load_epchc_wq(test_xlsx, download_latest_epchc = F)
 epcdata
 ```
-
 
 ```{r ecphc_validate}
 #Display station locations

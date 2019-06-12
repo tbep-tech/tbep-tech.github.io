@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Ed Sherwood esherwood@tbep.org, Ben Best ben@ecoquants.com" />
+<meta name="author" content="Ed Sherwood esherwood@tbep.org, Ben Best ben@ecoquants.com, Marcus Beck marcusb@sccwrp.org" />
 
 
 <title>Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</title>
@@ -6234,50 +6234,43 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
-<h4 class="author"><em>Ed Sherwood <a href="mailto:esherwood@tbep.org" class="email">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com" class="email">ben@ecoquants.com</a></em></h4>
+<h4 class="author"><em>Ed Sherwood <a href="mailto:esherwood@tbep.org" class="email">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com" class="email">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org" class="email">marcusb@sccwrp.org</a></em></h4>
 <h4 class="date"><em>12 June, 2019</em></h4>
 
 </div>
 
 
 <p>Original: <a href="https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd">esherwoo77/pull_epc_data:pull_epc_data.Rmd</a></p>
-<div id="todo" class="section level2">
-<h2>TODO</h2>
-<ul>
-<li>Shiny app:
-<ul>
-<li>slider to change thresholds and see results</li>
-</ul></li>
-</ul>
-</div>
-<div id="code-to-download-epchc-dataset" class="section level2">
-<h2>Code to Download EPCHC Dataset</h2>
-<pre class="r"><code>#library(tbeptools)
-#get_epchc_wq(epchc_xlsx)
+<pre class="r"><code># libraries
+require(tidyverse)
+require(lubridate)
+require(readxl)
+require(curl)
+require(leaflet)
+require(rmarkdown)
+require(here) # gets consistent path based on *.Rproj
+require(glue) # easy string creation
+library(tools)
+library(gt)
+#library(tbeptools)
+devtools::load_all(&#39;../tbeptools/.&#39;)
+knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
 
-#URL of EPCHC&#39;s long-term dataset in Excel Spreadsheet format
-epchc_url &lt;- &quot;ftp://ftp.epchc.org/EPC_ERM_FTP/WQM_Reports/RWMDataSpreadsheet_ThroughCurrentReportMonth.xlsx&quot;
+# set Google Drive folder to where sync&#39;d
+user &lt;- Sys.info()[[&quot;user&quot;]]
+dir_gdrive &lt;- case_when(
+  user == &quot;Marcus&quot; ~ &quot;C:/Users/Marcus.SCCWRP2K/Google Drive/tbep-tech&quot;,
+  user == &quot;bbest&quot; ~ &quot;/Users/bbest/Gdrive Ecoquants/projects/tbep-tech&quot;)
 
-if (!file.exists(epchc_xlsx) | download_latest_epchc){
-  # download data from EPCHC&#39;s ftp site
-  tmp_xlsx &lt;- tempfile(fileext = &quot;xlsx&quot;)
-  download.file(url = epchc_url, destfile = tmp_xlsx, method = &quot;libcurl&quot;, mode = &quot;wb&quot;) # 23.2 MB
-  
-  is_latest &lt;- md5sum(epchc_xlsx) == md5sum(tmp_xlsx)
-  if (!is_latest){
-    file.copy(tmp_xlsx, epchc_xlsx, overwrite=T)
-  }
-}
-
-# TODO: for Travis updating: if (is_latest) return() # no need to update</code></pre>
-</div>
+# test paths
+test_xlsx &lt;- file.path(dir_gdrive, &quot;data/wq/2018_Results_Updated.xls&quot;)</code></pre>
 <div id="download-and-import-epchc-dataset" class="section level2">
 <h2>Download and import EPCHC dataset</h2>
 <pre class="r"><code># load data and some light formatting
 epcdata &lt;- load_epchc_wq(test_xlsx, download_latest_epchc = F)
 epcdata</code></pre>
 <pre><code>## An object of class epcdata 
-## 64225 records in imported data
+## 64428 records in imported data
 ## Methods that can be used with this object: avedat, frmdat, rawdat, thrplot 
 ## Use methods as a function or slot, e.g., frmdat(epcdata) or epcdata@frmdat
 ## View help files for more info, e.g., ?frmdat</code></pre>
@@ -6298,8 +6291,8 @@ map &lt;- leaflet(wqsites) %&gt;%
               addLayersControl(overlayGroups = c(&#39;Water quality&#39;),
                                options = layersControlOptions(collapsed = FALSE))
 map</code></pre>
-<div id="htmlwidget-ad569f47fdc8d88d2572" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ad569f47fdc8d88d2572">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ce2a01fe008d013a1197" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ce2a01fe008d013a1197">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="plot-mean-annual-chl-a-values-by-bay-segment" class="section level2 tabset">
 <h2>Plot Mean Annual Chl-a Values by Bay Segment</h2>
@@ -6396,7 +6389,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nwhiynfsnu .gt_table {
+#okbanbrxin .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -6415,13 +6408,13 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* table.border.top.color */
 }
 
-#nwhiynfsnu .gt_heading {
+#okbanbrxin .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#nwhiynfsnu .gt_title {
+#okbanbrxin .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -6432,7 +6425,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   border-bottom-width: 0;
 }
 
-#nwhiynfsnu .gt_subtitle {
+#okbanbrxin .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -6443,7 +6436,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   border-top-width: 0;
 }
 
-#nwhiynfsnu .gt_bottom_border {
+#okbanbrxin .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -6452,7 +6445,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* heading.border.bottom.color */
 }
 
-#nwhiynfsnu .gt_column_spanner {
+#okbanbrxin .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -6460,7 +6453,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   padding-bottom: 4px;
 }
 
-#nwhiynfsnu .gt_col_heading {
+#okbanbrxin .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -6473,11 +6466,11 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   margin: 10px;
 }
 
-#nwhiynfsnu .gt_sep_right {
+#okbanbrxin .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#nwhiynfsnu .gt_group_heading {
+#okbanbrxin .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -6501,7 +6494,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   vertical-align: middle;
 }
 
-#nwhiynfsnu .gt_empty_group_heading {
+#okbanbrxin .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -6525,33 +6518,33 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   vertical-align: middle;
 }
 
-#nwhiynfsnu .gt_striped {
+#okbanbrxin .gt_striped {
   background-color: #f2f2f2;
 }
 
-#nwhiynfsnu .gt_from_md > :first-child {
+#okbanbrxin .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nwhiynfsnu .gt_from_md > :last-child {
+#okbanbrxin .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nwhiynfsnu .gt_row {
+#okbanbrxin .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#nwhiynfsnu .gt_stub {
+#okbanbrxin .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#nwhiynfsnu .gt_summary_row {
+#okbanbrxin .gt_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -6561,7 +6554,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* summary_row.text_transform */
 }
 
-#nwhiynfsnu .gt_grand_summary_row {
+#okbanbrxin .gt_grand_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -6571,19 +6564,19 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* grand_summary_row.text_transform */
 }
 
-#nwhiynfsnu .gt_first_summary_row {
+#okbanbrxin .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#nwhiynfsnu .gt_first_grand_summary_row {
+#okbanbrxin .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #A8A8A8;
 }
 
-#nwhiynfsnu .gt_table_body {
+#okbanbrxin .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -6598,55 +6591,55 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* table_body.border.bottom.color */
 }
 
-#nwhiynfsnu .gt_footnote {
+#okbanbrxin .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#nwhiynfsnu .gt_sourcenote {
+#okbanbrxin .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#nwhiynfsnu .gt_center {
+#okbanbrxin .gt_center {
   text-align: center;
 }
 
-#nwhiynfsnu .gt_left {
+#okbanbrxin .gt_left {
   text-align: left;
 }
 
-#nwhiynfsnu .gt_right {
+#okbanbrxin .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nwhiynfsnu .gt_font_normal {
+#okbanbrxin .gt_font_normal {
   font-weight: normal;
 }
 
-#nwhiynfsnu .gt_font_bold {
+#okbanbrxin .gt_font_bold {
   font-weight: bold;
 }
 
-#nwhiynfsnu .gt_font_italic {
+#okbanbrxin .gt_font_italic {
   font-style: italic;
 }
 
-#nwhiynfsnu .gt_super {
+#okbanbrxin .gt_super {
   font-size: 65%;
 }
 
-#nwhiynfsnu .gt_footnote_glyph {
+#okbanbrxin .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nwhiynfsnu" style="overflow-x:auto;"><!--gt table start-->
+<div id="okbanbrxin" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_right' rowspan='1' colspan='1'>Year</th>
