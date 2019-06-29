@@ -12,20 +12,15 @@ output:
 Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
 
 ```{r setup, message = F, warning = F}
-# libraries
-require(tidyverse)
-require(lubridate)
-require(readxl)
-require(curl)
-require(leaflet)
-require(rmarkdown)
-require(here) # gets consistent path based on *.Rproj
-require(glue) # easy string creation
-library(tools)
-library(gt)
-#library(tbeptools)
-devtools::load_all('../tbeptools/.')
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+
+# libraries
+library(tidyverse)
+library(leaflet)
+library(here)
+library(gt)
+library(tbeptools)
+# devtools::load_all('../tbeptools/.')
 
 # set Google Drive folder to where sync'd
 user <- Sys.info()[["user"]]

@@ -1,0 +1,49 @@
+language: r
+sudo: false
+cache:
+  packages: true
+  directories:
+    - _cache
+r_packages:
+  - tidyverse
+  - leaflet
+  - here 
+  - gt
+r_github_packages: 
+  - tbep-tech/tbeptools
+addons:
+  apt:
+    packages:
+    - gdal-bin 
+    - libgdal-dev 
+    - libgdal1-dev 
+    - netcdf-bin 
+    - libproj-dev 
+    - libnetcdf-dev 
+    - netcdf-bin
+git:
+  depth: 3
+before_install:
+  - sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
+  - sudo apt-get update
+  - sudo add-apt-repository -y ppa:opencpu/jq
+  - sudo apt-get --yes --force-yes update -qq
+  - sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev libgeos-dev libjq-dev libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin protobuf-compiler
+  - Rscript -e 'update.packages(ask = FALSE)'
+script:
+  - Rscript -e 'rmarkdown::knit("wq.Rmd")'
+  - git config --global user.name "fawda123"
+  - git config --global user.email "mbafs2012@gmail.com"
+  - git add -A
+  - git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
+  - git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
+notifications:
+  email:
+    recipients:
+    - mbafs2012@gmail.com
+    - ben@ecoquants.com
+    on_success: change
+    on_failure: change
+env:
+  global:
+  - secure: bR6yQW49LuDgSOJOCf22bkXQjpKP2JyY4cm3OmeY/S3yRZ4DXkz9yfDO+zcrA5Gu8N84EZhxmLAKdG7mhJ/8Q3qLhZhqnQqa4+doy0Ga3YzBovpcmSR5kFn9ssNxBGOk9LFUd3sb1yM7RxP4UCPQ6jz+3+xJkm2Rybmrrn9YerEMONrrKqBo5JXt/PLkdHBQb1eMxQ2fQdjdwcj2L2L6LtmNNuzzRQxtTqqVh/94v6RjEm7nleeL97O4LxchbEe2wwlHplpmbjOdoP3DJj3aLxXA/cuBlRexo0wChs+V1RObr5EJg+wabDHJmqSQWmZOij5HujNwy8ay2dusf9YUaYWcYB2LR1TM90zpSdLb0dr/Vtgv9YxYVV+wn2udFjrgNLx98ewQ57ZdEajIuJfUTjKaCJw4Cp5OuBXTlYhs96tjPel0AWSs7d0XnS8Tx7oUykcggSi5CFQ7G/VryewiLGl2tDqHzRMVulMxp01P2Y0HdV2j/YHSDPfI1hHm7Ug5ACNBU8wQwFAYhMn7YWedIEJnlPV1H3L+lN6Bc+gFEKBnuXAjnOzONk4t632ShxPTZ7tHzubVCrYFRB7LQaNRdUzYCT+ivzZ/YvjgeVOTEs7ri0lW1ZR8NMyDFW504x3cu92BbC7ol79yN/q2V2T2zX13RSx4pTEVa7aa1YdNGKw=
