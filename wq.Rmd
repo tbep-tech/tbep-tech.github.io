@@ -41,13 +41,13 @@ test_xlsx <- file.path(dir_gdrive, "data/wq/2018_Results_Updated.xls")
 
 ```{r epchc_import}
 # load data and some light formatting
-epcdata <- load_epchc_wq(test_xlsx, download_latest_epchc = F)
+epcdata <- read_importwq(test_xlsx, download_latest_epchc = T)
 epcdata
 ```
 
 ```{r ecphc_validate}
 #Display station locations
-wqsites <- frmdat(epcdata) %>% 
+wqsites <- epcdata %>% 
            select(epchc_station, Latitude, Longitude) %>% 
            unique()                                                   
 
@@ -70,25 +70,25 @@ map
 ### Old Tampa Bay
 
 ```{r chlplot_otb}
-thrplot(epcdata, bay_segment = "OTB", thr = "chla")
+show_thrplot(epcdata, bay_segment = "OTB", thr = "chla")
 ```
 
 ### Hillsborough Bay
 
 ```{r chlplot_hb}
-thrplot(epcdata, bay_segment = "HB", thr = "chla")
+show_thrplot(epcdata, bay_segment = "HB", thr = "chla")
 ```
 
 ### Middle Tampa Bay
 
 ```{r chlplot_mtb}
-thrplot(epcdata, bay_segment = "MTB", thr = "chla")
+show_thrplot(epcdata, bay_segment = "MTB", thr = "chla")
 ```
 
 ### Lower Tampa Bay
 
 ```{r chlplot_ltb}
-thrplot(epcdata, bay_segment = "LTB", thr = "chla")
+show_thrplot(epcdata, bay_segment = "LTB", thr = "chla")
 ```
 
 ## Plot Mean Annual Light Attenuation Values by Bay Segment {.tabset}
@@ -96,25 +96,25 @@ thrplot(epcdata, bay_segment = "LTB", thr = "chla")
 ### Old Tampa Bay
 
 ```{r laplot_otb}
-thrplot(epcdata, bay_segment = "OTB", thr = "la")
+show_thrplot(epcdata, bay_segment = "OTB", thr = "la")
 ```
 
 ### Hillsborough Bay
 
 ```{r laplot_hb}
-thrplot(epcdata, bay_segment = "HB", thr = "la")
+show_thrplot(epcdata, bay_segment = "HB", thr = "la")
 ```
 
 ### Middle Tampa Bay
 
 ```{r laplot_mtb}
-thrplot(epcdata, bay_segment = "MTB", thr = "la")
+show_thrplot(epcdata, bay_segment = "MTB", thr = "la")
 ```
 
 ### Lower Tampa Bay
 
 ```{r laplot_ltb}
-thrplot(epcdata, bay_segment = "LTB", thr = "la")
+show_thrplot(epcdata, bay_segment = "LTB", thr = "la")
 ```
 
 #### NEED TO USE THE FILES BELOW TO GENERATE THE COLOR CODED TABLE OF RESULTS
