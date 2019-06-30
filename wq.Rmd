@@ -106,17 +106,6 @@ show_thrplot(epcdata, bay_segment = "MTB", thr = "la")
 show_thrplot(epcdata, bay_segment = "LTB", thr = "la")
 ```
 
-#### NEED TO USE THE FILES BELOW TO GENERATE THE COLOR CODED TABLE OF RESULTS
-
-## Export Annual Values as a Tidy CSV File
-Export final datasets to csv files in 'data-processed' folder.
-```{r epchc_export_tidy_data}
-# write.csv(chladata, file = "./data-processed/TB_Chla_Annual_Means.csv")
-# write.csv(chlamodata, file = "./data-processed/TB_Chla_Monthly_means.csv")
-# write.csv(sdmdata, file = "./data-processed/TB_Secchi_Annual_Means.csv")
-# write.csv(sdmmodata, file = "./data-processed/TB_Secchi_Monthly_means.csv")
-```
-
 ## Colorized Table
 
 Now let's produce a color coded table similar to that found in [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
@@ -126,7 +115,9 @@ Now let's produce a color coded table similar to that found in [tbep-tech:data/w
 except we'll include the actual values and color code cells along a gradient using the new [**gt**](https://github.com/rstudio/gt) R package.
 
 ```{r}
-colorize_fld <- function(gtbl, fld, pal=c("red", "yellow", "green"), digits=1){
+
+avedat <- anlz_avedat(epcdata)
+colorize_fld <- function(gtbl, fld, pal=c("green", "yellow", "red"), digits=1){
   gtbl %>% 
     data_color(
       #columns = vars(fld), 
@@ -140,7 +131,7 @@ colorize_fld <- function(gtbl, fld, pal=c("red", "yellow", "green"), digits=1){
       decimals = 1) 
 }
 
-colorize_tbl <- function(gtbl, exclude_cols="Year", pal=c("red", "yellow", "green"), digits=1){
+colorize_tbl <- function(gtbl, exclude_cols="Year", pal=c("green", "yellow", "red"), digits=1){
   flds <- setdiff(names(gtbl), exclude_cols)
   for (fld in flds){
     gtbl <- colorize_fld(gtbl, fld, pal, digits)
@@ -148,11 +139,13 @@ colorize_tbl <- function(gtbl, exclude_cols="Year", pal=c("red", "yellow", "gree
   gtbl
 }
 
-read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>% 
-  select(-X1) %>% 
-  #View()
+epcdata %>% 
+  anlz_avedat %>% 
+  .[['ann']] %>% 
+  filter(var %in% 'mean_chla') %>% 
+  spread(var, val) %>% 
   spread(bay_segment, mean_chla) %>% 
-  rename(Year=yr) %>% #,
+  rename(Year = yr) %>% 
   gt() %>% 
   colorize_tbl()
 ```

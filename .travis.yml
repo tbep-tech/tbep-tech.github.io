@@ -4,8 +4,6 @@ cache:
   packages: true
   directories:
     - _cache
-r_github_packages: 
-  - tbep-tech/tbeptools
 addons:
   apt:
     packages:
