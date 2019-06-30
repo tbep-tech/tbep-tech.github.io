@@ -6241,28 +6241,22 @@ div.tocify {
 
 
 <p>Original: <a href="https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd">esherwoo77/pull_epc_data:pull_epc_data.Rmd</a></p>
-<pre class="r"><code># libraries
+<pre class="r"><code>knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+
+# libraries
 library(tidyverse)
 library(leaflet)
 library(here)
 library(gt)
 library(tbeptools)
-
 # devtools::load_all(&#39;../tbeptools/.&#39;)
-knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
 
-# set Google Drive folder to where sync&#39;d
-user &lt;- Sys.info()[[&quot;user&quot;]]
-dir_gdrive &lt;- case_when(
-  user == &quot;Marcus&quot; ~ &quot;C:/Users/Marcus.SCCWRP2K/Google Drive/tbep-tech&quot;,
-  user == &quot;bbest&quot; ~ &quot;/Users/bbest/Gdrive Ecoquants/projects/tbep-tech&quot;)
-
-# test paths
-test_xlsx &lt;- file.path(dir_gdrive, &quot;data/wq/2018_Results_Updated.xls&quot;)</code></pre>
+# local file path
+xlsx &lt;- here(&#39;data-raw&#39;, &#39;2018_Results_Updated.xls&#39;)</code></pre>
 <div id="download-and-import-epchc-dataset" class="section level2">
 <h2>Download and import EPCHC dataset</h2>
 <pre class="r"><code># load data and some light formatting
-epcdata &lt;- read_importwq(test_xlsx, download_latest_epchc = T)</code></pre>
+epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T)</code></pre>
 <pre><code>## File is current...</code></pre>
 <pre class="r"><code>epcdata</code></pre>
 <pre><code>## # A tibble: 25,441 x 11
@@ -6297,8 +6291,8 @@ map &lt;- leaflet(wqsites) %&gt;%
               addLayersControl(overlayGroups = c(&#39;Water quality&#39;),
                                options = layersControlOptions(collapsed = FALSE))
 map</code></pre>
-<div id="htmlwidget-ee97e48174f04d723dd6" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ee97e48174f04d723dd6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-dca84ff2cde84fea431e" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-dca84ff2cde84fea431e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[27.889299,27.8589,27.8524,27.786501,27.812901,27.8118,27.778,27.723801,27.693399,27.666,27.5884,27.662701,27.708401,27.7932,27.826099,27.855801,27.8818,27.9291,27.937401,27.9237,27.9904,27.972601,27.918501,27.8902,27.896999,27.8493,27.989901,27.9676,27.979401,27.945601,27.927799,27.9002,27.8519,27.908899,27.876499,27.8281,27.809601,27.7813,27.751101,27.729,27.625999,27.627899,27.5737,27.578899,27.6112],[-82.477402,-82.468597,-82.409302,-82.4272,-82.478897,-82.523201,-82.520302,-82.533798,-82.555901,-82.599197,-82.619301,-82.6679,-82.6092,-82.570702,-82.567497,-82.553299,-82.577499,-82.587303,-82.565002,-82.480698,-82.659302,-82.620201,-82.537903,-82.548798,-82.438202,-82.431396,-82.631599,-82.575996,-82.683296,-82.694298,-82.639702,-82.592003,-82.580803,-82.463203,-82.413803,-82.413101,-82.445999,-82.474098,-82.5718,-82.498703,-82.591499,-82.641502,-82.686798,-82.744102,-82.694702],6,null,"Water quality",{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.8,"fill":true,"fillColor":"black","fillOpacity":0.2},null,null,["EPC Station: 6","EPC Station: 7","EPC Station: 8","EPC Station: 9","EPC Station: 11","EPC Station: 13","EPC Station: 14","EPC Station: 16","EPC Station: 19","EPC Station: 23","EPC Station: 24","EPC Station: 25","EPC Station: 28","EPC Station: 32","EPC Station: 33","EPC Station: 36","EPC Station: 38","EPC Station: 40","EPC Station: 41","EPC Station: 44","EPC Station: 46","EPC Station: 47","EPC Station: 50","EPC Station: 51","EPC Station: 52","EPC Station: 55","EPC Station: 60","EPC Station: 63","EPC Station: 64","EPC Station: 65","EPC Station: 66","EPC Station: 67","EPC Station: 68","EPC Station: 70","EPC Station: 71","EPC Station: 73","EPC Station: 80","EPC Station: 81","EPC Station: 82","EPC Station: 84","EPC Station: 90","EPC Station: 91","EPC Station: 92","EPC Station: 93","EPC Station: 95"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[[],"Water quality",{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[27.5737,27.9904],"lng":[-82.744102,-82.409302]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="plot-mean-annual-chl-a-values-by-bay-segment" class="section level2 tabset">
 <h2>Plot Mean Annual Chl-a Values by Bay Segment</h2>
@@ -6395,7 +6389,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#oxebuqnswv .gt_table {
+#ipsnipkdmq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -6414,13 +6408,13 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* table.border.top.color */
 }
 
-#oxebuqnswv .gt_heading {
+#ipsnipkdmq .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#oxebuqnswv .gt_title {
+#ipsnipkdmq .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -6431,7 +6425,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   border-bottom-width: 0;
 }
 
-#oxebuqnswv .gt_subtitle {
+#ipsnipkdmq .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -6442,7 +6436,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   border-top-width: 0;
 }
 
-#oxebuqnswv .gt_bottom_border {
+#ipsnipkdmq .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -6451,7 +6445,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* heading.border.bottom.color */
 }
 
-#oxebuqnswv .gt_column_spanner {
+#ipsnipkdmq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -6459,7 +6453,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   padding-bottom: 4px;
 }
 
-#oxebuqnswv .gt_col_heading {
+#ipsnipkdmq .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -6472,11 +6466,11 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   margin: 10px;
 }
 
-#oxebuqnswv .gt_sep_right {
+#ipsnipkdmq .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#oxebuqnswv .gt_group_heading {
+#ipsnipkdmq .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -6500,7 +6494,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   vertical-align: middle;
 }
 
-#oxebuqnswv .gt_empty_group_heading {
+#ipsnipkdmq .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -6524,33 +6518,33 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   vertical-align: middle;
 }
 
-#oxebuqnswv .gt_striped {
+#ipsnipkdmq .gt_striped {
   background-color: #f2f2f2;
 }
 
-#oxebuqnswv .gt_from_md > :first-child {
+#ipsnipkdmq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#oxebuqnswv .gt_from_md > :last-child {
+#ipsnipkdmq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#oxebuqnswv .gt_row {
+#ipsnipkdmq .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#oxebuqnswv .gt_stub {
+#ipsnipkdmq .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#oxebuqnswv .gt_summary_row {
+#ipsnipkdmq .gt_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -6560,7 +6554,7 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* summary_row.text_transform */
 }
 
-#oxebuqnswv .gt_grand_summary_row {
+#ipsnipkdmq .gt_grand_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -6570,19 +6564,19 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* grand_summary_row.text_transform */
 }
 
-#oxebuqnswv .gt_first_summary_row {
+#ipsnipkdmq .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#oxebuqnswv .gt_first_grand_summary_row {
+#ipsnipkdmq .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #A8A8A8;
 }
 
-#oxebuqnswv .gt_table_body {
+#ipsnipkdmq .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -6597,55 +6591,55 @@ read_csv(here(&quot;data-processed/TB_Chla_Annual_Means.csv&quot;)) %&gt;%
   /* table_body.border.bottom.color */
 }
 
-#oxebuqnswv .gt_footnote {
+#ipsnipkdmq .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#oxebuqnswv .gt_sourcenote {
+#ipsnipkdmq .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#oxebuqnswv .gt_center {
+#ipsnipkdmq .gt_center {
   text-align: center;
 }
 
-#oxebuqnswv .gt_left {
+#ipsnipkdmq .gt_left {
   text-align: left;
 }
 
-#oxebuqnswv .gt_right {
+#ipsnipkdmq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#oxebuqnswv .gt_font_normal {
+#ipsnipkdmq .gt_font_normal {
   font-weight: normal;
 }
 
-#oxebuqnswv .gt_font_bold {
+#ipsnipkdmq .gt_font_bold {
   font-weight: bold;
 }
 
-#oxebuqnswv .gt_font_italic {
+#ipsnipkdmq .gt_font_italic {
   font-style: italic;
 }
 
-#oxebuqnswv .gt_super {
+#ipsnipkdmq .gt_super {
   font-size: 65%;
 }
 
-#oxebuqnswv .gt_footnote_glyph {
+#ipsnipkdmq .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="oxebuqnswv" style="overflow-x:auto;"><!--gt table start-->
+<div id="ipsnipkdmq" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_right' rowspan='1' colspan='1'>Year</th>
