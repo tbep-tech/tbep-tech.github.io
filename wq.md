@@ -217,7 +217,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#luvqghfygm .gt_table {
+#cvmtdxdnxo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -236,13 +236,13 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   /* table.border.top.color */
 }
 
-#luvqghfygm .gt_heading {
+#cvmtdxdnxo .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#luvqghfygm .gt_title {
+#cvmtdxdnxo .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -253,7 +253,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   border-bottom-width: 0;
 }
 
-#luvqghfygm .gt_subtitle {
+#cvmtdxdnxo .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -264,7 +264,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   border-top-width: 0;
 }
 
-#luvqghfygm .gt_bottom_border {
+#cvmtdxdnxo .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -273,7 +273,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   /* heading.border.bottom.color */
 }
 
-#luvqghfygm .gt_column_spanner {
+#cvmtdxdnxo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -281,7 +281,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   padding-bottom: 4px;
 }
 
-#luvqghfygm .gt_col_heading {
+#cvmtdxdnxo .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -294,11 +294,11 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   margin: 10px;
 }
 
-#luvqghfygm .gt_sep_right {
+#cvmtdxdnxo .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#luvqghfygm .gt_group_heading {
+#cvmtdxdnxo .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -322,7 +322,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   vertical-align: middle;
 }
 
-#luvqghfygm .gt_empty_group_heading {
+#cvmtdxdnxo .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -346,33 +346,33 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   vertical-align: middle;
 }
 
-#luvqghfygm .gt_striped {
+#cvmtdxdnxo .gt_striped {
   background-color: #f2f2f2;
 }
 
-#luvqghfygm .gt_from_md > :first-child {
+#cvmtdxdnxo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#luvqghfygm .gt_from_md > :last-child {
+#cvmtdxdnxo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#luvqghfygm .gt_row {
+#cvmtdxdnxo .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#luvqghfygm .gt_stub {
+#cvmtdxdnxo .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#luvqghfygm .gt_summary_row {
+#cvmtdxdnxo .gt_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -382,7 +382,7 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   /* summary_row.text_transform */
 }
 
-#luvqghfygm .gt_grand_summary_row {
+#cvmtdxdnxo .gt_grand_summary_row {
   color: #000000;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -392,19 +392,19 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   /* grand_summary_row.text_transform */
 }
 
-#luvqghfygm .gt_first_summary_row {
+#cvmtdxdnxo .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#luvqghfygm .gt_first_grand_summary_row {
+#cvmtdxdnxo .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #A8A8A8;
 }
 
-#luvqghfygm .gt_table_body {
+#cvmtdxdnxo .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -419,55 +419,55 @@ read_csv(here("data-processed/TB_Chla_Annual_Means.csv")) %>%
   /* table_body.border.bottom.color */
 }
 
-#luvqghfygm .gt_footnote {
+#cvmtdxdnxo .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#luvqghfygm .gt_sourcenote {
+#cvmtdxdnxo .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#luvqghfygm .gt_center {
+#cvmtdxdnxo .gt_center {
   text-align: center;
 }
 
-#luvqghfygm .gt_left {
+#cvmtdxdnxo .gt_left {
   text-align: left;
 }
 
-#luvqghfygm .gt_right {
+#cvmtdxdnxo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#luvqghfygm .gt_font_normal {
+#cvmtdxdnxo .gt_font_normal {
   font-weight: normal;
 }
 
-#luvqghfygm .gt_font_bold {
+#cvmtdxdnxo .gt_font_bold {
   font-weight: bold;
 }
 
-#luvqghfygm .gt_font_italic {
+#cvmtdxdnxo .gt_font_italic {
   font-style: italic;
 }
 
-#luvqghfygm .gt_super {
+#cvmtdxdnxo .gt_super {
   font-size: 65%;
 }
 
-#luvqghfygm .gt_footnote_glyph {
+#cvmtdxdnxo .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="luvqghfygm" style="overflow-x:auto;"><!--gt table start-->
+<div id="cvmtdxdnxo" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_right' rowspan='1' colspan='1'>Year</th>
