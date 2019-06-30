@@ -24,7 +24,7 @@ before_install:
   - sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev libgeos-dev libjq-dev libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin protobuf-compiler
 script:
   - Rscript -e 'knitr::knit("wq.Rmd", output = "wq.html")'
-  - git config --global user.name "fawda123"
+  - git config --global user.name "Marcus Beck (Travis-CI)"
   - git config --global user.email "mbafs2012@gmail.com"
   - git add -A
   - git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
