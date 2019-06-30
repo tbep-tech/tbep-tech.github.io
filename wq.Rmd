@@ -15,10 +15,8 @@ Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherw
 knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
 
 # libraries
-library(tidyverse)
 library(leaflet)
 library(here)
-library(gt)
 library(tbeptools)
 # devtools::load_all('../tbeptools/.')
 
@@ -36,8 +34,7 @@ epcdata
 
 ```{r ecphc_validate}
 #Display station locations
-wqsites <- epcdata %>% 
-           select(epchc_station, Latitude, Longitude) %>% 
+wqsites <- epcdata[, c('epchc_station', 'Latitude', 'Longitude')] %>% 
            unique()                                                   
 
 map <- leaflet(wqsites) %>%                                         
@@ -106,46 +103,23 @@ show_thrplot(epcdata, bay_segment = "MTB", thr = "la")
 show_thrplot(epcdata, bay_segment = "LTB", thr = "la")
 ```
 
-## Colorized Table
+## Colorized Table {.tabset}
 
-Now let's produce a color coded table similar to that found in [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
+Create a similer table as the one here: [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
   
-![](img/decision-matrix_color-table-snip.png)
+```{r, out.height = "50%"}
+knitr::include_graphics(here('img', 'decision-matrix_color-table-snip.png'))
+```
 
-except we'll include the actual values and color code cells along a gradient using the new [**gt**](https://github.com/rstudio/gt) R package.
+### Chlorophyll
 
 ```{r}
-
-avedat <- anlz_avedat(epcdata)
-colorize_fld <- function(gtbl, fld, pal=c("green", "yellow", "red"), digits=1){
-  gtbl %>% 
-    data_color(
-      #columns = vars(fld), 
-      columns = fld, 
-      colors = scales::col_numeric(
-        palette = pal,
-        domain =  gtbl[[fld]])) %>% 
-    fmt_number(
-      #columns = vars(fld),
-      columns = fld,
-      decimals = 1) 
-}
-
-colorize_tbl <- function(gtbl, exclude_cols="Year", pal=c("green", "yellow", "red"), digits=1){
-  flds <- setdiff(names(gtbl), exclude_cols)
-  for (fld in flds){
-    gtbl <- colorize_fld(gtbl, fld, pal, digits)
-  }
-  gtbl
-}
-
-epcdata %>% 
-  anlz_avedat %>% 
-  .[['ann']] %>% 
-  filter(var %in% 'mean_chla') %>% 
-  spread(var, val) %>% 
-  spread(bay_segment, mean_chla) %>% 
-  rename(Year = yr) %>% 
-  gt() %>% 
-  colorize_tbl()
+show_matrix(epcdata, thr = 'chla')
 ```
+
+### Light attenuation
+
+```{r}
+show_matrix(epcdata, thr = 'la')
+```
+

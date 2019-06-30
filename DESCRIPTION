@@ -1,7 +1,6 @@
 Package: placeholder
 Title: Does not matter.
 Version: 0.0.1
-Imports: knitr, rmarkdown, tidyverse, leaflet, here
+Imports: knitr, rmarkdown, leaflet, here, tbeptools
 Remotes: 
-  tbep-tech/tbeptools,
-  rstudio/gt
+  tbep-tech/tbeptools
