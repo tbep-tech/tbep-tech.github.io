@@ -25,7 +25,7 @@ before_install:
   libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin
   protobuf-compiler
 script:
-- Rscript -e 'knitr::knit("wq.Rmd", output = "wq.html")'
+- Rscript -e 'rmarkdown::render("wq.Rmd")'
 - git config --global user.name "bbest"
 - git config --global user.email "ben@ecoquants.com"
 - git add -A
