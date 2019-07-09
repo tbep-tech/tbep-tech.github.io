@@ -17,18 +17,20 @@ addons:
 git:
   depth: 3
 before_install:
-  - sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
-  - sudo apt-get update
-  - sudo add-apt-repository -y ppa:opencpu/jq
-  - sudo apt-get --yes --force-yes update -qq
-  - sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev libgeos-dev libjq-dev libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin protobuf-compiler
+- sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
+- sudo apt-get update
+- sudo add-apt-repository -y ppa:opencpu/jq
+- sudo apt-get --yes --force-yes update -qq
+- sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev libgeos-dev libjq-dev
+  libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin
+  protobuf-compiler
 script:
-  - Rscript -e 'knitr::knit("wq.Rmd", output = "wq.html")'
-  - git config --global user.name "fawda123"
-  - git config --global user.email "mbafs2012@gmail.com"
-  - git add -A
-  - git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
-  - git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
+- Rscript -e 'knitr::knit("wq.Rmd", output = "wq.html")'
+- git config --global user.name "fawda123"
+- git config --global user.email "mbafs2012@gmail.com"
+- git add -A
+- git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
+- git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
 notifications:
   email:
     recipients:
@@ -38,3 +40,5 @@ notifications:
 env:
   global:
   - secure: LblKVhmOIgugu3vi5qNIhfnVk0uyFQd/cRmy6BhXAUeqLxFmGUcCRGRTB4HobNtFpjiFULa46HYdfmz2C5/m8rqeYRb8TkpeKT34muumNvencEbe4AygG2DdtoeRCt8Ek9BLptxxRwD1A1js6PSaYcl3N1qK/g0LC0/hWT74VBIsoUXBPRXINe6957+KC0lsLe/tccxSDd/y1p5yRosEA5osoRpTsLQ+R4J+RLWRRjkuAkyYrsfVXLfMC78HCX04RXMxnRvqYibYGWbM25qnq8zO4UMLcQzvTAlvr/8K5byZ9CjOhg1amIqD6e7WYPhVpBJIDZrVlsyVfmjv4dmulTJfMFMmnuRb6QvQBzN0ajRyN95QAbZmo3mKS45ee5uuTlZhZY8rmLmWDtfcew20N5PS/Yma4qQFfEJ2r2Wh+nYvUOQ0PwYBjkozUatSJwkaREWChTX4yUexPmA4VgZbNVE5WVZX4ELeGaFYy1rq7i5GcG+wQvOA80cRQP7zCw2aIjwE5S6FGli0zm4VQc88ihnKcoEcHeXc130aPG4ZISpZdJ9dBXJrt/2RFbiWM+e9wxIkCc4DNhVn4bmgJL6lWkBeHsVs7X35/TtvRz9tFEcgcbLNokXIaLR8eAQDy50zkheY8EcAoDsUGR2PW5oL2WtVmZXraC1Cc4buuQkJRz4=
+  - secure: TLjFXO8vNQHKl2O4xWKQ4+XO94X//88TepASXM66QN0af2CqnhVFYkuScrBKkEy09yZVyWL6/jVjtpvdy3HvmLLntXfK3979KmGhVysPbB432oGVfwq3onqQMyuaNTPRoQDO9ETzJuPTgCtUNymjiA+d4c7vjmNQlTq4Q8mWoNgtIUeYDB5xnlB3R3DjbPv24Toi5iqZ/dKabf31YPeaFgW7EenXLTgmy3rdYWw+PkQwZXWK2XWlpdgHU+HTEwG2WPsi2A+Zft9lcg5thOLPnVvMjEwIrUzXQib7C2+X1NrcxjGZ+f01VVGg+DTgRWvybmJ0C046etBgWzcFJFPJt0dBmw8LIvbQ3Yqgpu1YNedJynnCvlL4y0BzRvXTXK1XVwDAKTpZeCbW3BJtGpMxZNrYC+BKe/o1hUJhF0Y9eovHjj5IKJaSecuh+Kd6SdFHFLG+vr9JvZswiXcbmlbUpFzXiPLJ1QhbnSOVAPAHeO6MQQYfOnU/6xEAAAxQF6SAt62T4aBmwYy+s9VAlcH21A7l75X11CT6+wfiavrpAb2Qy03n3Cjj9BnWDHG52A1/49s/+WJP+MuEHAxnorpKNSfSxN1woEGctiAg/5r+0VdBipLZPB2T5GFh2R9wGiZ9R/jAUR80I6K7HEAm28s+2jEmQced92pbOvCxD1JF3rw=
+  - secure: BEUluhw3PfUN6RVWuN3xpFjHPMhRuzVMjylqEcKNfs4fy1YB8Nr4v+uQu5O0Yrxjn5DgiynVQpD1c4o2tZmms1UCYxgAF36idEbSVfodBTJekGWB4+A+ry/rHUgjIiUUFWeiw+8ywEfYL0pAMH/S1ZmoL6u4OLzZ73nIH+zTrpxDnltydzl5htsFhB19Bd23zGAmp4e/wdbJku00rEWnc4IrCUabxO01r1zoL/Kct1RfmGMGtYt4GC097ZuIsYc+jZLon1ZEX6LNF+fGtHRpHSxP1lKt9LMSyPWDb4r/qVIvwYXUA1PLq2Uddzi3ei3uJT0jxnmUgRc8X84aqGPKEkfM23P7BJiYhG/itX57XFWrNhAp518wqLwg2LPzy48vPv9ubOtiE5R1KRnpAMz6nfbjguatkmInQ6qdC/8RHvS7eFkyinoPdRlZweoeHpBeQqjEr3nmG3jE63K/nt8KNl1CMf5zbAGSr5VeCiAF/dF5Ewv6ts8wus7eTYg21OQAKgqUhdpAob3ysA7DM2DDGCjf5Evm/Mwc50QEqyf3Hq6ilvPJEYXBnZ0+RG/fL7fvGh4FVSOtUwgTWj2DLPJqHPgXjNmlxd9jtK04dNdlWJ65yoErIBycz4FevmwKbFSP1OM5TQEsrczg2CjQBA5OPI4zecKrTgZLct6CCPSjNbQ=
