@@ -26,8 +26,8 @@ before_install:
   protobuf-compiler
 script:
 - Rscript -e 'rmarkdown::render("wq.Rmd")'
-- git config --global user.name "bbest"
-- git config --global user.email "ben@ecoquants.com"
+- git config --global user.name "fawda123"
+- git config --global user.email "mbafs2012@gmail.com"
 - git add -A
 - git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
 - git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
@@ -42,4 +42,4 @@ env:
   global:
   - TRAVIS_REPO_SLUG=tbep-tech/tbep-tech.github.io
   - TRAVIS_BRANCH=master
-  - secure: BEUluhw3PfUN6RVWuN3xpFjHPMhRuzVMjylqEcKNfs4fy1YB8Nr4v+uQu5O0Yrxjn5DgiynVQpD1c4o2tZmms1UCYxgAF36idEbSVfodBTJekGWB4+A+ry/rHUgjIiUUFWeiw+8ywEfYL0pAMH/S1ZmoL6u4OLzZ73nIH+zTrpxDnltydzl5htsFhB19Bd23zGAmp4e/wdbJku00rEWnc4IrCUabxO01r1zoL/Kct1RfmGMGtYt4GC097ZuIsYc+jZLon1ZEX6LNF+fGtHRpHSxP1lKt9LMSyPWDb4r/qVIvwYXUA1PLq2Uddzi3ei3uJT0jxnmUgRc8X84aqGPKEkfM23P7BJiYhG/itX57XFWrNhAp518wqLwg2LPzy48vPv9ubOtiE5R1KRnpAMz6nfbjguatkmInQ6qdC/8RHvS7eFkyinoPdRlZweoeHpBeQqjEr3nmG3jE63K/nt8KNl1CMf5zbAGSr5VeCiAF/dF5Ewv6ts8wus7eTYg21OQAKgqUhdpAob3ysA7DM2DDGCjf5Evm/Mwc50QEqyf3Hq6ilvPJEYXBnZ0+RG/fL7fvGh4FVSOtUwgTWj2DLPJqHPgXjNmlxd9jtK04dNdlWJ65yoErIBycz4FevmwKbFSP1OM5TQEsrczg2CjQBA5OPI4zecKrTgZLct6CCPSjNbQ=
+  - secure: JkWBG5hePgDqLRnevDz4Sg0qlvqofjFQPP1X8BoulKOpue8s5lK5syX5PmwuuAV8PhrBP3AbC46JJwILT3tqizrrBI8KNraPdO+d/jxtCE9z6X+b/xz3R8hnqW8s7HL+OKBmLZGPcdRnH+4S41tSDApm1j8rbALKA7nMKNiZMAjaciWaZvajkfkiAXkCWBEDgOOv4yoG4tfgOhNwZ0WeU8qYN88mpfyw67qptpBAYfMuEqZXnF1j3Q/FeRroGzCXMBHZO1Wf0jDfCAjn0vl9iZ5nRWtBbrRBuWMq7jRpOc34g2QfL+8AeVfJZaqM5pwS5sjf+pmGxYFVnjrMYdiXKZqMKi3eIXTVy97pF4wwDWDLU02K2GWK3aF8yq9/DziQd81gZVee53fRxrLhZRHFLSR/0JhTdoFRFM9Q572IBlU2NwSRpy5mP6MmN9fObStAfV1dZFw1bv1H/v9mKiKGaaG4l14sF6/d0sLblaBcaW/L1IjwNniq1sw5rFFG09nR8iI6q6I5gea7RbVZDn4XapKJ3ZrRaKWyQNAxC0IgcnveC7+6ZiX98FUAHpSY24A3DH+K7i3+BvawuqO1DO+BDCrO8kA+hrjwHojqlHh58ynGMmfH8YPHq1a1ksn/8Lepl3qpj/DdHm0H9cI5FebbTItAM8nPj4I5VTVx5oY+ZgA=
