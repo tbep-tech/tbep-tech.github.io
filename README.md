@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/tbep-tech/tbep-tech.github.io.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-tech.github.io)
 
-# Tampa Bay Estuarine Program (TBEP) - Technical Github website
+# Tampa Bay Estuary Program (TBEP) - Technical Github website
 
 ## Repositories
 
