@@ -11,8 +11,8 @@ output:
 
 Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
 
-```{r setup, message = F, warning = F}
-knitr::opts_chunk$set(echo = TRUE, message = F, warning = F)
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = F, message = F, warning = F)
 
 # libraries
 library(leaflet)
