@@ -4,6 +4,13 @@ cache:
   packages: true
   directories:
   - _cache
+requirements:
+  build:
+    - r
+    - r-RCurl
+  run:
+    - r
+    - r-RCurl
 addons:
   apt:
     packages:
@@ -44,3 +51,4 @@ env:
   - TRAVIS_REPO_SLUG=tbep-tech/tbep-tech.github.io
   - TRAVIS_BRANCH=master
   - secure: Tw20794PwlDfA4dUHWvkJ3jqy3f5uLIzyDjnZaDUPzWMdsyb1LdmgKS+o2PlOUhLI3OLrsIAzsqRBuR7mx6xOM/OysjsOQu/nA0VwpqAYaA2bvEgbPQgJ9JIHPfHt999ujAX2MhbN3Oj6jmLS0ZKTsxsb3LOV8AlLEpObOI0h9qaPmoe6ncb0sewH5T++GGAAap8K9PJxtPW+ypYGTHnXIKLyixxaLaa9+aKGI83WtJPJNEVRCES3SZKNG+OfjVU9ZXbIZUGmtGIsw5xN3eyA/6TgEyRRmOgC/KjA6rROMAeyd7QRKC2Hgbm2Vt5Uf10uX9pd4lVOozZfu2KkseEbpBlWkvVLbkrkFYBoilR/hbU7blM1U3Yuo+q9K6MdndsR48yw/SpkKbsOc6KfE0JN+bHGIsDHJaEbW14jCPiZrMW2ZhAqsUuu9IsFQDQUg4KDicch64/5u5DnO7710Y01q9/kibshfVuAp2wEs2lf3+nfK86r30Fcw4XvW/9o+K/8/bYdtwpBRk0O4BKe13yFYFV+KHlmEU/8dKP+XAr+PZAeQDWulTTF/k/frqSM4ehiSeFyHS+Ju5k2sxSa0gibFA94UGbkaNoevlZOLa6xo3cA3WJbpn08rjwTE8IF5Jj0Q6gA6Rb7iUdJupQ9aCaYEQEJaJIf4ROq7DUpXywaok=
+  - CRAN: http://cran.rstudio.com
