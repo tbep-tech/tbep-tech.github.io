@@ -12,7 +12,7 @@ output:
 Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
 
 ```{r setup, include=F}
-knitr::opts_chunk$set(echo = F, message = F, warning = F)
+knitr::opts_chunk$set(echo = T, message = F, warning = F)
 
 # libraries
 library(leaflet)
@@ -55,25 +55,25 @@ map
 
 ### Old Tampa Bay
 
-```{r chlplot_otb}
+```{r chlplot_otb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "OTB", thr = "chla")
 ```
 
 ### Hillsborough Bay
 
-```{r chlplot_hb}
+```{r chlplot_hb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "HB", thr = "chla")
 ```
 
 ### Middle Tampa Bay
 
-```{r chlplot_mtb}
+```{r chlplot_mtb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "MTB", thr = "chla")
 ```
 
 ### Lower Tampa Bay
 
-```{r chlplot_ltb}
+```{r chlplot_ltb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "LTB", thr = "chla")
 ```
 
@@ -81,45 +81,46 @@ show_thrplot(epcdata, bay_segment = "LTB", thr = "chla")
 
 ### Old Tampa Bay
 
-```{r laplot_otb}
+```{r laplot_otb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "OTB", thr = "la")
 ```
 
 ### Hillsborough Bay
 
-```{r laplot_hb}
+```{r laplot_hb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "HB", thr = "la")
 ```
 
 ### Middle Tampa Bay
 
-```{r laplot_mtb}
+```{r laplot_mtb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "MTB", thr = "la")
 ```
 
 ### Lower Tampa Bay
 
-```{r laplot_ltb}
+```{r laplot_ltb, fig.height = 5, fig.width = 8}
 show_thrplot(epcdata, bay_segment = "LTB", thr = "la")
 ```
 
-## Colorized Table {.tabset}
+## Target attainment matrix {.tabset}
 
-Create a similer table as the one here: [tbep-tech:data/wq/TBEP_01_19_2018_**Decision_Matrix_Update**.pdf](https://drive.google.com/open?id=1NGq0VzaPv1_uxgoDkprVTAndSuBygSuq)
-  
-```{r, out.height = "50%"}
-knitr::include_graphics(here('img', 'decision-matrix_color-table-snip.png'))
+### Numerical results
+
+```{r, fig.height = 12, fig.width = 4}
+avedat <- anlz_avedat(epcdata)
+anlz_attain(avedat, magdurout = T)
+anlz_attain(avedat)
 ```
 
-### Chlorophyll
+### Table with ggplot
+
+```{r, fig.height = 12, fig.width = 4}
+show_matrix(epcdata)
+```
+
+### Table with gt
 
 ```{r}
-show_matrix(epcdata, thr = 'chla')
+show_matrix(epcdata, tab = T)
 ```
-
-### Light attenuation
-
-```{r}
-show_matrix(epcdata, thr = 'la')
-```
-
