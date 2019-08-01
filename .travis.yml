@@ -1,37 +1,9 @@
 language: r
-sudo: true
-cache:
-  packages: true
-  directories:
-  - _cache
-requirements:
-  build:
-    - r
-    - r-RCurl
-  run:
-    - r
-    - r-RCurl
-addons:
-  apt:
-    packages:
-    - gdal-bin
-    - libgdal-dev
-    - libgdal1-dev
-    - netcdf-bin
-    - libproj-dev
-    - libnetcdf-dev
-    - netcdf-bin
-    - libcurl4-openssl-dev
+sudo: false
+cache: packages
 git:
-  depth: 3
-before_install:
-- sudo add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable
-- sudo apt-get update
-- sudo add-apt-repository -y ppa:opencpu/jq
-- sudo apt-get --yes --force-yes update -qq
-- sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev libgeos-dev libjq-dev
-  libnetcdf-dev libproj-dev libprotobuf-dev libudunits2-dev libv8-3.14-dev netcdf-bin
-  protobuf-compiler libcurl4-openssl-dev
+  depth: false
+
 script:
 - Rscript -e 'rmarkdown::render("wq.Rmd")'
 - git config --global user.name "fawda123"
