@@ -8,6 +8,7 @@ script:
 - Rscript -e 'rmarkdown::render("wq.Rmd")'
 - git config --global user.name "fawda123"
 - git config --global user.email "mbafs2012@gmail.com"
+- git pull https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
 - git add -A
 - git commit -a -m "Updating wq rmd build for website via travis-ci.org [ci skip]"
 - git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:${TRAVIS_BRANCH}
