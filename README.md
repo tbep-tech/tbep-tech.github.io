@@ -14,5 +14,5 @@
 
 - [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
-- [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/inst/wq-dash/wq-dash.Rmd))
+- [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/blob/master/inst/wq-dash/wq-dash.Rmd))
 
