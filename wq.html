@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-08-22 23:13</h4>
+<h4 class="date">2019-08-22 23:42</h4>
 
 </div>
 
@@ -1585,7 +1585,7 @@ div.tocify {
 <div id="download-and-import-epchc-dataset" class="section level2">
 <h2>Download and import EPCHC dataset</h2>
 <pre class="r"><code># load data and some light formatting
-epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T)</code></pre>
+epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T)</code></pre>
 <pre><code>## Error in function (type, msg, asError = TRUE)  : 
 ##   Operation timed out after 60000 milliseconds with 0 bytes received
 ## trying connection again...</code></pre>
@@ -1700,7 +1700,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hjsbcxdzni .gt_table {
+#rxxwddpttr .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1725,13 +1725,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#hjsbcxdzni .gt_heading {
+#rxxwddpttr .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#hjsbcxdzni .gt_title {
+#rxxwddpttr .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1742,7 +1742,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#hjsbcxdzni .gt_subtitle {
+#rxxwddpttr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1753,7 +1753,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#hjsbcxdzni .gt_bottom_border {
+#rxxwddpttr .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1762,7 +1762,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#hjsbcxdzni .gt_column_spanner {
+#rxxwddpttr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1770,7 +1770,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#hjsbcxdzni .gt_col_heading {
+#rxxwddpttr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1784,23 +1784,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#hjsbcxdzni .gt_columns_top_border {
+#rxxwddpttr .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#hjsbcxdzni .gt_columns_bottom_border {
+#rxxwddpttr .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hjsbcxdzni .gt_sep_right {
+#rxxwddpttr .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#hjsbcxdzni .gt_group_heading {
+#rxxwddpttr .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1825,7 +1825,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#hjsbcxdzni .gt_empty_group_heading {
+#rxxwddpttr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1849,19 +1849,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#hjsbcxdzni .gt_striped {
+#rxxwddpttr .gt_striped {
   background-color: #8080800D;
 }
 
-#hjsbcxdzni .gt_from_md > :first-child {
+#rxxwddpttr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hjsbcxdzni .gt_from_md > :last-child {
+#rxxwddpttr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hjsbcxdzni .gt_row {
+#rxxwddpttr .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1872,14 +1872,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#hjsbcxdzni .gt_stub {
+#rxxwddpttr .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#hjsbcxdzni .gt_summary_row {
+#rxxwddpttr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1889,7 +1889,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#hjsbcxdzni .gt_grand_summary_row {
+#rxxwddpttr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1899,19 +1899,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#hjsbcxdzni .gt_first_summary_row {
+#rxxwddpttr .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#hjsbcxdzni .gt_first_grand_summary_row {
+#rxxwddpttr .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#hjsbcxdzni .gt_table_body {
+#rxxwddpttr .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1926,7 +1926,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#hjsbcxdzni .gt_footnotes {
+#rxxwddpttr .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1935,7 +1935,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#hjsbcxdzni .gt_footnote {
+#rxxwddpttr .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1943,7 +1943,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#hjsbcxdzni .gt_sourcenotes {
+#rxxwddpttr .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1952,48 +1952,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#hjsbcxdzni .gt_sourcenote {
+#rxxwddpttr .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#hjsbcxdzni .gt_center {
+#rxxwddpttr .gt_center {
   text-align: center;
 }
 
-#hjsbcxdzni .gt_left {
+#rxxwddpttr .gt_left {
   text-align: left;
 }
 
-#hjsbcxdzni .gt_right {
+#rxxwddpttr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hjsbcxdzni .gt_font_normal {
+#rxxwddpttr .gt_font_normal {
   font-weight: normal;
 }
 
-#hjsbcxdzni .gt_font_bold {
+#rxxwddpttr .gt_font_bold {
   font-weight: bold;
 }
 
-#hjsbcxdzni .gt_font_italic {
+#rxxwddpttr .gt_font_italic {
   font-style: italic;
 }
 
-#hjsbcxdzni .gt_super {
+#rxxwddpttr .gt_super {
   font-size: 65%;
 }
 
-#hjsbcxdzni .gt_footnote_marks {
+#rxxwddpttr .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="hjsbcxdzni" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="rxxwddpttr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
