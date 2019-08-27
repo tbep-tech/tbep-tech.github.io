@@ -5,19 +5,20 @@ output: html_document
 
 [![Build Status](https://travis-ci.org/tbep-tech/tbep-tech.github.io.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-tech.github.io)
 
-# Tampa Bay Estuarine Program (TBEP) - Technical Github website
-
 ## Repositories
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/tbep-tech.github.io): Github organization
     
-    - [**tbep-tech.github.io**](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
+    - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
     
-    - [**tbeptools**](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data
+    - [tbeptools](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data
 
 ## Reports
 
 - [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
-- [Water Quality Dashboard](https://tbep-tech.github.io/wq-dash.html) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
+- [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/blob/master/inst/wq-dash/wq-dash.Rmd))
 
+## Presentations
+
+- [SWMPrats open science example](https://tbep-tech.github.io/SWMPrats_pres/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
