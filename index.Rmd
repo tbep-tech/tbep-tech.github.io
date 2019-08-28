@@ -27,4 +27,6 @@ output: html_document
 
 ## Presentations
 
-- [SWMPrats open science example](https://tbep-tech.github.io/SWMPrats_pres/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
+- [What is open science](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html): General overview of open science principles
+
+- [SWMPrats open science example](https://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
