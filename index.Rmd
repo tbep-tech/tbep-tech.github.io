@@ -13,6 +13,12 @@ output: html_document
     
     - [tbeptools](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data
 
+## Workshop surveys
+
+- [Pre-workshop survey](https://forms.gle/B4W5BeSMNMdYrLkH9): Google forms pre-workhop survey to assess existing familiarity of open science principless and preliminary needs among stakeholders. 
+
+- [Post-workshop survey](https://forms.gle/BbaXmmxiqywtU7oc7): Google forms post-workshop survey to assess overall experience from the workshop and level of understanding after the introduction to open science principles.
+
 ## Reports
 
 - [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
