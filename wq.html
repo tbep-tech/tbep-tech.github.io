@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-08-28 17:00</h4>
+<h4 class="date">2019-08-28 21:25</h4>
 
 </div>
 
@@ -1585,14 +1585,8 @@ div.tocify {
 <div id="download-and-import-epchc-dataset" class="section level2">
 <h2>Download and import EPCHC dataset</h2>
 <pre class="r"><code># load data and some light formatting
-epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connecttimeout = 20)</code></pre>
-<pre><code>## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20000 milliseconds with 0 bytes received
-## trying connection again...
-## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20000 milliseconds with 0 bytes received
-## trying connection again...</code></pre>
-<pre class="r"><code>epcdata</code></pre>
+epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connecttimeout = 20)
+epcdata</code></pre>
 <pre><code>## # A tibble: 25,486 x 11
 ##    bay_segment epchc_station SampleTime             yr    mo Latitude
 ##    &lt;chr&gt;               &lt;dbl&gt; &lt;dttm&gt;              &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
@@ -1703,7 +1697,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xbmvbdmgpw .gt_table {
+#rfjrwaljmd .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1728,13 +1722,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#xbmvbdmgpw .gt_heading {
+#rfjrwaljmd .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#xbmvbdmgpw .gt_title {
+#rfjrwaljmd .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1745,7 +1739,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#xbmvbdmgpw .gt_subtitle {
+#rfjrwaljmd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1756,7 +1750,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#xbmvbdmgpw .gt_bottom_border {
+#rfjrwaljmd .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1765,7 +1759,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#xbmvbdmgpw .gt_column_spanner {
+#rfjrwaljmd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1773,7 +1767,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#xbmvbdmgpw .gt_col_heading {
+#rfjrwaljmd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1787,23 +1781,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#xbmvbdmgpw .gt_columns_top_border {
+#rfjrwaljmd .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#xbmvbdmgpw .gt_columns_bottom_border {
+#rfjrwaljmd .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xbmvbdmgpw .gt_sep_right {
+#rfjrwaljmd .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#xbmvbdmgpw .gt_group_heading {
+#rfjrwaljmd .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1828,7 +1822,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#xbmvbdmgpw .gt_empty_group_heading {
+#rfjrwaljmd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1852,19 +1846,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#xbmvbdmgpw .gt_striped {
+#rfjrwaljmd .gt_striped {
   background-color: #8080800D;
 }
 
-#xbmvbdmgpw .gt_from_md > :first-child {
+#rfjrwaljmd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xbmvbdmgpw .gt_from_md > :last-child {
+#rfjrwaljmd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xbmvbdmgpw .gt_row {
+#rfjrwaljmd .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1875,14 +1869,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#xbmvbdmgpw .gt_stub {
+#rfjrwaljmd .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#xbmvbdmgpw .gt_summary_row {
+#rfjrwaljmd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1892,7 +1886,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#xbmvbdmgpw .gt_grand_summary_row {
+#rfjrwaljmd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1902,19 +1896,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#xbmvbdmgpw .gt_first_summary_row {
+#rfjrwaljmd .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#xbmvbdmgpw .gt_first_grand_summary_row {
+#rfjrwaljmd .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#xbmvbdmgpw .gt_table_body {
+#rfjrwaljmd .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1929,7 +1923,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#xbmvbdmgpw .gt_footnotes {
+#rfjrwaljmd .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1938,7 +1932,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#xbmvbdmgpw .gt_footnote {
+#rfjrwaljmd .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1946,7 +1940,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#xbmvbdmgpw .gt_sourcenotes {
+#rfjrwaljmd .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1955,48 +1949,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#xbmvbdmgpw .gt_sourcenote {
+#rfjrwaljmd .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#xbmvbdmgpw .gt_center {
+#rfjrwaljmd .gt_center {
   text-align: center;
 }
 
-#xbmvbdmgpw .gt_left {
+#rfjrwaljmd .gt_left {
   text-align: left;
 }
 
-#xbmvbdmgpw .gt_right {
+#rfjrwaljmd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xbmvbdmgpw .gt_font_normal {
+#rfjrwaljmd .gt_font_normal {
   font-weight: normal;
 }
 
-#xbmvbdmgpw .gt_font_bold {
+#rfjrwaljmd .gt_font_bold {
   font-weight: bold;
 }
 
-#xbmvbdmgpw .gt_font_italic {
+#rfjrwaljmd .gt_font_italic {
   font-style: italic;
 }
 
-#xbmvbdmgpw .gt_super {
+#rfjrwaljmd .gt_super {
   font-size: 65%;
 }
 
-#xbmvbdmgpw .gt_footnote_marks {
+#rfjrwaljmd .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="xbmvbdmgpw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="rfjrwaljmd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
