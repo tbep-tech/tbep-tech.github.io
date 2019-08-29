@@ -30,3 +30,5 @@ output: html_document
 - [What is open science](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html): General overview of open science principles
 
 - [SWMPrats open science example](https://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
+
+- [Overcoming open science challenges](https://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html): An overview of challenges to adopting open science and remedies for overcoming challenges
