@@ -11,7 +11,7 @@ output: html_document
     
     - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
     
-    - [tbeptools](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data
+    - [tbeptools](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
 ## Workshop surveys
 
