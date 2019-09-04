@@ -31,4 +31,6 @@ output: html_document
 
 - [SWMPrats open science example](https://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
 
+- [Evolution of the water quality reporting tool](https://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html): Application of open science principles to the water quality reporting tool
+
 - [Overcoming open science challenges](https://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html): An overview of challenges to adopting open science and remedies for overcoming challenges
