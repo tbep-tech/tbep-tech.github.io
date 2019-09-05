@@ -19,11 +19,11 @@ output: html_document
 
 - [Post-workshop survey](https://forms.gle/BbaXmmxiqywtU7oc7): Google forms post-workshop survey to assess overall experience from the workshop and level of understanding after the introduction to open science principles.
 
-## Reports
+## Reporting
 
-- [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
+- **Rmarkdown** html: [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
-- [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/blob/master/inst/wq-dash/wq-dash.Rmd))
+- **Shiny** app: [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/blob/master/inst/wq-dash/wq-dash.Rmd))
 
 ## Presentations
 
