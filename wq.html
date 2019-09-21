@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-09-20 23:44</h4>
+<h4 class="date">2019-09-21 23:45</h4>
 
 </div>
 
@@ -1590,7 +1590,13 @@ epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connect
 ##   Operation timed out after 20000 milliseconds with 0 bytes received
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20000 milliseconds with 0 bytes received
+##   Operation timed out after 20001 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20001 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20001 milliseconds with 0 bytes received
 ## trying connection again...</code></pre>
 <pre class="r"><code>epcdata</code></pre>
 <pre><code>## # A tibble: 25,486 x 11
@@ -1703,7 +1709,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ofmyetgtlv .gt_table {
+#schoxkywej .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1728,13 +1734,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#ofmyetgtlv .gt_heading {
+#schoxkywej .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#ofmyetgtlv .gt_title {
+#schoxkywej .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1745,7 +1751,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#ofmyetgtlv .gt_subtitle {
+#schoxkywej .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1756,7 +1762,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#ofmyetgtlv .gt_bottom_border {
+#schoxkywej .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1765,7 +1771,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#ofmyetgtlv .gt_column_spanner {
+#schoxkywej .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1773,7 +1779,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#ofmyetgtlv .gt_col_heading {
+#schoxkywej .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1787,23 +1793,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#ofmyetgtlv .gt_columns_top_border {
+#schoxkywej .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#ofmyetgtlv .gt_columns_bottom_border {
+#schoxkywej .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ofmyetgtlv .gt_sep_right {
+#schoxkywej .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#ofmyetgtlv .gt_group_heading {
+#schoxkywej .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1828,7 +1834,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#ofmyetgtlv .gt_empty_group_heading {
+#schoxkywej .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1852,19 +1858,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#ofmyetgtlv .gt_striped {
+#schoxkywej .gt_striped {
   background-color: #8080800D;
 }
 
-#ofmyetgtlv .gt_from_md > :first-child {
+#schoxkywej .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ofmyetgtlv .gt_from_md > :last-child {
+#schoxkywej .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ofmyetgtlv .gt_row {
+#schoxkywej .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1875,14 +1881,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#ofmyetgtlv .gt_stub {
+#schoxkywej .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#ofmyetgtlv .gt_summary_row {
+#schoxkywej .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1892,7 +1898,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#ofmyetgtlv .gt_grand_summary_row {
+#schoxkywej .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1902,19 +1908,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#ofmyetgtlv .gt_first_summary_row {
+#schoxkywej .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#ofmyetgtlv .gt_first_grand_summary_row {
+#schoxkywej .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#ofmyetgtlv .gt_table_body {
+#schoxkywej .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1929,7 +1935,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#ofmyetgtlv .gt_footnotes {
+#schoxkywej .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1938,7 +1944,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#ofmyetgtlv .gt_footnote {
+#schoxkywej .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1946,7 +1952,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#ofmyetgtlv .gt_sourcenotes {
+#schoxkywej .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1955,48 +1961,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#ofmyetgtlv .gt_sourcenote {
+#schoxkywej .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#ofmyetgtlv .gt_center {
+#schoxkywej .gt_center {
   text-align: center;
 }
 
-#ofmyetgtlv .gt_left {
+#schoxkywej .gt_left {
   text-align: left;
 }
 
-#ofmyetgtlv .gt_right {
+#schoxkywej .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ofmyetgtlv .gt_font_normal {
+#schoxkywej .gt_font_normal {
   font-weight: normal;
 }
 
-#ofmyetgtlv .gt_font_bold {
+#schoxkywej .gt_font_bold {
   font-weight: bold;
 }
 
-#ofmyetgtlv .gt_font_italic {
+#schoxkywej .gt_font_italic {
   font-style: italic;
 }
 
-#ofmyetgtlv .gt_super {
+#schoxkywej .gt_super {
   font-size: 65%;
 }
 
-#ofmyetgtlv .gt_footnote_marks {
+#schoxkywej .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ofmyetgtlv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="schoxkywej" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
