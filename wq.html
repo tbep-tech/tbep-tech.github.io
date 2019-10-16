@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-10-14 23:56</h4>
+<h4 class="date">2019-10-15 23:57</h4>
 
 </div>
 
@@ -1587,7 +1587,10 @@ div.tocify {
 <pre class="r"><code># load data and some light formatting
 epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connecttimeout = 20)</code></pre>
 <pre><code>## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20001 milliseconds with 0 bytes received
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
 ##   Operation timed out after 20000 milliseconds with 0 bytes received
@@ -1596,10 +1599,43 @@ epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connect
 ##   Operation timed out after 20000 milliseconds with 0 bytes received
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20001 milliseconds with 0 bytes received
+##   Operation timed out after 20000 milliseconds with 0 bytes received
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
-##   Operation timed out after 20001 milliseconds with 0 bytes received
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Operation timed out after 20000 milliseconds with 0 bytes received
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
 ##   Operation timed out after 20000 milliseconds with 0 bytes received
@@ -1715,7 +1751,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#eovqpfzsdu .gt_table {
+#vgumidjust .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1740,13 +1776,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#eovqpfzsdu .gt_heading {
+#vgumidjust .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#eovqpfzsdu .gt_title {
+#vgumidjust .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1757,7 +1793,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#eovqpfzsdu .gt_subtitle {
+#vgumidjust .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1768,7 +1804,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#eovqpfzsdu .gt_bottom_border {
+#vgumidjust .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1777,7 +1813,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#eovqpfzsdu .gt_column_spanner {
+#vgumidjust .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1785,7 +1821,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#eovqpfzsdu .gt_col_heading {
+#vgumidjust .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1799,23 +1835,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#eovqpfzsdu .gt_columns_top_border {
+#vgumidjust .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#eovqpfzsdu .gt_columns_bottom_border {
+#vgumidjust .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#eovqpfzsdu .gt_sep_right {
+#vgumidjust .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#eovqpfzsdu .gt_group_heading {
+#vgumidjust .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1840,7 +1876,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#eovqpfzsdu .gt_empty_group_heading {
+#vgumidjust .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1864,19 +1900,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#eovqpfzsdu .gt_striped {
+#vgumidjust .gt_striped {
   background-color: #8080800D;
 }
 
-#eovqpfzsdu .gt_from_md > :first-child {
+#vgumidjust .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#eovqpfzsdu .gt_from_md > :last-child {
+#vgumidjust .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#eovqpfzsdu .gt_row {
+#vgumidjust .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1887,14 +1923,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#eovqpfzsdu .gt_stub {
+#vgumidjust .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#eovqpfzsdu .gt_summary_row {
+#vgumidjust .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1904,7 +1940,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#eovqpfzsdu .gt_grand_summary_row {
+#vgumidjust .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1914,19 +1950,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#eovqpfzsdu .gt_first_summary_row {
+#vgumidjust .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#eovqpfzsdu .gt_first_grand_summary_row {
+#vgumidjust .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#eovqpfzsdu .gt_table_body {
+#vgumidjust .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1941,7 +1977,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#eovqpfzsdu .gt_footnotes {
+#vgumidjust .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1950,7 +1986,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#eovqpfzsdu .gt_footnote {
+#vgumidjust .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1958,7 +1994,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#eovqpfzsdu .gt_sourcenotes {
+#vgumidjust .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1967,48 +2003,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#eovqpfzsdu .gt_sourcenote {
+#vgumidjust .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#eovqpfzsdu .gt_center {
+#vgumidjust .gt_center {
   text-align: center;
 }
 
-#eovqpfzsdu .gt_left {
+#vgumidjust .gt_left {
   text-align: left;
 }
 
-#eovqpfzsdu .gt_right {
+#vgumidjust .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#eovqpfzsdu .gt_font_normal {
+#vgumidjust .gt_font_normal {
   font-weight: normal;
 }
 
-#eovqpfzsdu .gt_font_bold {
+#vgumidjust .gt_font_bold {
   font-weight: bold;
 }
 
-#eovqpfzsdu .gt_font_italic {
+#vgumidjust .gt_font_italic {
   font-style: italic;
 }
 
-#eovqpfzsdu .gt_super {
+#vgumidjust .gt_super {
   font-size: 65%;
 }
 
-#eovqpfzsdu .gt_footnote_marks {
+#vgumidjust .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="eovqpfzsdu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="vgumidjust" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
