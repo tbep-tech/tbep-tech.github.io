@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-10-26 00:03</h4>
+<h4 class="date">2019-10-27 00:04</h4>
 
 </div>
 
@@ -1587,6 +1587,30 @@ div.tocify {
 <pre class="r"><code># load data and some light formatting
 epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connecttimeout = 20)</code></pre>
 <pre><code>## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
+##   Failed to connect to ftp.epchc.org port 21: Connection refused
+## trying connection again...
+## Error in function (type, msg, asError = TRUE)  : 
 ##   Failed to connect to ftp.epchc.org port 21: Connection refused
 ## trying connection again...
 ## Error in function (type, msg, asError = TRUE)  : 
@@ -1703,7 +1727,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ckkdpvlifo .gt_table {
+#vuphgmomav .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1728,13 +1752,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#ckkdpvlifo .gt_heading {
+#vuphgmomav .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#ckkdpvlifo .gt_title {
+#vuphgmomav .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1745,7 +1769,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#ckkdpvlifo .gt_subtitle {
+#vuphgmomav .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1756,7 +1780,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#ckkdpvlifo .gt_bottom_border {
+#vuphgmomav .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1765,7 +1789,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#ckkdpvlifo .gt_column_spanner {
+#vuphgmomav .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1773,7 +1797,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#ckkdpvlifo .gt_col_heading {
+#vuphgmomav .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1787,23 +1811,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#ckkdpvlifo .gt_columns_top_border {
+#vuphgmomav .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#ckkdpvlifo .gt_columns_bottom_border {
+#vuphgmomav .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ckkdpvlifo .gt_sep_right {
+#vuphgmomav .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#ckkdpvlifo .gt_group_heading {
+#vuphgmomav .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1828,7 +1852,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#ckkdpvlifo .gt_empty_group_heading {
+#vuphgmomav .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1852,19 +1876,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#ckkdpvlifo .gt_striped {
+#vuphgmomav .gt_striped {
   background-color: #8080800D;
 }
 
-#ckkdpvlifo .gt_from_md > :first-child {
+#vuphgmomav .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ckkdpvlifo .gt_from_md > :last-child {
+#vuphgmomav .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ckkdpvlifo .gt_row {
+#vuphgmomav .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1875,14 +1899,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#ckkdpvlifo .gt_stub {
+#vuphgmomav .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#ckkdpvlifo .gt_summary_row {
+#vuphgmomav .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1892,7 +1916,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#ckkdpvlifo .gt_grand_summary_row {
+#vuphgmomav .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1902,19 +1926,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#ckkdpvlifo .gt_first_summary_row {
+#vuphgmomav .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#ckkdpvlifo .gt_first_grand_summary_row {
+#vuphgmomav .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#ckkdpvlifo .gt_table_body {
+#vuphgmomav .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1929,7 +1953,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#ckkdpvlifo .gt_footnotes {
+#vuphgmomav .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1938,7 +1962,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#ckkdpvlifo .gt_footnote {
+#vuphgmomav .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1946,7 +1970,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#ckkdpvlifo .gt_sourcenotes {
+#vuphgmomav .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1955,48 +1979,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#ckkdpvlifo .gt_sourcenote {
+#vuphgmomav .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#ckkdpvlifo .gt_center {
+#vuphgmomav .gt_center {
   text-align: center;
 }
 
-#ckkdpvlifo .gt_left {
+#vuphgmomav .gt_left {
   text-align: left;
 }
 
-#ckkdpvlifo .gt_right {
+#vuphgmomav .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ckkdpvlifo .gt_font_normal {
+#vuphgmomav .gt_font_normal {
   font-weight: normal;
 }
 
-#ckkdpvlifo .gt_font_bold {
+#vuphgmomav .gt_font_bold {
   font-weight: bold;
 }
 
-#ckkdpvlifo .gt_font_italic {
+#vuphgmomav .gt_font_italic {
   font-style: italic;
 }
 
-#ckkdpvlifo .gt_super {
+#vuphgmomav .gt_super {
   font-size: 65%;
 }
 
-#ckkdpvlifo .gt_footnote_marks {
+#vuphgmomav .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ckkdpvlifo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="vuphgmomav" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
