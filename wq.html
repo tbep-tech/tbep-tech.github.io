@@ -1576,7 +1576,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Get EPCHC Data, Tidy it Up &amp; Perform TBEP Annual WQ Assessment</h1>
 <h4 class="author">Ed Sherwood <a href="mailto:esherwood@tbep.org">esherwood@tbep.org</a>, Ben Best <a href="mailto:ben@ecoquants.com">ben@ecoquants.com</a>, Marcus Beck <a href="mailto:marcusb@sccwrp.org">marcusb@sccwrp.org</a></h4>
-<h4 class="date">2019-11-12 00:11</h4>
+<h4 class="date">2019-11-13 00:12</h4>
 
 </div>
 
@@ -1591,20 +1591,20 @@ epcdata &lt;- read_importwq(xlsx, download_latest_epchc = T, tryurl = T, connect
 ## trying connection again...</code></pre>
 <pre class="r"><code>epcdata</code></pre>
 <pre><code>## # A tibble: 25,486 x 11
-##    bay_segment epchc_station SampleTime             yr    mo Latitude
-##    &lt;chr&gt;               &lt;dbl&gt; &lt;dttm&gt;              &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
-##  1 HB                      6 2019-05-15 10:03:00  2019     5     27.9
-##  2 HB                      7 2019-05-15 10:16:00  2019     5     27.9
-##  3 HB                      8 2019-05-15 12:26:00  2019     5     27.9
-##  4 MTB                     9 2019-05-15 11:51:00  2019     5     27.8
-##  5 MTB                    11 2019-05-15 10:34:00  2019     5     27.8
-##  6 MTB                    13 2019-05-15 10:45:00  2019     5     27.8
-##  7 MTB                    14 2019-05-15 11:22:00  2019     5     27.8
-##  8 MTB                    16 2019-05-21 11:42:00  2019     5     27.7
-##  9 MTB                    19 2019-05-21 11:53:00  2019     5     27.7
-## 10 LTB                    23 2019-05-21 14:16:00  2019     5     27.7
-## # … with 25,476 more rows, and 5 more variables: Longitude &lt;dbl&gt;,
-## #   Total_Depth_m &lt;dbl&gt;, Sample_Depth_m &lt;dbl&gt;, sd_m &lt;dbl&gt;, chla &lt;dbl&gt;</code></pre>
+##    bay_segment epchc_station SampleTime             yr    mo Latitude Longitude
+##    &lt;chr&gt;               &lt;dbl&gt; &lt;dttm&gt;              &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
+##  1 HB                      6 2019-05-15 10:03:00  2019     5     27.9     -82.5
+##  2 HB                      7 2019-05-15 10:16:00  2019     5     27.9     -82.5
+##  3 HB                      8 2019-05-15 12:26:00  2019     5     27.9     -82.4
+##  4 MTB                     9 2019-05-15 11:51:00  2019     5     27.8     -82.4
+##  5 MTB                    11 2019-05-15 10:34:00  2019     5     27.8     -82.5
+##  6 MTB                    13 2019-05-15 10:45:00  2019     5     27.8     -82.5
+##  7 MTB                    14 2019-05-15 11:22:00  2019     5     27.8     -82.5
+##  8 MTB                    16 2019-05-21 11:42:00  2019     5     27.7     -82.5
+##  9 MTB                    19 2019-05-21 11:53:00  2019     5     27.7     -82.6
+## 10 LTB                    23 2019-05-21 14:16:00  2019     5     27.7     -82.6
+## # … with 25,476 more rows, and 4 more variables: Total_Depth_m &lt;dbl&gt;,
+## #   Sample_Depth_m &lt;dbl&gt;, sd_m &lt;dbl&gt;, chla &lt;dbl&gt;</code></pre>
 </div>
 <div id="plot-mean-annual-chl-a-values-by-bay-segment" class="section level2 tabset">
 <h2>Plot Mean Annual Chl-a Values by Bay Segment</h2>
@@ -1700,7 +1700,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#mxrfdrmecc .gt_table {
+#ggzhaakzoh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1725,13 +1725,13 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table.border.bottom.color */
 }
 
-#mxrfdrmecc .gt_heading {
+#ggzhaakzoh .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#mxrfdrmecc .gt_title {
+#ggzhaakzoh .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1742,7 +1742,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-bottom-width: 0;
 }
 
-#mxrfdrmecc .gt_subtitle {
+#ggzhaakzoh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1753,7 +1753,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   border-top-width: 0;
 }
 
-#mxrfdrmecc .gt_bottom_border {
+#ggzhaakzoh .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1762,7 +1762,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* heading.border.bottom.color */
 }
 
-#mxrfdrmecc .gt_column_spanner {
+#ggzhaakzoh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1770,7 +1770,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   padding-bottom: 4px;
 }
 
-#mxrfdrmecc .gt_col_heading {
+#ggzhaakzoh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1784,23 +1784,23 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#mxrfdrmecc .gt_columns_top_border {
+#ggzhaakzoh .gt_columns_top_border {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#mxrfdrmecc .gt_columns_bottom_border {
+#ggzhaakzoh .gt_columns_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mxrfdrmecc .gt_sep_right {
+#ggzhaakzoh .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#mxrfdrmecc .gt_group_heading {
+#ggzhaakzoh .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1825,7 +1825,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#mxrfdrmecc .gt_empty_group_heading {
+#ggzhaakzoh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1849,19 +1849,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   vertical-align: middle;
 }
 
-#mxrfdrmecc .gt_striped {
+#ggzhaakzoh .gt_striped {
   background-color: #8080800D;
 }
 
-#mxrfdrmecc .gt_from_md > :first-child {
+#ggzhaakzoh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mxrfdrmecc .gt_from_md > :last-child {
+#ggzhaakzoh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mxrfdrmecc .gt_row {
+#ggzhaakzoh .gt_row {
   padding: 8px;
   /* row.padding */
   margin: 10px;
@@ -1872,14 +1872,14 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   overflow-x: hidden;
 }
 
-#mxrfdrmecc .gt_stub {
+#ggzhaakzoh .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #D3D3D3;
   padding-left: 12px;
 }
 
-#mxrfdrmecc .gt_summary_row {
+#ggzhaakzoh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1889,7 +1889,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* summary_row.text_transform */
 }
 
-#mxrfdrmecc .gt_grand_summary_row {
+#ggzhaakzoh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1899,19 +1899,19 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* grand_summary_row.text_transform */
 }
 
-#mxrfdrmecc .gt_first_summary_row {
+#ggzhaakzoh .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
 }
 
-#mxrfdrmecc .gt_first_grand_summary_row {
+#ggzhaakzoh .gt_first_grand_summary_row {
   border-top-style: double;
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
 
-#mxrfdrmecc .gt_table_body {
+#ggzhaakzoh .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1926,7 +1926,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* table_body.border.bottom.color */
 }
 
-#mxrfdrmecc .gt_footnotes {
+#ggzhaakzoh .gt_footnotes {
   border-top-style: solid;
   /* footnotes.border.top.style */
   border-top-width: 2px;
@@ -1935,7 +1935,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnotes.border.top.color */
 }
 
-#mxrfdrmecc .gt_footnote {
+#ggzhaakzoh .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   margin: 0px;
@@ -1943,7 +1943,7 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* footnote.padding */
 }
 
-#mxrfdrmecc .gt_sourcenotes {
+#ggzhaakzoh .gt_sourcenotes {
   border-top-style: solid;
   /* sourcenotes.border.top.style */
   border-top-width: 2px;
@@ -1952,48 +1952,48 @@ anlz_attain(avedat, magdurout = T)</code></pre>
   /* sourcenotes.border.top.color */
 }
 
-#mxrfdrmecc .gt_sourcenote {
+#ggzhaakzoh .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#mxrfdrmecc .gt_center {
+#ggzhaakzoh .gt_center {
   text-align: center;
 }
 
-#mxrfdrmecc .gt_left {
+#ggzhaakzoh .gt_left {
   text-align: left;
 }
 
-#mxrfdrmecc .gt_right {
+#ggzhaakzoh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mxrfdrmecc .gt_font_normal {
+#ggzhaakzoh .gt_font_normal {
   font-weight: normal;
 }
 
-#mxrfdrmecc .gt_font_bold {
+#ggzhaakzoh .gt_font_bold {
   font-weight: bold;
 }
 
-#mxrfdrmecc .gt_font_italic {
+#ggzhaakzoh .gt_font_italic {
   font-style: italic;
 }
 
-#mxrfdrmecc .gt_super {
+#ggzhaakzoh .gt_super {
   font-size: 65%;
 }
 
-#mxrfdrmecc .gt_footnote_marks {
+#ggzhaakzoh .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="mxrfdrmecc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="ggzhaakzoh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <tr>
     <th class="gt_col_heading gt_columns_bottom_border gt_columns_top_border gt_center" rowspan="1" colspan="1">Year</th>
