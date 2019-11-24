@@ -9,15 +9,13 @@ output:
     toc_float: yes
 ---
 
-Original: [esherwoo77/pull_epc_data:pull_epc_data.Rmd](https://github.com/esherwoo77/pull_epc_data/blob/master/pull_epc_data.Rmd)
-
 ```{r setup, include=F}
 knitr::opts_chunk$set(echo = T, message = F, warning = F)
 
 # libraries
 library(here)
-library(tbeptools) # remotes::install_github("tbep-tech/tbeptools")
-# devtools::load_all('../tbeptools/.')
+# library(tbeptools) # remotes::install_github("tbep-tech/tbeptools")
+devtools::load_all('../tbeptools/.')
 
 # local file path
 xlsx <- here('data-raw', '2018_Results_Updated.xls')

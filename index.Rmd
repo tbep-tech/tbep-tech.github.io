@@ -23,7 +23,7 @@ output: html_document
 
 - **Rmarkdown** html: [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
-- **Shiny** app: [Water Quality Dashboard](https://shiny.tbeptech.org/tbeptools/inst/wq-dash/wq-dash.Rmd) (source: [wq-dash.Rmd](https://github.com/tbep-tech/tbeptools/blob/master/inst/wq-dash/wq-dash.Rmd))
+- **Shiny** app: [Water Quality Dashboard](https://shiny.tbeptech.org/wq-dash/) (source: [wq-dash.Rmd](https://github.com/tbep-tech/wq-dash/wq-dash.Rmd))
 
 ## Presentations
 
