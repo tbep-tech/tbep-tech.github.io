@@ -1,5 +1,5 @@
 ---
-title: "Tampa Bay Estuarine Program (TBEP) Technical Website"
+title: "Tampa Bay Estuarine Program (TBEP) Reporting Website"
 output: html_document
 ---
 
@@ -9,28 +9,14 @@ output: html_document
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/tbep-tech.github.io): Github organization
     
-    - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
+- [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
     
-    - [tbeptools](https://github.com/tbep-tech/tbeptools) ([website](https://tbep-tech.github.io/tbeptools/)): R library with utility functions for ingesting, modeling and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
-
-## Workshop surveys
-
-- [Pre-workshop survey](https://forms.gle/B4W5BeSMNMdYrLkH9): Google forms pre-workhop survey to assess existing familiarity of open science principless and preliminary needs among stakeholders. 
-
-- [Post-workshop survey](https://forms.gle/BbaXmmxiqywtU7oc7): Google forms post-workshop survey to assess overall experience from the workshop and level of understanding after the introduction to open science principles.
+- [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
 ## Reporting
 
-- **Rmarkdown** html: [Water Quality](https://tbep-tech.github.io/wq.html) (source: [wq.Rmd](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
+- **Water Quality Report Card**:
 
-- **Shiny** app: [Water Quality Dashboard](https://shiny.tbeptech.org/wq-dash/) (source: [wq-dash.Rmd](https://github.com/tbep-tech/wq-dash/wq-dash.Rmd))
+     - [Static website](https://tbep-tech.github.io/wq.html) ([source](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
 
-## Presentations
-
-- [What is open science](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html): General overview of open science principles
-
-- [SWMPrats open science example](https://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html): Slide deck describing open science applications to the NERRS System Wide Monitoring Program
-
-- [Evolution of the water quality reporting tool](https://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html): Application of open science principles to the water quality reporting tool
-
-- [Overcoming open science challenges](https://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html): An overview of challenges to adopting open science and remedies for overcoming challenges
+     - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/wq-dash.Rmd))
