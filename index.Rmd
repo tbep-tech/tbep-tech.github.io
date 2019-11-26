@@ -1,9 +1,7 @@
 ---
-title: "Tampa Bay Estuarine Program (TBEP) Reporting Website"
+title: "Tampa Bay Estuarine Program (TBEP) GitHub Website"
 output: html_document
 ---
-
-[![Build Status](https://travis-ci.org/tbep-tech/tbep-tech.github.io.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-tech.github.io)
 
 ## Repositories
 
