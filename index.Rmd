@@ -7,7 +7,7 @@ output: html_document
 
 ## Repositories
 
-- [github.com/tbep-tech](https://github.com/tbep-tech/tbep-tech.github.io): Github organization
+- [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
     
 - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
     
@@ -17,6 +17,6 @@ output: html_document
 
 - **Water Quality Report Card**:
 
-     - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) [Static website](https://tbep-tech.github.io/wq.html) ([source](https://github.com/tbep-tech/tbep-tech.github.io/blob/master/wq.Rmd))
+     - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) [Static website](https://tbep-tech.github.io/wq-static/wq.html) ([source](https://github.com/tbep-tech/wq-static/blob/master/wq.Rmd))
 
-     - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/wq-dash.Rmd))
+     - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
