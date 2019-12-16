@@ -11,7 +11,8 @@ output: html_document
     
 - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
 
-- [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
+- [![Travis build status](https://travis-ci.org/tbep-tech/tbep-refs.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-refs)
+[tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
     
 - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/tbeptools.svg?branch=master)](https://travis-ci.org/tbep-tech/tbeptools) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
