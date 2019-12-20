@@ -19,7 +19,7 @@ output: html_document
 ## Reporting
 
 - **Water Quality Report Card**:
-     - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) Two-pager, [front](https://tbep-tech.github.io/wq-static/wq1.pdf) and [back](https://tbep-tech.github.io/wq-static/wq2.html)  ([source](https://github.com/tbep-tech/wq-static))   
+     - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) Two-pager, [front](https://tbep-tech.github.io/wq-static/wq1.pdf) and [back](https://tbep-tech.github.io/wq-static/wq2.pdf)  ([source](https://github.com/tbep-tech/wq-static))   
      - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
 
 - **Tidal Creek Report Card**
