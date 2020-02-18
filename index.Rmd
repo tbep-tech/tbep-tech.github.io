@@ -24,7 +24,10 @@ output: html_document
 
 - **Tidal Creek Report Card**
      - [Dashboard](https://shiny.tbeptec.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
-     
+
+- **Tampa Bay Watershed Land Use**
+    - [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
+    
 ## Presentations
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
