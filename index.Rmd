@@ -16,6 +16,8 @@ output: html_document
     
 - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/tbeptools.svg?branch=master)](https://travis-ci.org/tbep-tech/tbeptools) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
+- [![Travis build status](https://travis-ci.org/tbep-tech/wqtrends.svg?branch=master)](https://travis-ci.org/tbep-tech/wqtrends) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for a detailed overview of the package.
+
 ## Reporting
 
 - **Water Quality Report Card**:
@@ -23,12 +25,21 @@ output: html_document
      - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
 
 - **Tidal Creek Report Card**
-     - [Dashboard](https://shiny.tbeptec.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
+     - [Dashboard](https://shiny.tbeptech.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
 
 - **Tampa Bay Watershed Land Use**
     - [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
-    
+
+- **ANEP congressional districts**
+    - [Dashboard](https://shiny.tbeptech.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
+
 ## Presentations
+
+- **R training**
+
+     - Writing functions in R [link](https://tbep-tech.github.io/tbep-r-training/functions.html)
+     
+     - Rookery Bay R training (incomplete) [link](https://tbep-tech.github.io/rookery-bay-training/index.html)
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
 
