@@ -11,12 +11,14 @@ output: html_document
     
 - [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
 
-- [![Travis build status](https://travis-ci.org/tbep-tech/tbep-refs.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-refs)
+- [![Build status](https://travis-ci.org/tbep-tech/tbep-refs.svg?branch=master)](https://travis-ci.org/tbep-tech/tbep-refs)
 [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
     
-- [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/tbeptools.svg?branch=master)](https://travis-ci.org/tbep-tech/tbeptools) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
+- [![Build Status](https://travis-ci.org/tbep-tech/tbeptools.svg?branch=master)](https://travis-ci.org/tbep-tech/tbeptools) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
-- [![Travis build status](https://travis-ci.org/tbep-tech/wqtrends.svg?branch=master)](https://travis-ci.org/tbep-tech/wqtrends) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for a detailed overview of the package.
+- [![Build status](https://travis-ci.org/tbep-tech/wqtrends.svg?branch=master)](https://travis-ci.org/tbep-tech/wqtrends) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
+
+- [![Build status](https://travis-ci.org/tbep-tech/pepreporting.svg?branch=master)](https://travis-ci.org/tbep-tech/pepreporting) [pepreporting](https://tbep-tech.github.io/pepreporting/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/pepreporting/articles/Introduction.html) for details on the package.
 
 ## Reporting
 
@@ -32,6 +34,9 @@ output: html_document
 
 - **ANEP congressional districts**
     - [Dashboard](https://shiny.tbeptech.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
+
+- **Ft. DeSota Buoy Data, Pinellas County**
+    - [![Build Status](https://travis-ci.org/tbep-tech/desoto-buoy.svg?branch=master)](https://travis-ci.org/tbep-tech/desoto-buoy) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 
 ## Presentations
 
