@@ -20,7 +20,7 @@ output: html_document
 
 - [![Build status](https://travis-ci.org/tbep-tech/pepreporting.svg?branch=master)](https://travis-ci.org/tbep-tech/pepreporting) [pepreporting](https://tbep-tech.github.io/pepreporting/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/pepreporting/articles/Introduction.html) for details on the package.
 
-- [![Build status](https://travis-ci.org/tbep-tech/seagrasstransect.svg?branch=master)](https://travis-ci.org/tbep-tech/seagrasstransect) [seagrassransect](https://tbep-tech.github.io/seagrasstransect/): R package to compare seagrass transect data across survey teams. See the [dashboard](https://shiny.tbeptech.org/seagrasstransect) for results.
+- [![Build status](https://travis-ci.org/tbep-tech/seagrasstransect.svg?branch=master)](https://travis-ci.org/tbep-tech/seagrasstransect) [seagrasstransect](https://tbep-tech.github.io/seagrasstransect/): R package to compare seagrass transect data across survey teams. See the [dashboard](https://shiny.tbeptech.org/seagrasstransect) for results.
 
 ## Reporting
 
