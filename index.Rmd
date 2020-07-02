@@ -60,6 +60,10 @@ output: html_document
 
      - Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
 
+- **TAC meeting Jun 2020**
+
+     - Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
+     
 - **TAC meeting Jan 2020**
 
      - Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
