@@ -44,6 +44,8 @@ output: html_document
 
 - **R training**
 
+     - TBEP June R training [link](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
+     
      - Writing functions in R [link](https://tbep-tech.github.io/tbep-r-training/functions.html)
      
      - Rookery Bay R training (incomplete) [link](https://tbep-tech.github.io/rookery-bay-training/index.html)
