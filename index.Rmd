@@ -22,8 +22,6 @@ output: html_document
 
 - [![Build status](https://travis-ci.org/tbep-tech/pepreporting.svg?branch=master)](https://travis-ci.org/tbep-tech/pepreporting) [pepreporting](https://tbep-tech.github.io/pepreporting/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/pepreporting/articles/Introduction.html) for details on the package.
 
-- [![Build status](https://travis-ci.org/tbep-tech/seagrasstransect.svg?branch=master)](https://travis-ci.org/tbep-tech/seagrasstransect) [seagrasstransect](https://tbep-tech.github.io/seagrasstransect/): R package to compare seagrass transect data across survey teams. See the [dashboard](https://shiny.tbeptech.org/seagrasstransect) for results.
-
 ## Reporting
 
 - **Water Quality Report Card**:
@@ -41,6 +39,9 @@ output: html_document
 
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![Build Status](https://travis-ci.org/tbep-tech/desoto-buoy.svg?branch=master)](https://travis-ci.org/tbep-tech/desoto-buoy) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
+
+- **Seagrass Transect Data Comparison Dashboard**
+    - [Dashboard](https://shiny.tbeptech.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
 
 ## Presentations
 
@@ -61,6 +62,10 @@ output: html_document
      - Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
 
      - Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
+
+- **Virtual Summit Jul 2020**
+
+    - Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
 
 - **SWFL RAMP Meeting Jul 2020**
 
