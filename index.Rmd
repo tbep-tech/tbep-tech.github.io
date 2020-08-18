@@ -66,6 +66,10 @@ output: html_document
 - **Virtual Summit Jul 2020**
 
     - Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
+    
+- **NERRS Ecosystem Metabolism Webinar Aug 2020**
+
+    - Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
 
 - **SWFL RAMP Meeting Jul 2020**
 
