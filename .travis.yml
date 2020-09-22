@@ -5,7 +5,6 @@ git:
   depth: false
 
 script:
-- sudo apt-get install r-cran-rmarkdown
 - Rscript -e 'rmarkdown::render("index.Rmd")'
 - git config --global user.name "fawda123"
 - git config --global user.email "mbafs2012@gmail.com"
