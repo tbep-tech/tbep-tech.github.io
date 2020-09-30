@@ -5,6 +5,8 @@ output: html_document
 
 ![](tbep_logo.png)
 
+Site build `r Sys.Date()`
+
 # {.tabset}
 
 ## Repositories
