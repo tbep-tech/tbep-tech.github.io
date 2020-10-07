@@ -89,6 +89,10 @@ Site build `r Sys.Date()`
 
      - Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
 
+- **PEP Monitoring Collaborative Oct 2020**
+     
+     - Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/pepreporting.html)
+     
 - **Board meetings Feb 2020**
 
      - 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
