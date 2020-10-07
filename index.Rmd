@@ -83,13 +83,11 @@ Site build `r Sys.Date()`
 
      - Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
 
-- **TAC meeting Jun 2020**
+- **TAC meeting**
 
-     - Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
-     
-- **TAC meeting Jan 2020**
+     - Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
 
-     - Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
+     - Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
 
 - **Board meetings Feb 2020**
 
