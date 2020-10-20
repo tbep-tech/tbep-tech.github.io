@@ -106,6 +106,8 @@ Site build `r Sys.Date()`
      - Kickoff webinar, March 2nd, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
      
      - Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
+     
+     - October open science updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
 
 
 
