@@ -33,22 +33,33 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **Water Quality Report Card**:
      - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) [Two-pager](https://tbep-tech.github.io/wq-static/wq.pdf) ([source](https://github.com/tbep-tech/wq-static))   
-     - [Dashboard](https://shiny.tbeptech.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
-
+     - [Dashboard](https://shiny.tbep.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
+     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html)
+     
 - **Tidal Creek Report Card**
-     - [Dashboard](https://shiny.tbeptech.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
+     - [Dashboard](https://shiny.tbep.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
+     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tidalcreeks.html)
+     
+- **Tampa Bay Nekton Index**
+     - [Dashboard](https://shiny.tbep.org/nekton-dash) ([source](https://github.com/tbep-tech/nekton-dash/blob/master/nekton-dash.Rmd))
+     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbni.html)
 
+- **Tampa Bay Benthic Index**
+     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
+     
 - **Tampa Bay Watershed Land Use**
     - [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
 
 - **ANEP congressional districts**
-    - [Dashboard](https://shiny.tbeptech.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
+    - [Dashboard](https://shiny.tbep.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
 
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![Build Status](https://travis-ci.org/tbep-tech/desoto-buoy.svg?branch=master)](https://travis-ci.org/tbep-tech/desoto-buoy) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 
 - **Seagrass Transect Data Comparison Dashboard**
-    - [Dashboard](https://shiny.tbeptech.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
+    - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
+    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+     
 
 ## Presentations
 
