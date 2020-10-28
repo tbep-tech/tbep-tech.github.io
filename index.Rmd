@@ -117,13 +117,17 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
      - Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
 
-- **Open Science Subcommitee**
+- **Open Science Subcommittee**
 
      - Kickoff webinar, March 2nd, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
      
      - Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
      
      - October open science updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
+     
+- **ANEP Tech Transfer Workshop**
+
+     - What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
 
 ## Resources
 
