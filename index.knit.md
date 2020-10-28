@@ -8,7 +8,7 @@ output:
 
 ![](tbep_logo.png)
 
-Site build `r Sys.Date()`
+Site build 2020-10-28
 
 Want to contribute to this page? Create an issue [here](https://github.com/tbep-tech/tbep-tech.github.io/issues/new/choose). 
 
