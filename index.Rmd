@@ -10,6 +10,8 @@ output:
 
 Site build `r Sys.Date()`
 
+Want to contribute to this page? Create an issue [here](https://github.com/tbep-tech/tbep-tech.github.io/issues). 
+
 # {.tabset}
 
 ## Repositories
@@ -137,6 +139,7 @@ Site build `r Sys.Date()`
 * [Hadley Wickham's **R for Data Science**](https://r4ds.had.co.nz){target="_blank"}
 * [Yihui Xie **R Markdown: The Definitive Guide**](https://bookdown.org/yihui/rmarkdown/){target="_blank"}
 * [Winston Chang **R Graphics Cookbook**](http://www.cookbook-r.com/){target="_blank"}
+* [Wegman et al. **Remote Sensing and GIS for Ecologists: Using Open Source Software**](http://book.ecosens.org/RSEbook/){target="_blank"}
 
 ### *Git/Github* 
 
