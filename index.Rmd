@@ -156,6 +156,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 * [Winston Chang **R Graphics Cookbook**](http://www.cookbook-r.com/){target="_blank"}
 * [Wegman et al. **Remote Sensing and GIS for Ecologists: Using Open Source Software**](http://book.ecosens.org/RSEbook/){target="_blank"}
 * [Lovelace et al. **Geocomputation with R**](https://geocompr.robinlovelace.net/){target="_blank"}
+* [Edszer Pebesma and Roger Bivand **Spatial Data Science**](https://keen-swartz-3146c4.netlify.app/index.html){target="_blank"}
 
 ### *Git/Github* 
 
