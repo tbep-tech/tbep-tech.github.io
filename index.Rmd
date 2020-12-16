@@ -18,14 +18,15 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
     
-- [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): [![Render site](https://github.com/tbep-tech/tbep-tech.github.io/workflows/Render%20site/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) files for this Github website
+- [![Render site](https://github.com/tbep-tech/tbep-tech.github.io/workflows/Render%20site/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
 
 - [![Render Rmarkdown](https://github.com/tbep-tech/tbep-refs/workflows/Render%20Rmarkdown/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
 [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
     
 - [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
-- [![Build status](https://travis-ci.org/tbep-tech/wqtrends.svg?branch=master)](https://travis-ci.org/tbep-tech/wqtrends) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
+- 
+[![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
 
 - [![R-CMD-check](https://github.com/tbep-tech/pepreporting/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/pepreporting/actions) [pepreporting](https://tbep-tech.github.io/pepreporting/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/pepreporting/articles/Introduction.html) for details on the package.
 
@@ -56,10 +57,17 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![Build Status](https://travis-ci.org/tbep-tech/desoto-buoy.svg?branch=master)](https://travis-ci.org/tbep-tech/desoto-buoy) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 
-- **Seagrass Transect Data Comparison Dashboard**
+- **Seagrass Transect Training Data Dashboard**
     - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
 
+- **Seagrass Transect Dashboard**
+    - [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
+    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+    
+- **TBERF Oyster Restoration Project**
+    - [![figures-and-readme](https://github.com/tbep-tech/tberf-oyster/workflows/Render%20figures%20and%20readme/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
+    
 ## Presentations
 
 - **R training**
