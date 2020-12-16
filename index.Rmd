@@ -25,8 +25,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
 - [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
 
-- 
-[![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
+- [![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
 
 - [![R-CMD-check](https://github.com/tbep-tech/pepreporting/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/pepreporting/actions) [pepreporting](https://tbep-tech.github.io/pepreporting/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/pepreporting/articles/Introduction.html) for details on the package.
 
