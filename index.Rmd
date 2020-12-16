@@ -60,6 +60,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
      
+- **TBEP References Library**
+    - [![Render Rmarkdown](https://github.com/tbep-tech/tbep-refs/workflows/Render%20Rmarkdown/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions) Rendered HTML file of TBEP references in formatted bibliography ([source](https://github.com/tbep-tech/tbep-refs))
+
 
 ## Presentations
 
