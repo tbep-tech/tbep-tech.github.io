@@ -65,7 +65,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
     
 - **TBERF Oyster Restoration Project**
-    - [![figures-and-readme](https://github.com/tbep-tech/tberf-oyster/workflows/Render%20figures%20and%20readme/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
+    - [![render-rmarkdown](https://github.com/tbep-tech/tberf-oyster/workflows/Render%20Rmarkdown/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
     
 ## Presentations
 
