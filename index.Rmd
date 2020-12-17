@@ -18,9 +18,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
     
-- [![Render site](https://github.com/tbep-tech/tbep-tech.github.io/workflows/Render%20site/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
+- [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
 
-- [![Render Rmarkdown](https://github.com/tbep-tech/tbep-refs/workflows/Render%20Rmarkdown/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
+- [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
 [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
     
 - [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
