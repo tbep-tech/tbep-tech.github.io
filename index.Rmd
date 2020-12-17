@@ -32,7 +32,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 ## Reporting
 
 - **Water Quality Report Card**:
-     - [![Travis-CI Build Status](https://travis-ci.org/tbep-tech/wq-static.svg?branch=master)](https://travis-ci.org/tbep-tech/wq-static) [Two-pager](https://tbep-tech.github.io/wq-static/wq.pdf) ([source](https://github.com/tbep-tech/wq-static))   
+     - [![build](https://github.com/tbep-tech/wq-static/workflows/build/badge.svg)](https://github.com/tbep-tech/wq-static/actions) [Two-pager](https://tbep-tech.github.io/wq-static/wq.pdf) ([source](https://github.com/tbep-tech/wq-static))   
      - [Dashboard](https://shiny.tbep.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
      - [Vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html)
      
