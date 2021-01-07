@@ -18,6 +18,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
     
+- [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
+
 - [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
 
 - [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
