@@ -18,9 +18,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
     
-- [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
-
 - [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
+
+- [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
 
 - [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
 [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
@@ -46,6 +46,14 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      - [Dashboard](https://shiny.tbep.org/nekton-dash) ([source](https://github.com/tbep-tech/nekton-dash/blob/master/nekton-dash.Rmd))
      - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbni.html)
 
+- **Seagrass Transect Training Data Dashboard**
+    - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
+    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+
+- **Seagrass Transect Dashboard**
+    - [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
+    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+    
 - **Tampa Bay Benthic Index**
      - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
      
@@ -58,16 +66,11 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 
-- **Seagrass Transect Training Data Dashboard**
-    - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
-    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
-
-- **Seagrass Transect Dashboard**
-    - [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
-    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+- **Seagrass Transect Water Atlas Content**
+    - [![build](https://github.com/tbep-tech/seagrasstransect/workflows/build/badge.svg)](https://github.com/tbep-tech/seagrasstransect/actions) Graphics, tables, and downloads for seagrass transect data ([source](https://github.com/tbep-tech/seagrasstransect))
     
 - **TBERF Oyster Restoration Project**
-    - [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
+    - [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) Materials for evaluating TBERF oyster restoration success [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
     
 ## Presentations
 
