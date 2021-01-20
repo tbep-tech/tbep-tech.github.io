@@ -72,6 +72,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **TBERF Oyster Restoration Project**
     - [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) Materials for evaluating TBERF oyster restoration success [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
     
+- **Water Quality Trends Manuscript**
+    - [![build](https://github.com/tbep-tech/wqtrends-manu/workflows/build/badge.svg)](https://github.com/tbep-tech/wqtrends-manu/actions) Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
+    
 ## Presentations
 
 - **R training**
