@@ -74,7 +74,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
 - **Water Quality Trends Manuscript**
     - [![build](https://github.com/tbep-tech/wqtrends-manu/workflows/build/badge.svg)](https://github.com/tbep-tech/wqtrends-manu/actions) Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
-    
+
+- **R training on ecosystem metabolism**        
+    - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) Website content ([source](https://github.com/tbep-tech/ecometab-r-training))
+
 ## Presentations
 
 - **R training**
