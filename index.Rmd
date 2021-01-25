@@ -125,6 +125,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **PEP Monitoring Collaborative Oct 2020**
      
      - Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/pepreporting.html)
+      
+     - Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/pepreporting2.html)
      
 - **Board meetings Feb 2020**
 
