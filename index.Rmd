@@ -75,15 +75,15 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Water Quality Trends Manuscript**
     - [![build](https://github.com/tbep-tech/wqtrends-manu/workflows/build/badge.svg)](https://github.com/tbep-tech/wqtrends-manu/actions) Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
 
-- **R training on ecosystem metabolism**        
-    - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) Website content ([source](https://github.com/tbep-tech/ecometab-r-training))
-
 ## Presentations
 
 - **R training**
 
+     - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) NERRS ecocystem metabolism [link](https://github.com/tbep-tech/ecometab-r-training)
+     
      - TBEP June R training [link](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
      
+
      - Writing functions in R [link](https://tbep-tech.github.io/tbep-r-training/functions.html)
      
      - R package development workflow [link](https://tbep-tech.github.io/tbep-r-training/packages.html)
@@ -143,6 +143,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      - Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
      
      - October open science updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
+     
+     - February open science updates, Feb 2nd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
      
 - **ANEP Tech Transfer Workshop**
 
