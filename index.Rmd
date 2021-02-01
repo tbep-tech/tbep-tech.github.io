@@ -81,7 +81,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
      - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) NERRS ecocystem metabolism [link](https://tbep-tech.github.io/ecometab-r-training)
      
-     - TBEP June R training [link](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
+     - [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
+ TBEP June R training [link](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
      
 
      - Writing functions in R [link](https://tbep-tech.github.io/tbep-r-training/functions.html)
