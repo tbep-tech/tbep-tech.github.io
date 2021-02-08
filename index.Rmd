@@ -89,6 +89,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      
      - R package development workflow [link](https://tbep-tech.github.io/tbep-r-training/packages.html)
      
+     - A soft introduction to Shiny [link](https://tbep-tech.github.io/tbep-r-training/shiny.html)
+     
      - Rookery Bay R training (incomplete) [link](https://tbep-tech.github.io/rookery-bay-training/index.html)
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
