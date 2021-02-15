@@ -79,6 +79,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **R training**
 
+     - [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) PEP R training [link](https://tbep-tech.github.io/pep-r-training)
+
      - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) NERRS ecocystem metabolism [link](https://tbep-tech.github.io/ecometab-r-training)
      
      - [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
