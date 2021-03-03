@@ -77,7 +77,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ## Presentations
 
-- **R training**
+- **R trainings**
 
      - [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) PEP R training [link](https://tbep-tech.github.io/pep-r-training)
 
@@ -121,7 +121,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
      - Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
 
-- **TAC meeting**
+- **TAC meetings**
 
      - Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
 
@@ -154,6 +154,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **ANEP Tech Transfer Workshop**
 
      - What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
+     
+- **Bay-Delta IEP Data Science PWT**
+
+     - Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
 
 ## Resources
 
