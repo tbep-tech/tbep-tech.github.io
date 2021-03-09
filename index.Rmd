@@ -75,25 +75,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Water Quality Trends Manuscript**
     - [![build](https://github.com/tbep-tech/wqtrends-manu/workflows/build/badge.svg)](https://github.com/tbep-tech/wqtrends-manu/actions) Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
 
+- **TBNMC Annual Compliance Assessment**
+    - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment/actions) RMarkdown materials for creating a the annual compliance assessment report for the 2017 FDEP RA update
+
 ## Presentations
-
-- **R trainings**
-
-     - [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) PEP R training [link](https://tbep-tech.github.io/pep-r-training)
-
-     - [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) NERRS ecocystem metabolism [link](https://tbep-tech.github.io/ecometab-r-training)
-     
-     - [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
- TBEP June R training [link](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
-     
-
-     - Writing functions in R [link](https://tbep-tech.github.io/tbep-r-training/functions.html)
-     
-     - R package development workflow [link](https://tbep-tech.github.io/tbep-r-training/packages.html)
-     
-     - A soft introduction to Shiny [link](https://tbep-tech.github.io/tbep-r-training/shiny.html)
-     
-     - Rookery Bay R training (incomplete) [link](https://tbep-tech.github.io/rookery-bay-training/index.html)
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
 
@@ -160,6 +145,17 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      - Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
 
 ## Resources
+
+### *TBEP R Trainings* 
+
+* [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
+* [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
+* [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
+ [TBEP June R training](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
+* [Writing functions in R](https://tbep-tech.github.io/tbep-r-training/functions.html)
+* [R package development workflow](https://tbep-tech.github.io/tbep-r-training/packages.html)
+* [A soft introduction to Shiny](https://tbep-tech.github.io/tbep-r-training/shiny.html)
+* [Rookery Bay R training (incomplete)](https://tbep-tech.github.io/rookery-bay-training/index.html)
 
 ### *R Lessons & Tutorials*
 
