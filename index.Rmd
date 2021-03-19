@@ -108,6 +108,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **TAC meetings**
 
+     - Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
+
      - Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
 
      - Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
@@ -143,6 +145,11 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Bay-Delta IEP Data Science PWT**
 
      - Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
+
+
+- **USF College of Marine Science**
+
+     - How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Resources
 
