@@ -66,6 +66,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **TBNMC Annual Compliance Assessment**
     - [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment))
 
+- **Piney Point Environmental Monitoring Dashboard**
+    - [Dashboard](https://shiny.tbep.org/piney-point) ([source](https://github.com/tbep-tech/piney-point))
+    - [![build](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml) [LOBO dashboard](https://shiny.tbep.org/piney-point/lobo.Rmd) ([source](https://github.com/tbep-tech/piney-point))
+    
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 
