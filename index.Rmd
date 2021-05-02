@@ -140,7 +140,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      
      - October open science updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
      
-     - February open science updates, Feb 2nd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
+     - February open science updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
+     
+     - May open science updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
      
 - **ANEP Tech Transfer Workshop**
 
