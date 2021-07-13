@@ -63,6 +63,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **ANEP congressional districts**
     - [Dashboard](https://shiny.tbep.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
 
+- **Water Quality Trends Manuscript**
+    - Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
+    
 - **TBNMC Annual Compliance Assessment**
     - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment))
 
@@ -81,10 +84,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
 - **TBERF Oyster Restoration Project**
     - [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) Materials for evaluating TBERF oyster restoration success [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
-    
-- **Water Quality Trends Manuscript**
-    - Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
 
+- **Scallop Search**
+    - [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
+    
 ## Presentations
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
