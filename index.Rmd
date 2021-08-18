@@ -188,6 +188,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 * [Data Carpentry: **Geospatial Workshop**](https://datacarpentry.org/geospatial-workshop/){target="_blank"}
 * [Data Carpentry: **R for Data Analysis and Visualization of Ecological Data**](http://www.datacarpentry.org/R-ecology-lesson/){target="_blank"}
 * [Data Carpentry: **Data Organization in Spreadsheets**](http://www.datacarpentry.org/spreadsheet-ecology-lesson/){target="_blank"}
+* [**Reproducible Reporting  with R (R$^3$)** for Marine Ecological Indicators](https://noaa-iea.github.io/r3-train/){target="_blank"}
+* [**R for Water Resources Data Science**](https://www.r4wrds.com/){target="_blank"}
 * [**RStudio Webinars**, many topics](https://www.rstudio.com/resources/webinars/){target="_blank"}
 * [R For Cats: **Basic introduction site, with cats!**](http://rforcats.net/){target="_blank"}
 * [Topical cheatsheets from **RStudio**, also viewed from the help menu](http://www.rstudio.com/resources/cheatsheets/){target="_blank"}
