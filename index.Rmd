@@ -171,8 +171,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      
 ## Resources
 
-### *TBEP R Trainings* 
+### *TBEP Trainings* 
 
+* [![build](https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/cerf-os-workshop/actions) [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
 * [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
 * [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
 * [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
