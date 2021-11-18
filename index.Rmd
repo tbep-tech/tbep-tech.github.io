@@ -129,10 +129,16 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      - Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
       
      - Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
-     
-- **Board meetings Feb 2020**
 
-     - 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
+- **Southwest Florida Seagrass Working Group**
+
+     - Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
+
+- **Board meetings**
+
+     - Feb. 2020, 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
+     
+     - Nov. 2021, Piney Point Manuscript Update: [Management Board](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing), [Policy Board]()
 
 - **SBEP TAC meeting Feb 2020**
 
@@ -168,6 +174,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Piney Point**
 
      - Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
+     
+     - Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
      
 ## Resources
 
