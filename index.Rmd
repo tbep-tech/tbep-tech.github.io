@@ -65,7 +65,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **Water Quality Trends Manuscript**
     - Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
-    
+
+- **2021 TBNMC Annual Compliance Assessment (incomplete draft)**
+    - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2021/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021))
+
 - **2020 TBNMC Annual Compliance Assessment**
     - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2020/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020))
 
