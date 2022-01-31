@@ -157,13 +157,15 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      
      - Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
      
-     - October open science updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
+     - OS updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
      
-     - February open science updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
+     - OS updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
      
-     - May open science updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
+     - OS updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
 
-     - Aug open science updates, Aug 3rd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
+     - OS updates, Aug 3rd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
+     
+     - OS updates, Feb 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
      
 - **ANEP Tech Transfer Workshop**
 
