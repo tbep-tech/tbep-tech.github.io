@@ -145,8 +145,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
      - Feb. 2020, 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
      
-     - Nov. 2021, Piney Point Manuscript Update: [Management Board](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing), [Policy Board]()
+     - Nov. 2021, Piney Point Manuscript Update: [link](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing)
 
+     - Feb. 2022, water quality report card and state of the bay update: [link](https://docs.google.com/presentation/d/1gUsIP_Hp2aeH94wip7dkuGGS-zTv79bTWdZ6agSVAvQ/edit?usp=sharing)
+     
 - **SBEP TAC meeting Feb 2020**
 
      - Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
