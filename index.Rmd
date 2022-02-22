@@ -121,7 +121,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **TAC meetings**
 
-     - Feb 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
+     - Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
      
      - Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
 
