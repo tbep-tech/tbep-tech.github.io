@@ -210,6 +210,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ### *R Lessons & Tutorials*
 
+* [DSOS/AEMON-J **Hacking Limnology 2022, supporting open science workshops**](https://aquaticdatasciopensci.github.io/material/){target="_blank"}
 * [Software Carpentry: **R for Reproducible Scientific Analysis**](http://data-lessons.github.io/gapminder-R/){target="_blank"}
 * [Data Carpentry: **Geospatial Workshop**](https://datacarpentry.org/geospatial-workshop/){target="_blank"}
 * [Data Carpentry: **R for Data Analysis and Visualization of Ecological Data**](http://www.datacarpentry.org/R-ecology-lesson/){target="_blank"}
