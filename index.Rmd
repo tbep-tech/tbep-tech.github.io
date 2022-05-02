@@ -173,6 +173,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
      
      - OS updates, Feb 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
      
+     - OS updates, May 3rd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032022.html)
+     
 - **ANEP Tech Transfer Workshop**
 
      - What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
