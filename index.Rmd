@@ -109,6 +109,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     - Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
 
+- **Old Tampa Bay Working Group**
+
+    - Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality  [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 - **Virtual Summit Jul 2020**
 
     - Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
@@ -123,6 +127,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 - **TAC meetings**
 
+     - Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
+     
      - Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
      
      - Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
