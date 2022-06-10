@@ -93,6 +93,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Scallop Search**
     - [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
     
+- **Verified WBIDs**
+    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/build/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed ([source](https://github.com/tbep-tech/verified-wbids)).
+        
 ## Presentations
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
