@@ -16,9 +16,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ## Repositories
 
-- [github.com/tbep-tech](https://github.com/tbep-tech/): Github organization
+- [github.com/tbep-tech](https://github.com/tbep-tech/): GitHub organization
     
-- [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this Github website
+- [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this GitHub website
 
 - [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
 
@@ -68,7 +68,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 - **Water Quality Trends Manuscript**
     - Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
 
-- **2021 TBNMC Annual Compliance Assessment (incomplete draft)**
+- **2021 TBNMC Annual Compliance Assessment**
     - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2021/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021))
 
 - **2020 TBNMC Annual Compliance Assessment**
@@ -79,7 +79,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     - [![build](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml) [LOBO dashboard](https://shiny.tbep.org/piney-point/lobo.Rmd) ([source](https://github.com/tbep-tech/piney-point/lobo.Rmd))
     
 - **Piney Point Data Analysis**
-    - [![build](https://github.com/tbep-tech/piney-point-analysis/actions/workflows/databuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point-analysis/actions/workflows/databuild.yaml) Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
+    - Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
     
 - **Ft. DeSota Buoy Data, Pinellas County**
     - [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
@@ -94,8 +94,11 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     - [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
     
 - **Verified WBIDs**
-    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/build/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed ([source](https://github.com/tbep-tech/verified-wbids)).
-        
+    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed ([source](https://github.com/tbep-tech/verified-wbids)).
+    
+- **Load Estimates**
+    - [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
+    
 ## Presentations
 
 - **Presentation materials for open science talks, OS workshop Sep 2019**
@@ -247,9 +250,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 * [Lovelace et al. **Geocomputation with R**](https://geocompr.robinlovelace.net/){target="_blank"}
 * [Edszer Pebesma and Roger Bivand **Spatial Data Science**](https://keen-swartz-3146c4.netlify.app/index.html){target="_blank"}
 
-### *Git/Github* 
+### *Git/GitHub* 
 
-* [Jenny Bryan's **Happy Git and Github for the useR**](http://happygitwithr.com/){target="_blank"}
-* [Coding Club **Intro to Github**](https://ourcodingclub.github.io/2017/02/27/git.html){target="_blank"}
+* [Jenny Bryan's **Happy Git and GitHub for the useR**](http://happygitwithr.com/){target="_blank"}
+* [Coding Club **Intro to GitHub**](https://ourcodingclub.github.io/2017/02/27/git.html){target="_blank"}
 
 
