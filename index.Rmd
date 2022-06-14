@@ -94,7 +94,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     - [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
     
 - **Verified WBIDs**
-    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed ([source](https://github.com/tbep-tech/verified-wbids)).
+    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed [Dashboard](https://tbep-tech.github.io/verified-wbids/) ([source](https://github.com/tbep-tech/verified-wbids)).
     
 - **Load Estimates**
     - [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
