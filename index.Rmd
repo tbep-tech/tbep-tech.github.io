@@ -10,249 +10,228 @@ output:
 
 Site build `r Sys.Date()`
 
-Want to contribute to this page? Create an issue [here](https://github.com/tbep-tech/tbep-tech.github.io/issues/new/choose). 
+Want to contribute to this page? Create an issue [here](https://github.com/tbep-tech/tbep-tech.github.io/issues/new/choose).
 
-# {.tabset}
+#  {.tabset}
 
 ## Repositories
 
-- [github.com/tbep-tech](https://github.com/tbep-tech/): GitHub organization
-    
-- [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this GitHub website
+-   [github.com/tbep-tech](https://github.com/tbep-tech/): GitHub organization
 
-- [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
+-   [![build](https://github.com/tbep-tech/tbep-tech.github.io/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-tech.github.io/actions) [tbep-tech.github.io](https://github.com/tbep-tech/tbep-tech.github.io): files for this GitHub website
 
-- [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions)
-[tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
-    
-- [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data.  See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package. 
+-   [![build](https://github.com/tbep-tech/data-management-sop/workflows/build/badge.svg)](https://github.com/tbep-tech/data-management-sop/actions) [data-management-sop](https://tbep-tech.github.io/data-management-sop): TBEP data management SOP
 
-- [![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
+-   [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions) [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
 
-- [![R-CMD-check](https://github.com/tbep-tech/peptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/peptools/actions) [peptools](https://tbep-tech.github.io/peptools/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/peptools/articles/Introduction.html) for details on the package.
+-   [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data. See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package.
 
-- [![archive](https://github.com/tbep-tech/github-backup/workflows/archive/badge.svg)](https://github.com/tbep-tech/github-backup/actions) [github-backup](https://github.com/tbep-tech/github-backup): Repository used to create an archive of all repositories in the tbep-tech GitHub organization page and upload to Amazon S3 services on a weekly basis.
+-   [![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
+
+-   [![R-CMD-check](https://github.com/tbep-tech/peptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/peptools/actions) [peptools](https://tbep-tech.github.io/peptools/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/peptools/articles/Introduction.html) for details on the package.
+
+-   [![archive](https://github.com/tbep-tech/github-backup/workflows/archive/badge.svg)](https://github.com/tbep-tech/github-backup/actions) [github-backup](https://github.com/tbep-tech/github-backup): Repository used to create an archive of all repositories in the tbep-tech GitHub organization page and upload to Amazon S3 services on a weekly basis.
 
 ## Reporting
 
-- **Water Quality Report Card**:
-     - [![build](https://github.com/tbep-tech/wq-static/workflows/build/badge.svg)](https://github.com/tbep-tech/wq-static/actions) [Two-pager](https://tbep-tech.github.io/wq-static/wq.pdf) ([source](https://github.com/tbep-tech/wq-static))   
-     - [![build](https://github.com/tbep-tech/wq-dash/actions/workflows/databuild.yaml/badge.svg)](https://github.com/tbep-tech/wq-dash/actions/workflows/databuild.yaml) [Dashboard](https://shiny.tbep.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
-     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html)
-     
-- **Tidal Creek Report Card**
-     - [Dashboard](https://shiny.tbep.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
-     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tidalcreeks.html)
-     
-- **Tampa Bay Nekton Index**
-     - [Dashboard](https://shiny.tbep.org/nekton-dash) ([source](https://github.com/tbep-tech/nekton-dash/blob/master/nekton-dash.Rmd))
-     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbni.html)
+-   **Water Quality Report Card**:
+    -   [![build](https://github.com/tbep-tech/wq-static/workflows/build/badge.svg)](https://github.com/tbep-tech/wq-static/actions) [Two-pager](https://tbep-tech.github.io/wq-static/wq.pdf) ([source](https://github.com/tbep-tech/wq-static))\
+    -   [![build](https://github.com/tbep-tech/wq-dash/actions/workflows/databuild.yaml/badge.svg)](https://github.com/tbep-tech/wq-dash/actions/workflows/databuild.yaml) [Dashboard](https://shiny.tbep.org/wq-dash/) ([source](https://github.com/tbep-tech/wq-dash/blob/master/wq-dash.Rmd))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html)
+-   **Tidal Creek Report Card**
+    -   [Dashboard](https://shiny.tbep.org/tidalcreek-dash/) ([source](https://github.com/tbep-tech/tidalcreek-dash/blob/master/tidalcreek-dash.Rmd))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/tidalcreeks.html)
+-   **Tampa Bay Nekton Index**
+    -   [Dashboard](https://shiny.tbep.org/nekton-dash) ([source](https://github.com/tbep-tech/nekton-dash/blob/master/nekton-dash.Rmd))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbni.html)
+-   **Seagrass Transect Training Data Dashboard**
+    -   [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+-   **Seagrass Transect Dashboard**
+    -   [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
+-   **Tampa Bay Benthic Index**
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
+-   **Tampa Bay Watershed Land Use**
+    -   [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
+-   **ANEP congressional districts**
+    -   [Dashboard](https://shiny.tbep.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
+-   **Water Quality Trends Manuscript**
+    -   Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
+-   **2021 TBNMC Annual Compliance Assessment**
+    -   [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2021/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021))
+-   **2020 TBNMC Annual Compliance Assessment**
+    -   [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2020/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020))
+-   **Piney Point Environmental Monitoring Dashboard**
+    -   [![build](https://github.com/tbep-tech/piney-point/actions/workflows/databuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/databuild.yaml) [Dashboard](https://shiny.tbep.org/piney-point) ([source](https://github.com/tbep-tech/piney-point/index.Rmd))
+    -   [![build](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml) [LOBO dashboard](https://shiny.tbep.org/piney-point/lobo.Rmd) ([source](https://github.com/tbep-tech/piney-point/lobo.Rmd))
+-   **Piney Point Data Analysis**
+    -   Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
+-   **Ft. DeSota Buoy Data, Pinellas County**
+    -   [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
+-   **Seagrass Transect Water Atlas Content**
+    -   [![build](https://github.com/tbep-tech/seagrasstransect/workflows/build/badge.svg)](https://github.com/tbep-tech/seagrasstransect/actions) Graphics, tables, and downloads for seagrass transect data ([source](https://github.com/tbep-tech/seagrasstransect))
+-   **TBERF Oyster Restoration Project**
+    -   [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) Materials for evaluating TBERF oyster restoration success [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
+-   **Scallop Search**
+    -   [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
+-   **Verified WBIDs**
+    -   [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed [Dashboard](https://tbep-tech.github.io/verified-wbids/) ([source](https://github.com/tbep-tech/verified-wbids)).
+-   **Load Estimates**
+    -   [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
 
-- **Seagrass Transect Training Data Dashboard**
-    - [Dashboard](https://shiny.tbep.org/seagrasstransect) ([source](https://github.com/tbep-tech/seagrasstransect))
-    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
-
-- **Seagrass Transect Dashboard**
-    - [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
-    - [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
-    
-- **Tampa Bay Benthic Index**
-     - [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
-     
-- **Tampa Bay Watershed Land Use**
-    - [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
-
-- **ANEP congressional districts**
-    - [Dashboard](https://shiny.tbep.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
-
-- **Water Quality Trends Manuscript**
-    - Materials for manuscript on water quality trends assessment using GAMs ([source](https://github.com/tbep-tech/wqtrends-manu))
-
-- **2021 TBNMC Annual Compliance Assessment**
-    - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2021/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021))
-
-- **2020 TBNMC Annual Compliance Assessment**
-    - [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2020/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2020))
-
-- **Piney Point Environmental Monitoring Dashboard**
-    - [![build](https://github.com/tbep-tech/piney-point/actions/workflows/databuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/databuild.yaml) [Dashboard](https://shiny.tbep.org/piney-point) ([source](https://github.com/tbep-tech/piney-point/index.Rmd))
-    - [![build](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml/badge.svg)](https://github.com/tbep-tech/piney-point/actions/workflows/lobobuild.yaml) [LOBO dashboard](https://shiny.tbep.org/piney-point/lobo.Rmd) ([source](https://github.com/tbep-tech/piney-point/lobo.Rmd))
-    
-- **Piney Point Data Analysis**
-    - Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
-    
-- **Ft. DeSota Buoy Data, Pinellas County**
-    - [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
-
-- **Seagrass Transect Water Atlas Content**
-    - [![build](https://github.com/tbep-tech/seagrasstransect/workflows/build/badge.svg)](https://github.com/tbep-tech/seagrasstransect/actions) Graphics, tables, and downloads for seagrass transect data ([source](https://github.com/tbep-tech/seagrasstransect))
-    
-- **TBERF Oyster Restoration Project**
-    - [![build](https://github.com/tbep-tech/tberf-oyster/workflows/build/badge.svg)](https://github.com/tbep-tech/tberf-oyster/actions) Materials for evaluating TBERF oyster restoration success [Figures](https://tbep-tech.github.io/tberf-oyster/figures.html) ([source](https://github.com/tbep-tech/tberf-oyster))
-
-- **Scallop Search**
-    - [![build](https://github.com/tbep-tech/scallop-search/workflows/build/badge.svg)](https://github.com/tbep-tech/scallop-search/actions) Materials for evaluation and mapping of the Tampa Bay Watch Great Scallop Search [Dashboard](https://tbep-tech.github.io/scallop-search/) ([source](https://github.com/tbep-tech/scallop-search))
-    
-- **Verified WBIDs**
-    - [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed [Dashboard](https://tbep-tech.github.io/verified-wbids/) ([source](https://github.com/tbep-tech/verified-wbids)).
-    
-- **Load Estimates**
-    - [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
-    
 ## Presentations
 
-- **Presentation materials for open science talks, OS workshop Sep 2019**
+-   **Presentation materials for open science talks, OS workshop Sep 2019**
 
-     - What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
+    -   What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
 
-     - NERRS OS applications [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
+    -   NERRS OS applications [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
 
-     - Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
+    -   Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
 
-     - Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
+    -   Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
 
-- **NMC meetings**
+-   **NMC meetings**
 
-    - Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
+    -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
 
-- **Old Tampa Bay Working Group**
+-   **Old Tampa Bay Working Group**
 
-    - Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality  [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-- **Virtual Summit Jul 2020**
+-   **Virtual Summit Jul 2020**
 
-    - Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
-    
-- **NERRS Ecosystem Metabolism Webinar Aug 2020**
+    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
 
-    - Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
+-   **NERRS Ecosystem Metabolism Webinar Aug 2020**
 
-- **SWFL RAMP Meeting Jul 2020**
+    -   Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
 
-     - Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
+-   **SWFL RAMP Meeting Jul 2020**
 
-- **TAC meetings**
+    -   Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
 
-     - Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
-     
-     - Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
-     
-     - Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
+-   **TAC meetings**
 
-     - Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit) 
+    -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
 
-     - Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
+    -   Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
 
-- **Habitat Restoration Consortium**
+    -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
 
-     - May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress  [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
-     
-- **PEP Monitoring Collaborative Oct 2020**
-     
-     - Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
-      
-     - Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
+    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit)
 
-- **Southwest Florida Seagrass Working Group**
+    -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
 
-     - Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
+-   **Habitat Restoration Consortium**
 
-- **Board meetings**
+    -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
 
-     - Feb. 2020, 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
-     
-     - Nov. 2021, Piney Point Manuscript Update: [link](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing)
+-   **PEP Monitoring Collaborative Oct 2020**
 
-     - Feb. 2022, water quality report card and state of the bay update: [link](https://docs.google.com/presentation/d/1gUsIP_Hp2aeH94wip7dkuGGS-zTv79bTWdZ6agSVAvQ/edit?usp=sharing)
-     
-- **SBEP TAC meeting Feb 2020**
+    -   Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
 
-     - Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
+    -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
 
-- **Open Science Subcommittee**
+-   **Southwest Florida Seagrass Working Group**
 
-     - Kickoff webinar, March 2nd, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
-     
-     - Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
-     
-     - OS updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
-     
-     - OS updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
-     
-     - OS updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
+    -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
 
-     - OS updates, Aug 3rd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
-     
-     - OS updates, Feb 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
-     
-     - OS updates, May 3rd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032022.html)
-     
-- **ANEP Tech Transfer Workshop**
+-   **Board meetings**
 
-     - What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
-     
-- **Bay-Delta IEP Data Science PWT**
+    -   Feb. 2020, 2019 water quality report card update: [Management Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019.html), [Policy Board](http://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2019_PB.html)
 
-     - Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
+    -   Nov. 2021, Piney Point Manuscript Update: [link](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing)
 
+    -   Feb. 2022, water quality report card and state of the bay update: [link](https://docs.google.com/presentation/d/1gUsIP_Hp2aeH94wip7dkuGGS-zTv79bTWdZ6agSVAvQ/edit?usp=sharing)
 
-- **USF College of Marine Science**
+-   **SBEP TAC meeting Feb 2020**
 
-     - How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+    -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
 
-- **Piney Point**
+-   **Open Science Subcommittee**
 
-     - Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
-     
-     - Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
-     
+    -   Kickoff webinar, March 2nd, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
+
+    -   Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
+
+    -   OS updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
+
+    -   OS updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
+
+    -   OS updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
+
+    -   OS updates, Aug 3rd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
+
+    -   OS updates, Feb 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
+
+    -   OS updates, May 3rd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032022.html)
+
+    -   OS updates, Aug 2nd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022022.html)
+
+-   **ANEP Tech Transfer Workshop**
+
+    -   What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
+
+-   **Bay-Delta IEP Data Science PWT**
+
+    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
+
+-   **USF College of Marine Science**
+
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+
+-   **Piney Point**
+
+    -   Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
+
+    -   Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
+
 ## Resources
 
-### *TBEP Trainings* 
+### *TBEP Trainings*
 
-* [![build](https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/cerf-os-workshop/actions) [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
-* [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
-* [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
-* [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions)
- [TBEP June R training](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
-* [Writing functions in R](https://tbep-tech.github.io/tbep-r-training/functions.html)
-* [R package development workflow](https://tbep-tech.github.io/tbep-r-training/packages.html)
-* [A soft introduction to Shiny](https://tbep-tech.github.io/tbep-r-training/shiny.html)
-* [Rookery Bay R training (incomplete)](https://tbep-tech.github.io/rookery-bay-training/index.html)
+-   [![build](https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/cerf-os-workshop/actions) [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
+-   [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
+-   [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
+-   [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions) [TBEP June R training](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
+-   [Writing functions in R](https://tbep-tech.github.io/tbep-r-training/functions.html)
+-   [R package development workflow](https://tbep-tech.github.io/tbep-r-training/packages.html)
+-   [A soft introduction to Shiny](https://tbep-tech.github.io/tbep-r-training/shiny.html)
+-   [Rookery Bay R training (incomplete)](https://tbep-tech.github.io/rookery-bay-training/index.html)
 
 ### *R Lessons & Tutorials*
 
-* [DSOS/AEMON-J **Hacking Limnology 2022, supporting open science workshops**](https://aquaticdatasciopensci.github.io/material/){target="_blank"}
-* [Software Carpentry: **R for Reproducible Scientific Analysis**](http://data-lessons.github.io/gapminder-R/){target="_blank"}
-* [Data Carpentry: **Geospatial Workshop**](https://datacarpentry.org/geospatial-workshop/){target="_blank"}
-* [Data Carpentry: **R for Data Analysis and Visualization of Ecological Data**](http://www.datacarpentry.org/R-ecology-lesson/){target="_blank"}
-* [Data Carpentry: **Data Organization in Spreadsheets**](http://www.datacarpentry.org/spreadsheet-ecology-lesson/){target="_blank"}
-* [**Reproducible Reporting  with R (R$^3$)** for Marine Ecological Indicators](https://noaa-iea.github.io/r3-train/){target="_blank"}
-* [**R for Water Resources Data Science**](https://www.r4wrds.com/){target="_blank"}
-* [**RStudio Webinars**, many topics](https://www.rstudio.com/resources/webinars/){target="_blank"}
-* [R For Cats: **Basic introduction site, with cats!**](http://rforcats.net/){target="_blank"}
-* [Topical cheatsheets from **RStudio**, also viewed from the help menu](http://www.rstudio.com/resources/cheatsheets/){target="_blank"}
-* [Cheatsheet from CRAN of **base R functions**](http://cran.r-project.org/doc/contrib/Short-refcard.pdf){target="_blank"} 
-* [Totally awesome **R-related artwork** by Allison Horst](https://github.com/allisonhorst/stats-illustrations){target="_blank"}
-* [**Color reference** PDF with text names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf){target="_blank"}, [**Color cheatsheet** PDF from NCEAS](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf){target="_blank"}
+-   [DSOS/AEMON-J **Hacking Limnology 2022, supporting open science workshops**](https://aquaticdatasciopensci.github.io/material/){target="_blank"}
+-   [Software Carpentry: **R for Reproducible Scientific Analysis**](http://data-lessons.github.io/gapminder-R/){target="_blank"}
+-   [Data Carpentry: **Geospatial Workshop**](https://datacarpentry.org/geospatial-workshop/){target="_blank"}
+-   [Data Carpentry: **R for Data Analysis and Visualization of Ecological Data**](http://www.datacarpentry.org/R-ecology-lesson/){target="_blank"}
+-   [Data Carpentry: **Data Organization in Spreadsheets**](http://www.datacarpentry.org/spreadsheet-ecology-lesson/){target="_blank"}
+-   [**Reproducible Reporting with R (R**$^3$) for Marine Ecological Indicators](https://noaa-iea.github.io/r3-train/){target="_blank"}
+-   [**R for Water Resources Data Science**](https://www.r4wrds.com/){target="_blank"}
+-   [**RStudio Webinars**, many topics](https://www.rstudio.com/resources/webinars/){target="_blank"}
+-   [R For Cats: **Basic introduction site, with cats!**](http://rforcats.net/){target="_blank"}
+-   [Topical cheatsheets from **RStudio**, also viewed from the help menu](http://www.rstudio.com/resources/cheatsheets/){target="_blank"}
+-   [Cheatsheet from CRAN of **base R functions**](http://cran.r-project.org/doc/contrib/Short-refcard.pdf){target="_blank"}
+-   [Totally awesome **R-related artwork** by Allison Horst](https://github.com/allisonhorst/stats-illustrations){target="_blank"}
+-   [**Color reference** PDF with text names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf){target="_blank"}, [**Color cheatsheet** PDF from NCEAS](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf){target="_blank"}
 
 ### *R eBooks/Courses*
 
-* [Jenny Bryan's **Stat545.com**](http://stat545.com/){target="_blank"}
-* [Garrett Grolemund and Hadley Wickham's **R For Data Science**](http://r4ds.had.co.nz/){target="_blank"}
-* [Chester Ismay and Albert Y. Kim's **Modern DiveR**](https://ismayc.github.io/moderndiver-book/){target="_blank"}
-* [Julia Silge and David Robinson **Text Mining with R**](http://tidytextmining.com/){target="_blank"}
-* [Hadley Wickham's **Advanced R**](http://adv-r.had.co.nz/){target="_blank"}
-* [Hadley Wickham's **R for Data Science**](https://r4ds.had.co.nz){target="_blank"}
-* [Yihui Xie **R Markdown: The Definitive Guide**](https://bookdown.org/yihui/rmarkdown/){target="_blank"}
-* [Winston Chang **R Graphics Cookbook**](http://www.cookbook-r.com/){target="_blank"}
-* [Wegman et al. **Remote Sensing and GIS for Ecologists: Using Open Source Software**](http://book.ecosens.org/RSEbook/){target="_blank"}
-* [Lovelace et al. **Geocomputation with R**](https://geocompr.robinlovelace.net/){target="_blank"}
-* [Edszer Pebesma and Roger Bivand **Spatial Data Science**](https://keen-swartz-3146c4.netlify.app/index.html){target="_blank"}
+-   [Jenny Bryan's **Stat545.com**](http://stat545.com/){target="_blank"}
+-   [Garrett Grolemund and Hadley Wickham's **R For Data Science**](http://r4ds.had.co.nz/){target="_blank"}
+-   [Chester Ismay and Albert Y. Kim's **Modern DiveR**](https://ismayc.github.io/moderndiver-book/){target="_blank"}
+-   [Julia Silge and David Robinson **Text Mining with R**](http://tidytextmining.com/){target="_blank"}
+-   [Hadley Wickham's **Advanced R**](http://adv-r.had.co.nz/){target="_blank"}
+-   [Hadley Wickham's **R for Data Science**](https://r4ds.had.co.nz){target="_blank"}
+-   [Yihui Xie **R Markdown: The Definitive Guide**](https://bookdown.org/yihui/rmarkdown/){target="_blank"}
+-   [Winston Chang **R Graphics Cookbook**](http://www.cookbook-r.com/){target="_blank"}
+-   [Wegman et al. **Remote Sensing and GIS for Ecologists: Using Open Source Software**](http://book.ecosens.org/RSEbook/){target="_blank"}
+-   [Lovelace et al. **Geocomputation with R**](https://geocompr.robinlovelace.net/){target="_blank"}
+-   [Edszer Pebesma and Roger Bivand **Spatial Data Science**](https://keen-swartz-3146c4.netlify.app/index.html){target="_blank"}
 
-### *Git/GitHub* 
+### *Git/GitHub*
 
-* [Jenny Bryan's **Happy Git and GitHub for the useR**](http://happygitwithr.com/){target="_blank"}
-* [Coding Club **Intro to GitHub**](https://ourcodingclub.github.io/2017/02/27/git.html){target="_blank"}
-
-
+-   [Jenny Bryan's **Happy Git and GitHub for the useR**](http://happygitwithr.com/){target="_blank"}
+-   [Coding Club **Intro to GitHub**](https://ourcodingclub.github.io/2017/02/27/git.html){target="_blank"}
