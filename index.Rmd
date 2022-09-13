@@ -82,61 +82,13 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ## Presentations
 
--   **Presentation materials for open science talks, OS workshop Sep 2019**
+-   **ANEP Tech Transfer Workshop**
 
-    -   What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
+    -   What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
 
-    -   NERRS OS applications [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
+-   **Bay-Delta IEP Data Science PWT**
 
-    -   Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
-
-    -   Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
-
--   **NMC meetings**
-
-    -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
-
--   **Old Tampa Bay Working Group**
-
-    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
--   **Virtual Summit Jul 2020**
-
-    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
-
--   **NERRS Ecosystem Metabolism Webinar Aug 2020**
-
-    -   Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
-
--   **SWFL RAMP Meeting Jul 2020**
-
-    -   Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
-
--   **TAC meetings**
-
-    -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
-
-    -   Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
-
-    -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
-
-    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit)
-
-    -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
-
--   **Habitat Restoration Consortium**
-
-    -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
-
--   **PEP Monitoring Collaborative Oct 2020**
-
-    -   Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
-
-    -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
-
--   **Southwest Florida Seagrass Working Group**
-
-    -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
+    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
 
 -   **Board meetings**
 
@@ -145,10 +97,26 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   Nov. 2021, Piney Point Manuscript Update: [link](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing)
 
     -   Feb. 2022, water quality report card and state of the bay update: [link](https://docs.google.com/presentation/d/1gUsIP_Hp2aeH94wip7dkuGGS-zTv79bTWdZ6agSVAvQ/edit?usp=sharing)
+    
+-   **Habitat Restoration Consortium**
 
--   **SBEP TAC meeting Feb 2020**
+    -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
 
-    -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
+-   **Joint Aquatic Sciences Meetings 2022**
+
+    -  How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022 [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
+
+-   **NERRS Ecosystem Metabolism Webinar Aug 2020**
+
+    -   Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
+
+-   **NMC meetings**
+
+    -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
+    
+-   **Old Tampa Bay Working Group**
+
+    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 -   **Open Science Subcommittee**
 
@@ -170,23 +138,59 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   OS updates, Aug 2nd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022022.html)
 
--   **ANEP Tech Transfer Workshop**
+-   **Open Science Workshop Sep 2019**
 
-    -   What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
+    -   What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
 
--   **Bay-Delta IEP Data Science PWT**
+    -   NERRS OS applications [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
 
-    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
+    -   Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
 
--   **USF College of Marine Science**
+    -   Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
 
-    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+-   **PEP Monitoring Collaborative Oct 2020**
 
+    -   Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
+
+    -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
+    
 -   **Piney Point**
 
     -   Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
 
     -   Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
+
+-   **SBEP TAC meeting Feb 2020**
+
+    -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
+    
+-   **SWFL RAMP Meeting Jul 2020**
+
+    -   Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
+
+-   **SWFL Seagrass Working Group**
+
+    -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
+    
+-   **TAC meetings**
+
+    -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
+
+    -   Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
+
+    -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
+
+    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit)
+
+    -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
+
+-   **USF College of Marine Science**
+
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)    
+
+-   **Virtual Summit Jul 2020**
+
+    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
 
 ## Resources
 
