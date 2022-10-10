@@ -97,14 +97,18 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   Nov. 2021, Piney Point Manuscript Update: [link](https://docs.google.com/presentation/d/1Dsqg1RlshDhk_qp_HiwMxPXhQEs8MuiRC9fjwvtElsQ/edit?usp=sharing)
 
     -   Feb. 2022, water quality report card and state of the bay update: [link](https://docs.google.com/presentation/d/1gUsIP_Hp2aeH94wip7dkuGGS-zTv79bTWdZ6agSVAvQ/edit?usp=sharing)
-    
+
+-   **EPA N-STEPS Webinar Oct 2022**
+
+    -   Better nutrient management through open science: A collection of tales from California and Florida [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
+
 -   **Habitat Restoration Consortium**
 
     -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
 
 -   **Joint Aquatic Sciences Meetings 2022**
 
-    -  How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022 [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
+    -   How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022 [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
 
 -   **NERRS Ecosystem Metabolism Webinar Aug 2020**
 
@@ -113,7 +117,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **NMC meetings**
 
     -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
-    
+
 -   **Old Tampa Bay Working Group**
 
     -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
@@ -153,7 +157,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
 
     -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
-    
+
 -   **Piney Point**
 
     -   Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
@@ -163,7 +167,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **SBEP TAC meeting Feb 2020**
 
     -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
-    
+
 -   **SWFL RAMP Meeting Jul 2020**
 
     -   Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
@@ -171,8 +175,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **SWFL Seagrass Working Group**
 
     -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
-    
+
 -   **TAC meetings**
+
+    -   Oct 2022, Revised Critical Coastal Habitat Assessment methodology [link](<https://docs.google.com/presentation/d/1gpMrYL6MVSoCz7HrPLng5d5vyEfb-_2rN5GkO5HKHno/edit?usp=sharing>)
 
     -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
 
@@ -186,7 +192,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   **USF College of Marine Science**
 
-    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)    
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 -   **Virtual Summit Jul 2020**
 
