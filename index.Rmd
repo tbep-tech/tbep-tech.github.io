@@ -77,6 +77,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed [Dashboard](https://tbep-tech.github.io/verified-wbids/) ([source](https://github.com/tbep-tech/verified-wbids)).
 -   **Load Estimates**
     -   [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
+-   **Equity Plan Mapping**
+    -   [![build](https://github.com/tbep-tech/equity-plan-mapping/workflows/build/badge.svg)](https://github.com/tbep-tech/equity-plan-mapping/actions) Materials for creating spatial maps to guide equity planning [Website](https://tbep-tech.github.io/equity-plan-mapping/) ([source](https://github.com/tbep-tech/equity-plan-mapping)).
+    
 
 ## Presentations
 
