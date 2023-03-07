@@ -51,6 +51,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   [Dashboard](https://shiny.tbep.org/seagrasstransect-dash) ([source](https://github.com/tbep-tech/seagrasstransect-dash))
     -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/seagrasstransect.html)
 -   **Tampa Bay Benthic Index**
+    -   [Dashboard](https://shiny.tbep.org/benthic-dash) ([source](https://github.com/tbep-tech/benthic-dash))
     -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
 -   **Tampa Bay Watershed Land Use**
     -   [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
@@ -66,7 +67,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **Piney Point Data Analysis**
     -   Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
 -   **Ft. DeSota Buoy Data, Pinellas County**
-    -   Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
+    -   [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 -   **Seagrass Transect Water Atlas Content**
     -   [![build](https://github.com/tbep-tech/seagrasstransect/workflows/build/badge.svg)](https://github.com/tbep-tech/seagrasstransect/actions) Graphics, tables, and downloads for seagrass transect data ([source](https://github.com/tbep-tech/seagrasstransect))
 -   **TBERF Oyster Restoration Project**
@@ -77,9 +78,6 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   [![build](https://github.com/tbep-tech/verified-wbids/workflows/build/badge.svg)](https://github.com/tbep-tech/verified-wbids/actions) Materials for evaluation of verified WBIDs in the Tampa Bay watershed [Dashboard](https://tbep-tech.github.io/verified-wbids/) ([source](https://github.com/tbep-tech/verified-wbids)).
 -   **Load Estimates**
     -   [![build](https://github.com/tbep-tech/load-estimates/workflows/build/badge.svg)](https://github.com/tbep-tech/load-estimates/actions) Materials for creating a unified workflow to synthesize and report on load estimates to Tampa Bay. All estimates were obtained from Janicki Environmental. [Dashboard](https://tbep-tech.github.io/load-estimates/) ([source](https://github.com/tbep-tech/load-estimates)).
--   **Equity Plan Mapping**
-    -   [![build](https://github.com/tbep-tech/equity-plan-mapping/workflows/build/badge.svg)](https://github.com/tbep-tech/equity-plan-mapping/actions) Materials for creating spatial maps to guide equity planning [Website](https://tbep-tech.github.io/equity-plan-mapping/) ([source](https://github.com/tbep-tech/equity-plan-mapping)).
-    
 
 ## Presentations
 
