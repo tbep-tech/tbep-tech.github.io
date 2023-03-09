@@ -67,7 +67,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **Piney Point Data Analysis**
     -   Repository for analyzing Piney Point data ([source](https://github.com/tbep-tech/piney-point-analysis))
 -   **Ft. DeSota Buoy Data, Pinellas County**
-    -   [![build](https://github.com/tbep-tech/desoto-buoy/workflows/build/badge.svg)](https://github.com/tbep-tech/desoto-buoy/actions) Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
+    -   Data management and reporting repository, RESTORE project ([source](https://github.com/tbep-tech/desoto-buoy))
 -   **Seagrass Transect Water Atlas Content**
     -   [![build](https://github.com/tbep-tech/seagrasstransect/workflows/build/badge.svg)](https://github.com/tbep-tech/seagrasstransect/actions) Graphics, tables, and downloads for seagrass transect data ([source](https://github.com/tbep-tech/seagrasstransect))
 -   **TBERF Oyster Restoration Project**
