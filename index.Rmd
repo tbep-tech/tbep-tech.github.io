@@ -200,6 +200,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
 
+-   **USF Department of Integrative Biology**
+
+    -   Pine Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023 [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
+
 -   **USF College of Marine Science**
 
     -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
