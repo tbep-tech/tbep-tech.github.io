@@ -87,7 +87,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   **Bay-Delta IEP Data Science PWT**
 
-    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/H459089dg_W2qmIzrAagSQ/edit)
+    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/8Gz2nC9Ss682ZE1IISYmdQ/view?utm_content=DAEVdjz5s2M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Board meetings**
 
@@ -128,7 +128,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   **Old Tampa Bay Working Group**
 
-    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/m-GUXzE2xRlVM-QZZOnicg/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/sxbdGX2nb7lgnnNcQIPIZw/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Open Science Subcommittee**
 
@@ -196,21 +196,21 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
 
-    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/VNloX1W-OUolVA6jr2Yu0g/edit)
+    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/xRSk8VdkFJJ-AzRG646ZgA/view?utm_content=DAD-9OAYHaM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
     -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
 
 -   **USF Department of Integrative Biology**
 
-    -   Pine Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023 [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
+    -   Piney Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023 [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
 
 -   **USF College of Marine Science**
 
-    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/share/preview?token=nGXfNsEB_NatxgwnyT-utQ&role=EDITOR&utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/zolcqGmrtxtc3C2Bs1YhOA/view?utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Virtual Summit Jul 2020**
 
-    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/-zfKTXQ2md9b8YltQ_mjlw/edit)
+    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/y_5oxvuwj5BgoXMkos6G8Q/view?utm_content=DAEB9tW1m98&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Resources
 
