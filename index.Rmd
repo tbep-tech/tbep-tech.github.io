@@ -103,7 +103,6 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Feb. 2023, water quality report card and state of the bay update (PB): [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2022pb.html)
     
-        
 -   **EPA N-STEPS Webinar Oct 2022**
 
     -   Better nutrient management through open science: A collection of tales from California and Florida [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
@@ -115,6 +114,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **Joint Aquatic Sciences Meetings 2022**
 
     -   How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022 [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
+
+-   **National Water Quality Monitoring Conference 2023**
+
+    -   Using Open Science to Address Current and Future Threats to the Health of Tampa Bay, April 27th, 2023 [link](https://docs.google.com/presentation/d/1Ri529XJtA8UfbpzvkYy5p_TXtDPoNs-g_t6R34-xcDM/edit?usp=sharing)
 
 -   **NERRS Ecosystem Metabolism Webinar Aug 2020**
 
@@ -220,7 +223,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ### *TBEP Trainings*
 
--   [![build](https://github.com/tbep-tech/tbep-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep- os-workshop/actions) [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
+-   [![build](https://github.com/tbep-tech/flafs-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/flafs-os-workshop/actions) [Florida AFS open science workshop](https://tbep-tech.github.io/flafs-os-workshop)
+-   [![build](https://github.com/tbep-tech/tbep-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-os-workshop/actions) [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
 -   [![build](https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/cerf-os-workshop/actions) [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
 -   [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
 -   [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
