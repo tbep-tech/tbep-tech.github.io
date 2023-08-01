@@ -158,6 +158,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   OS updates, Nov 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates11012022.html)
     
     -   OS updates, May 3rd, 2023 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032023.html)
+    
+    -   OS updates, Aug 2nd, 2023 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022023.html)
 
 -   **Open Science Workshop Sep 2019**
 
