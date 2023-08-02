@@ -59,6 +59,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   [Dashboard](https://shiny.tbep.org/anep-congressional/) ([source](https://github.com/tbep-tech/anep-congressional))
 -   **Equity Plan Mapping**
     -   [Website](https://tbep-tech.github.io/equity-plan-mapping/) ([source](https://github.com/tbep-tech/equity-plan-mapping))
+-   **Tampa Bay Valuation Dashboard**
+    -   [Dashboard](https://shiny.tbep.org/tbev-dash) ([source](https://github.com/tbep-tech/tbev-dash))
+-   **Old Tampa Bay Temperature Loggers**
+    -   [Dashboard](https://tbep-tech.github.io/otb-temp/tempeval) ([source](https://github.com/tbep-tech/otb-temp))    
 -   **TBNMC Annual Compliance Assessments**
     -   2022 [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2022/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2022/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2022/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2022))
     -   2021 [![build](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/workflows/build/badge.svg)](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021/actions) [Website](https://tbep-tech.github.io/tbnmc-compliance-assessment-2021/) ([Source](https://github.com/tbep-tech/tbnmc-compliance-assessment-2021))
