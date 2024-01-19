@@ -24,7 +24,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   [![build](https://github.com/tbep-tech/tbep-refs/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-refs/actions) [tbep-refs](https://github.com/tbep-tech/tbep-refs/): Comprehensive bibliography of TBEP publications, formatted [here](https://tbep-tech.github.io/tbep-refs/)
 
--   [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data. See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for a detailed overview of the package.
+-   [![R-CMD-check](https://github.com/tbep-tech/tbeptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeptools/actions) [tbeptools](https://tbep-tech.github.io/tbeptools/): R package with utility functions for reading, analyzing, and visualizing TBEP data. See the [vignette](https://tbep-tech.github.io/tbeptools/articles/intro.html) for details on of the package.
+
+-   [![R-CMD-check](https://github.com/tbep-tech/tbeploads/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/tbeploads/actions) [tbeploads](https://tbep-tech.github.io/tbeploads/): R package for calculating load estimates to Tampa Bay. See the [vignette](https://tbep-tech.github.io/tbeploads/articles/tbeploads.html) for details on the package.
 
 -   [![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
 
@@ -107,8 +109,6 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Feb. 2023, water quality report card and state of the bay update (PB): [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2022pb.html)
 
-    -   Jan. 2024, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023.html)
-    
 -   **EPA N-STEPS Webinar Oct 2022**
 
     -   Better nutrient management through open science: A collection of tales from California and Florida [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
@@ -207,6 +207,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   **TAC meetings**
 
+    -   Jan 2024, water quality report card and state of the bay update [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023.html)
+    
+    -   Oct 2023, Hot and fresh: Pervasive climate stressors of seagrass in Tampa Bay [link](https://docs.google.com/presentation/d/1Vjn-QnxQpEHLM1K8JK1ey1odq-5WXPmGJlBUtsJ1LBQ/edit?usp=sharing)
+    
     -   Oct 2022, Revised Critical Coastal Habitat Assessment methodology [link](https://docs.google.com/presentation/d/1gpMrYL6MVSoCz7HrPLng5d5vyEfb-_2rN5GkO5HKHno/edit?usp=sharing)
 
     -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
