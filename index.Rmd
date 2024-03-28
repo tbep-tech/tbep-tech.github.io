@@ -197,6 +197,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
 
+-   **Pints of Science Oct 2023**
+
+    -  Science for the Masses: Using Open Science for Better Decisions to Restore and Protect Tampa Bay [link](https://docs.google.com/presentation/d/1cphkJnifIwnk3-j4yLB2qkYiJl0wLnk5hqOFqnm0aDU/edit?usp=sharing)
+
 -   **SBEP TAC meeting Feb 2020**
 
     -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
