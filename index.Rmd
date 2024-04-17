@@ -113,6 +113,10 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Feb. 2024, water quality report card and state of the bay update (PB): [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023pb.html)
     
+-   **CERF Seagrass CoP May 2021** 
+
+    -   Providing interactive web access to long-term seagrass monitoring data with open science data analysis tools [link](https://www.canva.com/design/DAEeRJYbYo4/sgG-0xpTq29rVbsr9byh_w/edit?utm_content=DAEeRJYbYo4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 -   **EPA N-STEPS Webinar Oct 2022**
 
     -   Better nutrient management through open science: A collection of tales from California and Florida [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
