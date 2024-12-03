@@ -181,6 +181,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   OS updates, May 23rd, 2024 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05292024.html)
     
+    -   OS updates, Dec 10th, 2024 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates12102024.html)
+    
 -   **Open Science Workshop Sep 2019**
 
     -   What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
