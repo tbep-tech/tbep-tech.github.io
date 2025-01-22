@@ -91,11 +91,11 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   **ANEP Tech Transfer Workshop**
 
-    -   What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
+    -   What is Open Science and Why Should the NEPs Care?, Oct. 29th, 2020: [link](http://tbep-tech.github.io/tbep-os-presentations/os_and_neps.html)
 
 -   **Bay-Delta IEP Data Science PWT**
 
-    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021 [link](https://www.canva.com/design/DAEVdjz5s2M/8Gz2nC9Ss682ZE1IISYmdQ/view?utm_content=DAEVdjz5s2M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+    -   Bringing open science to Tampa Bay: Reproducible workflows & dynamic documents, Feb. 11th, 2021: [link](https://www.canva.com/design/DAEVdjz5s2M/8Gz2nC9Ss682ZE1IISYmdQ/view?utm_content=DAEVdjz5s2M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Board meetings**
 
@@ -112,148 +112,154 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   Feb. 2024, water quality report card and state of the bay update (MB): [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023mb.html)
 
     -   Feb. 2024, water quality report card and state of the bay update (PB): [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023pb.html)
+
+
+-   **CAC meetings**
+
+    -   Jan. 2025, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2024cac.html)
+    
     
 -   **CERF Seagrass CoP May 2021** 
 
-    -   Providing interactive web access to long-term seagrass monitoring data with open science data analysis tools [link](https://www.canva.com/design/DAEeRJYbYo4/sgG-0xpTq29rVbsr9byh_w/edit?utm_content=DAEeRJYbYo4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+    -   Providing interactive web access to long-term seagrass monitoring data with open science data analysis tools: [link](https://www.canva.com/design/DAEeRJYbYo4/sgG-0xpTq29rVbsr9byh_w/edit?utm_content=DAEeRJYbYo4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 -   **EPA N-STEPS Webinar Oct 2022**
 
-    -   Better nutrient management through open science: A collection of tales from California and Florida [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
+    -   Better nutrient management through open science: A collection of tales from California and Florida: [link](https://docs.google.com/presentation/d/1PydleljTAkKBGft_LcP_cG_sunZbW8OSjuQiVf4XO0k/edit?usp=sharing)
 
 -   **Habitat Restoration Consortium**
 
-    -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
+    -   May 2020, HMPU workflow, updating, and web products: Reproducible tools for tracking progress: [link](https://docs.google.com/presentation/d/1ZXKppCgevY6NYE45VSUwHwb4O2InEOL5nKVay7nzn6o/edit?usp=sharing)
 
 -   **Joint Aquatic Sciences Meetings 2022**
 
-    -   How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022 [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
+    -   How the Tampa Bay Estuary Program Uses Open Science to Work Smarter, Not Harder, May 16th, 2022: [link](https://docs.google.com/presentation/d/14_R59dGyY7YPBBZxb5rMFt2tvLXMtCNkPE26L4unQs0/edit?usp=sharing)
 
 -   **National Water Quality Monitoring Conference 2023**
 
-    -   Using Open Science to Address Current and Future Threats to the Health of Tampa Bay, April 27th, 2023 [link](https://docs.google.com/presentation/d/1Ri529XJtA8UfbpzvkYy5p_TXtDPoNs-g_t6R34-xcDM/edit?usp=sharing)
+    -   Using Open Science to Address Current and Future Threats to the Health of Tampa Bay, April 27th, 2023: [link](https://docs.google.com/presentation/d/1Ri529XJtA8UfbpzvkYy5p_TXtDPoNs-g_t6R34-xcDM/edit?usp=sharing)
 
 -   **NERRS Ecosystem Metabolism Webinar Aug 2020**
 
-    -   Methods and tools to measure ecosystem metabolism [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
+    -   Methods and tools to measure ecosystem metabolism: [link](http://tbep-tech.github.io/tbep-os-presentations/metab_tools.html)
 
 -   **NMC meetings**
 
-    -   2022 seagrass and water quality report results [link](https://tbep-tech.github.io/tbep-os-presentations/seagrass_and_wq_nmc22.html)
+    -   2022 seagrass and water quality report results: [link](https://tbep-tech.github.io/tbep-os-presentations/seagrass_and_wq_nmc22.html)
 
-    -   2022 provisional water quality report card [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2022_updates.html)
+    -   2022 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2022_updates.html)
 
-    -   2023 provisional water quality report card [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2023_updates.html)
+    -   2023 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2023_updates.html)
     
-    -   2024 provisional water quality report card [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2024_updates.html)
+    -   2024 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2024_updates.html)
     
-    -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
+    -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches: [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
 
 -   **Old Tampa Bay Working Group**
 
-    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality [link](https://www.canva.com/design/DAEDfKrp5K4/sxbdGX2nb7lgnnNcQIPIZw/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+    -   Jun 2020, Seagrass changes in OTB: Recent shifts and links to water quality: [link](https://www.canva.com/design/DAEDfKrp5K4/sxbdGX2nb7lgnnNcQIPIZw/view?utm_content=DAEDfKrp5K4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Open Science Subcommittee**
 
-    -   Kickoff webinar, March 2nd, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
+    -   Kickoff webinar, March 2nd, 2020: [link](http://tbep-tech.github.io/tbep-os-presentations/ossubcommittee_kickoff_webinar.html)
 
-    -   Water Quality Dashboard review summary, May 6th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
+    -   Water Quality Dashboard review summary, May 6th, 2020: [link](http://tbep-tech.github.io/tbep-os-presentations/wq_dashboard_review.html)
 
-    -   OS updates, Oct 27th, 2020 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
+    -   OS updates, Oct 27th, 2020: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates10272020.html)
 
-    -   OS updates, Feb 2nd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
+    -   OS updates, Feb 2nd, 2021: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02022021.html)
 
-    -   OS updates, May 4th, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
+    -   OS updates, May 4th, 2021: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05042021.html)
 
-    -   OS updates, Aug 3rd, 2021 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
+    -   OS updates, Aug 3rd, 2021: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08032021.html)
 
-    -   OS updates, Feb 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
+    -   OS updates, Feb 1st, 2022: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates02012022.html)
 
-    -   OS updates, May 3rd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032022.html)
+    -   OS updates, May 3rd, 2022: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032022.html)
 
-    -   OS updates, Aug 2nd, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022022.html)
+    -   OS updates, Aug 2nd, 2022: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022022.html)
 
-    -   OS updates, Nov 1st, 2022 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates11012022.html)
+    -   OS updates, Nov 1st, 2022: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates11012022.html)
     
-    -   OS updates, May 3rd, 2023 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032023.html)
+    -   OS updates, May 3rd, 2023: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05032023.html)
     
-    -   OS updates, Aug 2nd, 2023 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022023.html)
+    -   OS updates, Aug 2nd, 2023: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates08022023.html)
     
-    -   OS updates, Nov 1st, 2023 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates11012023.html)
+    -   OS updates, Nov 1st, 2023: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates11012023.html)
 
-    -   OS updates, May 23rd, 2024 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05292024.html)
+    -   OS updates, May 23rd, 2024: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05292024.html)
     
-    -   OS updates, Dec 10th, 2024 [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates12102024.html)
+    -   OS updates, Dec 10th, 2024: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates12102024.html)
     
 -   **Open Science Workshop Sep 2019**
 
-    -   What is open science [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
+    -   What is open science: [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
 
-    -   NERRS OS applications [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
+    -   NERRS OS applications: [link](http://tbep-tech.github.io/tbep-os-presentations/SWMPrats_pres.html)
 
-    -   Evolution of open science for the water quality reporting tool [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
+    -   Evolution of open science for the water quality reporting tool: [link](http://tbep-tech.github.io/tbep-os-presentations/evolution_reporting.html)
 
-    -   Overcoming open science challenges [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
+    -   Overcoming open science challenges: [link](http://tbep-tech.github.io/tbep-os-presentations/challenges_for_os.html)
 
 -   **PEP Monitoring Collaborative Oct 2020**
 
-    -   Open source water quality reporting tools for the PEP Monitoring Collaborative [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
+    -   Open source water quality reporting tools for the PEP Monitoring Collaborative: [link](http://tbep-tech.github.io/tbep-os-presentations/peptools.html)
 
-    -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
+    -   Open source reporting tools for the PEP Monitoring Collaborative: beach pathogens and dissolved oxygen: [link](http://tbep-tech.github.io/tbep-os-presentations/peptools2.html)
 
 -   **Piney Point**
 
-    -   Piney Point Data and Analysis, June 15th, 2021 [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
+    -   Piney Point Data and Analysis, June 15th, 2021: [link](https://tbep-tech.github.io/tbep-os-presentations/piney_point.html#1)
 
-    -   Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021) [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
+    -   Coordinated Monitoring of the Piney Point Wastewater Discharge into Tampa Bay: Data Synthesis and Reporting, Nov. 10, 2021 (CERF 2021): [link](https://docs.google.com/presentation/d/18PQ4BKonBdaDPqfzS1bF-L5Gsn2z8qRFC5RxreFxlHY/edit?usp=sharing)
 
 -   **Pints of Science Oct 2023**
 
-    -  Science for the Masses: Using Open Science for Better Decisions to Restore and Protect Tampa Bay [link](https://docs.google.com/presentation/d/1cphkJnifIwnk3-j4yLB2qkYiJl0wLnk5hqOFqnm0aDU/edit?usp=sharing)
+    -  Science for the Masses: Using Open Science for Better Decisions to Restore and Protect Tampa Bay: [link](https://docs.google.com/presentation/d/1cphkJnifIwnk3-j4yLB2qkYiJl0wLnk5hqOFqnm0aDU/edit?usp=sharing)
 
 -   **SBEP TAC meeting Feb 2020**
 
-    -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
+    -   Open Science Data Discussion: Red Tide Impact and Response Assessment for Tampa and Sarasota Bay Region: [link](http://tbep-tech.github.io/tbep-os-presentations/red_tides_and_open_science.html)
 
 -   **SWFL RAMP Meeting Jul 2020**
 
-    -   Open Science at TBEP: Tidal Tributaries Example [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
+    -   Open Science at TBEP: Tidal Tributaries Example: [link](http://tbep-tech.github.io/tbep-os-presentations/jul_ramp_pres.html)
 
 -   **SWFL Seagrass Working Group**
 
-    -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021 [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
+    -   Tampa Bay Seagrass Changes: Exploring Trends from 2018 to 2020, Nov. 16, 2021: [link](https://docs.google.com/presentation/d/1DO2l4Ee0GwLmJMLVnS8TQymaFJSZ190aoMgwycVIkzo/edit?usp=sharing)
 
 -   **TAC meetings**
 
-    -   Jan. 2025, water quality report card and state of the bay update [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2024.html)
+    -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries: [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
     
-    -   Jan 2024, water quality report card and state of the bay update [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023.html)
+    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration: [link](https://www.canva.com/design/DAD-9OAYHaM/xRSk8VdkFJJ-AzRG646ZgA/view?utm_content=DAD-9OAYHaM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
     
-    -   Oct 2023, Hot and fresh: Pervasive climate stressors of seagrass in Tampa Bay [link](https://docs.google.com/presentation/d/1Vjn-QnxQpEHLM1K8JK1ey1odq-5WXPmGJlBUtsJ1LBQ/edit?usp=sharing)
+    -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard: [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
     
-    -   Oct 2022, Revised Critical Coastal Habitat Assessment methodology [link](https://docs.google.com/presentation/d/1gpMrYL6MVSoCz7HrPLng5d5vyEfb-_2rN5GkO5HKHno/edit?usp=sharing)
+    -   Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo: [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
+    
+    -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know: [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
+    
+    -   Oct 2022, Revised Critical Coastal Habitat Assessment methodology: [link](https://docs.google.com/presentation/d/1gpMrYL6MVSoCz7HrPLng5d5vyEfb-_2rN5GkO5HKHno/edit?usp=sharing)
+       
+    -   Oct 2023, Hot and fresh: Pervasive climate stressors of seagrass in Tampa Bay: [link](https://docs.google.com/presentation/d/1Vjn-QnxQpEHLM1K8JK1ey1odq-5WXPmGJlBUtsJ1LBQ/edit?usp=sharing)
 
-    -   Jun 2022, Macroalgae trends in Tampa Bay: What we do(n't) know [link](https://docs.google.com/presentation/d/1q95cLUTpk6Mk-vxlvIe68G933pkM83G9-7_C_3d9QRQ/edit?usp=sharing)
-
-    -   Jan 2022, RSPARROW Tools for End Users, Project Overview and Demo [link](https://docs.google.com/presentation/d/1Fc6BG3YvQ0R1LE0Zgzq4XkLXEKnCFLbQ-ppvpmL6gag/edit?usp=sharing)
-
-    -   Mar 2021, Open Science Indicator Products: Seagrass transect data and dashboard [link](https://tbep-tech.github.io/tbep-os-presentations/opensci_seagrass.html#1)
-
-    -   Jun 2020, Tampa Bay Nekton Index: Open Science Integration [link](https://www.canva.com/design/DAD-9OAYHaM/xRSk8VdkFJJ-AzRG646ZgA/view?utm_content=DAD-9OAYHaM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
-
-    -   Jan 2020, Open Science Indicator Products: Water Quality and Tidal Tributaries [link](http://tbep-tech.github.io/tbep-os-presentations/opensci_products.html)
-
+    -   Jan 2024, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023.html)
+    
+    -   Jan 2025, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2024.html)
+    
 -   **USF Department of Integrative Biology**
 
-    -   Piney Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023 [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
+    -   Piney Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023: [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
 
 -   **USF College of Marine Science**
 
-    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021 [link](https://www.canva.com/design/DAEXu-oE6M4/zolcqGmrtxtc3C2Bs1YhOA/view?utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021: [link](https://www.canva.com/design/DAEXu-oE6M4/zolcqGmrtxtc3C2Bs1YhOA/view?utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 -   **Virtual Summit Jul 2020**
 
-    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents [link](https://www.canva.com/design/DAEB9tW1m98/y_5oxvuwj5BgoXMkos6G8Q/view?utm_content=DAEB9tW1m98&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+    -   Bringing Open Science to Tampa Bay: Reproducible Workflows and Dynamic Documents: [link](https://www.canva.com/design/DAEB9tW1m98/y_5oxvuwj5BgoXMkos6G8Q/view?utm_content=DAEB9tW1m98&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Resources
 
