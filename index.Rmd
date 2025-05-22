@@ -55,6 +55,9 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **Tampa Bay Benthic Index**
     -   [Dashboard](https://shiny.tbep.org/benthic-dash) ([source](https://github.com/tbep-tech/benthic-dash))
     -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/tbbi.html)
+-   **Fecal Indicator Bacteria Dashboard**
+    -   [Dashboard](https://shiny.tbep.org/fib-dash) ([source](https://github.com/tbep-tech/fib-dash))
+    -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/fib.html)
 -   **Tampa Bay Watershed Land Use**
     -   [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
 -   **ANEP congressional districts**
@@ -193,6 +196,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   OS updates, May 23rd, 2024: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05292024.html)
     
     -   OS updates, Dec 10th, 2024: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates12102024.html)
+    
+    -   OS updates, May 28th, 2025: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates05282025.html)
     
 -   **Open Science Workshop Sep 2019**
 
