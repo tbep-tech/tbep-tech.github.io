@@ -30,6 +30,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 -   [![R-CMD-check](https://github.com/tbep-tech/wqtrends/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/wqtrends/actions) [wqtrends](https://tbep-tech.github.io/wqtrends/): R package to assess water quality trends for long-term monitoring data in estuaries using Generalized Additive Models. See the [vignette](https://tbep-tech.github.io/wqtrends/articles/introduction.html) for details on the package.
 
+-   [![R-CMD-check](https://github.com/tbep-tech/slrcsap/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/slrcsap/actions) [slrcsap](https://tbep-tech.github.io/slrcsap/): R package to create projections of sea level rise for the Tampa Bay region recommended by the Climate Science Advisory Panel. See the [vignette](https://tbep-tech.github.io/slrcsap/articles/slrcsap.html) for details on the package.
+
 -   [![R-CMD-check](https://github.com/tbep-tech/peptools/workflows/R-CMD-check/badge.svg)](https://github.com/tbep-tech/peptools/actions) [peptools](https://tbep-tech.github.io/peptools/): R package with utility functions for reading, anlayzing, and visualizing Suffolk County monitoring data for the Peconic Estuary Program. See the [vignette](https://tbep-tech.github.io/peptools/articles/Introduction.html) for details on the package.
 
 -   [![archive](https://github.com/tbep-tech/github-backup/workflows/archive/badge.svg)](https://github.com/tbep-tech/github-backup/actions) [github-backup](https://github.com/tbep-tech/github-backup): Repository used to create an archive of all repositories in the tbep-tech GitHub organization page and upload to Amazon S3 services on a weekly basis.
