@@ -298,7 +298,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   [**R for Water Resources Data Science**](https://www.r4wrds.com/){target="_blank"}
 -   [**RStudio Webinars**, many topics](https://www.rstudio.com/resources/webinars/){target="_blank"}
 -   [R For Cats: **Basic introduction site, with cats!**](http://rforcats.net/){target="_blank"}
--   [Topical cheatsheets from **RStudio**, also viewed from the help menu](http://www.rstudio.com/resources/cheatsheets/){target="_blank"}
+-   [Topical cheatsheets from **Posit**, also viewed from the help menu](https://posit.co/resources/cheatsheets/){target="_blank"}
 -   [Cheatsheet from CRAN of **base R functions**](http://cran.r-project.org/doc/contrib/Short-refcard.pdf){target="_blank"}
 -   [Totally awesome **R-related artwork** by Allison Horst](https://github.com/allisonhorst/stats-illustrations){target="_blank"}
 -   [**Color reference** PDF with text names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf){target="_blank"}, [**Color cheatsheet** PDF from NCEAS](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf){target="_blank"}
