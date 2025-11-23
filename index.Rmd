@@ -277,12 +277,14 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ### *TBEP Trainings*
 
--   [![build](https://github.com/tbep-tech/flafs-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/flafs-os-workshop/actions) [Florida AFS open science workshop](https://tbep-tech.github.io/flafs-os-workshop)
--   [![build](https://github.com/tbep-tech/tbep-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-os-workshop/actions) [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
--   [![build](https://github.com/tbep-tech/cerf-os-workshop/workflows/build/badge.svg)](https://github.com/tbep-tech/cerf-os-workshop/actions) [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
--   [![build](https://github.com/tbep-tech/pep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/pep-r-training/actions) [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
--   [![build](https://github.com/tbep-tech/ecometab-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/ecometab-r-training/actions) [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
--   [![build](https://github.com/tbep-tech/tbep-r-training/workflows/build/badge.svg)](https://github.com/tbep-tech/tbep-r-training/actions) [TBEP June R training](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
+-   [Florida AFS open science workshop](https://tbep-tech.github.io/flafs-os-workshop)
+-   [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
+-   [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
+-   [CERF R training](https://tbep-tech.github.io/cerf-r-workshop)
+-   [CERF Shiny workshop](https://tbep-tech.github.io/shiny-workshop)
+-   [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
+-   [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
+-   [TBEP R training](https://tbep-tech.github.io/tbep-r-training/), [recordings](https://www.youtube.com/watch?v=_RI4XMRWeV0&list=PLfJ6-D-exF9RM5TPtT4T0nxieqpr_R4pJ)
 -   [Writing functions in R](https://tbep-tech.github.io/tbep-r-training/functions.html)
 -   [R package development workflow](https://tbep-tech.github.io/tbep-r-training/packages.html)
 -   [A soft introduction to Shiny](https://tbep-tech.github.io/tbep-r-training/shiny.html)
@@ -299,7 +301,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   [**R for Water Resources Data Science**](https://www.r4wrds.com/){target="_blank"}
 -   [**RStudio Webinars**, many topics](https://www.rstudio.com/resources/webinars/){target="_blank"}
 -   [R For Cats: **Basic introduction site, with cats!**](http://rforcats.net/){target="_blank"}
--   [Topical cheatsheets from **RStudio**, also viewed from the help menu](http://www.rstudio.com/resources/cheatsheets/){target="_blank"}
+-   [Topical cheatsheets from **Posit**, also viewed from the help menu](https://posit.co/resources/cheatsheets/){target="_blank"}
 -   [Cheatsheet from CRAN of **base R functions**](http://cran.r-project.org/doc/contrib/Short-refcard.pdf){target="_blank"}
 -   [Totally awesome **R-related artwork** by Allison Horst](https://github.com/allisonhorst/stats-illustrations){target="_blank"}
 -   [**Color reference** PDF with text names](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf){target="_blank"}, [**Color cheatsheet** PDF from NCEAS](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf){target="_blank"}
@@ -312,6 +314,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   [Julia Silge and David Robinson **Text Mining with R**](http://tidytextmining.com/){target="_blank"}
 -   [Hadley Wickham's **Advanced R**](http://adv-r.had.co.nz/){target="_blank"}
 -   [Hadley Wickham's **R for Data Science**](https://r4ds.had.co.nz){target="_blank"}
+-   [Hadley Wickham's **R for Data Science**, 2nd edition](https://r4ds.hadley.nz/){target="_blank"}
+-   [Hadley Wickham's **Mastering Shiny**](https://mastering-shiny.org/){target="_blank"}
 -   [Yihui Xie **R Markdown: The Definitive Guide**](https://bookdown.org/yihui/rmarkdown/){target="_blank"}
 -   [Winston Chang **R Graphics Cookbook**](http://www.cookbook-r.com/){target="_blank"}
 -   [Wegman et al. **Remote Sensing and GIS for Ecologists: Using Open Source Software**](http://book.ecosens.org/RSEbook/){target="_blank"}

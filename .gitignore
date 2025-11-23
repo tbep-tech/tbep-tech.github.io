@@ -4,3 +4,6 @@
 .Ruserdata
 README.html
 .DS_Store
+
+/.quarto/
+**/*.quarto_ipynb
