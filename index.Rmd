@@ -161,6 +161,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
     -   2024 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2024_updates.html)
     
+    -   2025 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2025_updates.html)
+
     -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches: [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
 
 -   **Old Tampa Bay Working Group**
