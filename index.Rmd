@@ -161,6 +161,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
     -   2024 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2024_updates.html)
     
+    -   2025 provisional water quality report card: [link](https://tbep-tech.github.io/tbep-os-presentations/wq_report_card_2025_updates.html)
+
     -   Hydrology and chlorophyll trends in Tampa Bay: Alternative modelling approaches: [link](https://tbep-tech.github.io/tbep-os-presentations/chltrends.html)
 
 -   **Old Tampa Bay Working Group**
@@ -278,6 +280,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   [Florida AFS open science workshop](https://tbep-tech.github.io/flafs-os-workshop)
 -   [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
 -   [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
+-   [CERF R training](https://tbep-tech.github.io/cerf-r-workshop)
 -   [CERF Shiny workshop](https://tbep-tech.github.io/shiny-workshop)
 -   [PEP R training](https://tbep-tech.github.io/pep-r-training), [recording](https://drive.google.com/file/d/1ZjVHFrVpw2uTKZw-BmD29umdbl6viutM/view?usp=sharing)
 -   [NERRS ecocystem metabolism](https://tbep-tech.github.io/ecometab-r-training)
