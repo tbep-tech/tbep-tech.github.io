@@ -267,6 +267,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     -   Jan 2024, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2023.html)
     
     -   Jan 2025, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2024.html)
+
+    -   Jan 2026, water quality report card and state of the bay update: [link](http://tbep-tech.github.io/tbep-os-presentations/state_of_the_bay_2025.html)
     
 -   **USF Department of Integrative Biology**
 

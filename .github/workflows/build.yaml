@@ -3,7 +3,7 @@ on:
     paths:
       - index.Rmd
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 0 * * 0" # midnight on Sunday
 
 name: build
 
