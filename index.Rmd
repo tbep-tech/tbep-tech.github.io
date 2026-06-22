@@ -60,6 +60,11 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 -   **Fecal Indicator Bacteria Dashboard**
     -   [Dashboard](https://shiny.tbep.org/fib-dash) ([source](https://github.com/tbep-tech/fib-dash))
     -   [Vignette](https://tbep-tech.github.io/tbeptools/articles/fib.html)
+-   **Non-native Species Dashboard**
+    -   [Dashboard](https://nonnatives.tbep.org/) ([source](https://github.com/tbep-tech/tbep-invasives))
+    -   [Report](https://drive.google.com/file/d/1Des3GsvmFvOpd8yEXd2SPlSN-mKVxoAG/view?usp=sharing)
+-   **Climate Change Indicators Dashboard**
+    -   [Dashboard](https://shiny.tbep.org/climate-dash) ([source](https://github.com/tbep-tech/climate-dash))
 -   **Tampa Bay Watershed Land Use**
     -   [Website](https://tbep-tech.github.io/landuse/) ([source](https://github.com/tbep-tech/landuse))
 -   **ANEP congressional districts**
@@ -216,6 +221,8 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
     
     -   OS updates, Dec 10th, 2025: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates12102025.html)
 
+    -   OS updates, Jun 24th, 2026: [link](http://tbep-tech.github.io/tbep-os-presentations/osupdates06242026.html)
+
 -   **Open Science Workshop Sep 2019**
 
     -   What is open science: [link](http://tbep-tech.github.io/tbep-os-presentations/what_is_os.html)
@@ -278,13 +285,19 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
     -   Mar 2026, Managing the unmanageable: Understanding the competing effects of salinity and nutrient loading on water quality: [link](https://docs.google.com/presentation/d/1pfQZUAgE1328DD9bc6jrgIRbaupp4xsyRtcgI_s5PO4/edit?usp=sharing)
     
+-   **USF College of Marine Science**
+
+    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021: [link](https://www.canva.com/design/DAEXu-oE6M4/zolcqGmrtxtc3C2Bs1YhOA/view?utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
+    -   Nutrient management policy for Tampa Bay, February 5th, 2026 (Ocean Policy course): [link](https://docs.google.com/presentation/d/1my11_INS59pDJ2zVRrgaaTgzGfihLYgj/edit?usp=sharing&ouid=111030724967489561225&rtpof=true&sd=true)
+
 -   **USF Department of Integrative Biology**
 
     -   Piney Point, red tide, and Twitter: A Tampa Bay story, March 30th, 2023: [link](https://docs.google.com/presentation/d/1yfXyuxaXU2CPLWnhtApxDpyS_xuhm9fh29jPpw6MaHE/edit?usp=sharing)
 
--   **USF College of Marine Science**
+-   **USF Environmental and Water Resources Engineering**
 
-    -   How you can do better science in less time: Open science lessons from the Ocean Health Index to Tampa Bay, March 5th, 2021: [link](https://www.canva.com/design/DAEXu-oE6M4/zolcqGmrtxtc3C2Bs1YhOA/view?utm_content=DAEXu-oE6M4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+    -   From data to action: Making informed decisions to protect and restore Tampa Bay, February 27th, 2026: [link](https://docs.google.com/presentation/d/1DfKkQU7s0_VTo7p3icq8zAt8iaZ9E1f7UUFsHmUiarw/edit?usp=sharing)
 
 -   **Virtual Summit Jul 2020**
 
