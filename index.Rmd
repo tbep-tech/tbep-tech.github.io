@@ -307,6 +307,7 @@ Want to contribute to this page? Create an issue [here](https://github.com/tbep-
 
 ### *TBEP Trainings*
 
+-   [SWFWMD R training](https://tbep-tech.github.io/swfwmd-r-training)
 -   [Florida AFS open science workshop](https://tbep-tech.github.io/flafs-os-workshop)
 -   [TBEP open science workshop](https://tbep-tech.github.io/tbep-os-workshop)
 -   [CERF open science workshop](https://tbep-tech.github.io/cerf-os-workshop)
